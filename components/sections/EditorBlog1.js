@@ -1,7 +1,9 @@
 
 import Link from 'next/link'
+import Image from "next/image";
 
-export default function EditorBlog1() {
+
+export default function EditorBlog1({data}) {
     return (
         <>
             <section className="editor-blog-area">
@@ -13,16 +15,22 @@ export default function EditorBlog1() {
                             </div>
                             <div className="post-card editor-post-card">
                                 <div className="post-thumb">
-                                    <Link href="/single-post-1"><img src="/assets/img/post/editor-post-img-1.jpg" alt="post" />
+                                    <Link href="/single-post-1">
+                                    {/* <img src={data[0].image} alt="post" /> */}
+                                      <Image
+                                                                                src={data[0].image}
+                                                                                alt="trend"
+                                                                                width={500}
+                                                                                height={300}
+                                                                            />
                                     </Link>
                                 </div>
                                 <div className="post-content">
-                                    <Link href="/single-post-1" className="card-btn bg-green">Sports</Link>
+                                    <Link href="/single-post-1" className="card-btn bg-green">{data[0].category}</Link>
                                     <h3 className="title">
-                                        <Link href="/single-post-1">Credit Shouldn’t Affect Health Insurance, Experts Say</Link>
+                                        <Link href="/single-post-1">{data[0].title}</Link>
                                     </h3>
-                                    <p>Lorem ipsum dolor amet consectetur. tellus suspendisse nulla aliquam. Risus rutrum tellus
-                                        eget ultrices pretium.</p>
+                                    <p>{data[0].shortdescription}</p>
                                     <ul className="post-list">
                                         <li className="author">
                                             by <span><Link href="/author-details">David Bin</Link></span>
@@ -35,12 +43,21 @@ export default function EditorBlog1() {
                             <div className="editor-post-wrap">
                                 <div className="post-card editor-post">
                                     <div className="post-thumb">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/editor-post-img-2.jpg" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                        {/* <img src={data[0].image} alt="post" /> */}
+                                          <Image
+                                                                                    src={data[0].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+
+                                        </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link href="/single-post-1" className="card-btn bg-yellow">Food</Link>
+                                        <Link href="/single-post-1" className="card-btn bg-yellow">{data[1].category}</Link>
                                         <h3 className="title">
-                                            <Link href="/single-post-1">19 Cold Soup Recipes for Hot Summer Days</Link>
+                                            <Link href="/single-post-1">{data[1].title}</Link>
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
@@ -52,12 +69,20 @@ export default function EditorBlog1() {
                                 </div>
                                 <div className="post-card editor-post">
                                     <div className="post-thumb">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/editor-post-img-3.jpg" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                        {/* <img src={data[0].image} alt="post" /> */}
+                                          <Image
+                                                                                    src={data[0].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link href="/single-post-1" className="card-btn bg-blue">Tech</Link>
+                                        <Link href="/single-post-1" className="card-btn bg-blue">{data[2].category}</Link>
                                         <h3 className="title">
-                                            <Link href="/single-post-1">15 ways you can your phone your productivity</Link>
+                                            <Link href="/single-post-1">{data[2].title}</Link>
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
@@ -69,12 +94,21 @@ export default function EditorBlog1() {
                                 </div>
                                 <div className="post-card editor-post">
                                     <div className="post-thumb">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/editor-post-img-4.jpg" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                                                           {/* <img src={data[0].image} alt="post" /> */}
+
+                                          <Image
+                                                                                    src={data[0].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link href="/single-post-1" className="card-btn bg-blue-light">Business</Link>
+                                        <Link href="/single-post-1" className="card-btn bg-blue-light">{data[3].category}</Link>
                                         <h3 className="title">
-                                            <Link href="/single-post-1">Navigation System as anything Doesn’t Space?</Link>
+                                            <Link href="/single-post-1">{data[3].title}</Link>
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">

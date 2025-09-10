@@ -51,7 +51,7 @@ export default function HeroPost1({ data }) {
 										<Link href="/single-post-1">
 											{/* <img src="/assets/img/post/post-img-1.jpg" alt="post" /> */}
 											<Image
-												src={data[2].image}
+												src={data[0].image}
 												alt="trend"
 												width={500}
 												height={300}
@@ -228,23 +228,39 @@ export default function HeroPost1({ data }) {
 										</div>
 										<div className="list-post-card">
 											<div className="post-img">
-												<Link href="/single-post-1"><img src="/assets/img/post/list-post-img-5.png" alt="post" /></Link>
+												<Link href="/single-post-1">
+												{/* <img src="/assets/img/post/list-post-img-5.png" alt="post" /> */}
+													<Image
+												src={data[8].image}
+												alt="trend"
+												width={70}
+												height={70}
+											/>
+												</Link>
 											</div>
 											<div className="post-content">
 												<Link href="/single-post-1" className="category">{data[7].category}</Link>
 												<h3 className="title">
-													<Link href="/single-post-1">{data[8].title}</Link>
+													<Link href="/single-post-1">{data[7].title}</Link>
 												</h3>
 											</div>
 										</div>
 										<div className="list-post-card">
 											<div className="post-img">
-												<Link href="/single-post-1"><img src="/assets/img/post/list-post-img-3.png" alt="post" /></Link>
+												<Link href="/single-post-1">
+												{/* <img src="/assets/img/post/list-post-img-3.png" alt="post" /> */}
+													<Image
+												src={data[8].image}
+												alt="trend"
+												width={70}
+												height={70}
+											/>
+												</Link>
 											</div>
 											<div className="post-content">
-												<Link href="/single-post-1" className="category">{data[9].category}</Link>
+												<Link href="/single-post-1" className="category">{data[8].category}</Link>
 												<h3 className="title">
-													<Link href="/single-post-1">{data[9].title}</Link>
+													<Link href="/single-post-1">{data[8].title}</Link>
 												</h3>
 											</div>
 										</div>
@@ -254,7 +270,34 @@ export default function HeroPost1({ data }) {
 									<div className="list-post-area">
 										<div className="list-post-card">
 											<div className="post-img">
-												<Link href="/single-post-1"><img src="/assets/img/post/list-post-img-1.png" alt="post" /></Link>
+												<Link href="/single-post-1">
+												{/* <img src="/assets/img/post/list-post-img-1.png" alt="post" /> */}
+													<Image
+												src={data[9].image}
+												alt="trend"
+												width={70}
+												height={70}
+											/>
+												</Link>
+											</div>
+											<div className="post-content">
+												<Link href="/single-post-1" className="category">{data[9].category}</Link>
+												<h3 className="title">
+													<Link href="/single-post-1">{data[9].title}</Link>
+												</h3>
+											</div>
+										</div>
+										<div className="list-post-card">
+											<div className="post-img">
+												<Link href="/single-post-1">
+												{/* <img src="/assets/img/post/list-post-img-2.png" alt="post" /> */}
+													<Image
+												src={data[10].image}
+												alt="trend"
+												width={70}
+												height={70}
+											/>
+												</Link>
 											</div>
 											<div className="post-content">
 												<Link href="/single-post-1" className="category">{data[10].category}</Link>
@@ -265,7 +308,15 @@ export default function HeroPost1({ data }) {
 										</div>
 										<div className="list-post-card">
 											<div className="post-img">
-												<Link href="/single-post-1"><img src="/assets/img/post/list-post-img-2.png" alt="post" /></Link>
+												<Link href="/single-post-1">
+												{/* <img src="/assets/img/post/list-post-img-4.png" alt="post" /> */}
+													<Image
+												src={data[11].image}
+												alt="trend"
+												width={70}
+												height={70}
+											/>
+												</Link>
 											</div>
 											<div className="post-content">
 												<Link href="/single-post-1" className="category">{data[11].category}</Link>
@@ -276,7 +327,15 @@ export default function HeroPost1({ data }) {
 										</div>
 										<div className="list-post-card">
 											<div className="post-img">
-												<Link href="/single-post-1"><img src="/assets/img/post/list-post-img-4.png" alt="post" /></Link>
+												<Link href="/single-post-1">
+												{/* <img src="/assets/img/post/list-post-img-5.png" alt="post" /> */}
+													<Image
+												src={data[12].image}
+												alt="trend"
+												width={70}
+												height={70}
+											/>
+												</Link>
 											</div>
 											<div className="post-content">
 												<Link href="/single-post-1" className="category">{data[12].category}</Link>
@@ -285,28 +344,25 @@ export default function HeroPost1({ data }) {
 												</h3>
 											</div>
 										</div>
-										<div className="list-post-card">
-											<div className="post-img">
-												<Link href="/single-post-1"><img src="/assets/img/post/list-post-img-5.png" alt="post" /></Link>
+											<div className="list-post-card">
+												<div className="post-img">
+													<Link href="/single-post-1">
+													{/* <img src="/assets/img/post/list-post-img-3.png" alt="post" /> */}
+														<Image
+													src={data[13].image}
+													alt="trend"
+													width={70}
+													height={70}
+												/>
+													</Link>
+												</div>
+												<div className="post-content">
+													<Link href="/single-post-1" className="category">{data[13].category}</Link>
+													<h3 className="title">
+														<Link href="/single-post-1">{data[13].title}</Link>
+													</h3>
+												</div>
 											</div>
-											<div className="post-content">
-												<Link href="/single-post-1" className="category">{data[13].category}</Link>
-												<h3 className="title">
-													<Link href="/single-post-1">{data[13].title}</Link>
-												</h3>
-											</div>
-										</div>
-										<div className="list-post-card">
-											<div className="post-img">
-												<Link href="/single-post-1"><img src="/assets/img/post/list-post-img-3.png" alt="post" /></Link>
-											</div>
-											<div className="post-content">
-												<Link href="/single-post-1" className="category">{data[14].category}</Link>
-												<h3 className="title">
-													<Link href="/single-post-1">{data[14].title}</Link>
-												</h3>
-											</div>
-										</div>
 									</div>
 								</div>
 							</div>

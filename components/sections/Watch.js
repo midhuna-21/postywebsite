@@ -8,8 +8,9 @@ import 'swiper/css/thumbs'
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import VideoPopup from '../elements/VideoPopup'
+import Image from "next/image";
 
-export default function Watch() {
+export default function Watch({ data }) {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null)
 	const [isOpen, setOpen] = useState(false)
 	return (
@@ -25,28 +26,36 @@ export default function Watch() {
 						<SwiperSlide>
 							<div className="carousel-post">
 								<div className="post-img">
-									<img src="/assets/img/images/post-carousel-img-1.jpg" />
+									<img src={"/assets/img/images/post-carousel-img-1.jpg"} />
+									{/* <Image
+  src={data[0].image}
+  alt="trend"
+  width={0}
+  height={0}
+  sizes="100vw"
+  className="w-full h-auto"
+/> */}
+
 								</div>
 								<div className="post-text">
 									<h3 className="header"><span /><span>What to Watch</span><span /></h3>
 								</div>
-								<div className="video-btn">
+								{/* <div className="video-btn">
 								<a className="video-popup" onClick={() => setOpen(true)}><i className="las la-play" />
 											</a>
-								</div>
+								</div> */}
 								<div className="post-card">
 									<div className="post-content">
-										<Link href="/single-post-1" className="card-btn bg-green">Travel</Link>
+										<Link href="/single-post-1" className="card-btn bg-green">{data[0].category}</Link>
 										<h3 className="title">
-											<Link href="/single-post-1">Winners of the 2022 the Nature Conservancy any Photo
-												Contest</Link>
+											<Link href="/single-post-1">{data[0].title}</Link>
 										</h3>
 										<ul className="post-list">
 											<li className="author">
 												by <span><Link href="/author-details">David Bin</Link></span>
 											</li>
-											<li className="date">July 29, 2024</li>
-											<li><i className="las la-comments" />5</li>
+											<li className="date">{data[0].date}</li>
+											{/* <li><i className="las la-comments" />5</li> */}
 										</ul>
 									</div>
 								</div>
@@ -56,27 +65,34 @@ export default function Watch() {
 							<div className="carousel-post">
 								<div className="post-img">
 									<img src="/assets/img/images/post-carousel-img-1.jpg" />
+									{/* <Image
+  src={data[0].image}
+  alt="trend"
+  width={0}
+  height={0}
+  sizes="100vw"
+  className="w-full h-auto"
+/> */}
 								</div>
 								<div className="post-text">
 									<h3 className="header"><span /><span>What to Watch</span><span /></h3>
 								</div>
-								<div className="video-btn">
+								{/* <div className="video-btn">
 									<a className="video-popup" onClick={() => setOpen(true)}><i className="las la-play" />
 											</a>
-								</div>
+								</div> */}
 								<div className="post-card">
 									<div className="post-content">
-										<Link href="/single-post-1" className="card-btn bg-green">Travel</Link>
+										<Link href="/single-post-1" className="card-btn bg-green">{data[1].category}</Link>
 										<h3 className="title">
-											<Link href="/single-post-1">Winners of the 2022 the Nature Conservancy any Photo
-												Contest</Link>
+											<Link href="/single-post-1">{data[1].title}</Link>
 										</h3>
 										<ul className="post-list">
 											<li className="author">
 												by <span><Link href="/author-details">David Bin</Link></span>
 											</li>
-											<li className="date">July 29, 2024</li>
-											<li><i className="las la-comments" />5</li>
+											<li className="date">{data[1].date}</li>
+											{/* <li><i className="las la-comments" />5</li> */}
 										</ul>
 									</div>
 								</div>
@@ -86,27 +102,34 @@ export default function Watch() {
 							<div className="carousel-post">
 								<div className="post-img">
 									<img src="/assets/img/images/post-carousel-img-1.jpg" />
+									{/* <Image
+  src={data[0].image}
+  alt="trend"
+  width={0}
+  height={0}
+  sizes="100vw"
+  className="w-full h-auto"
+/> */}
 								</div>
 								<div className="post-text">
 									<h3 className="header"><span /><span>What to Watch</span><span /></h3>
 								</div>
-								<div className="video-btn">
+								{/* <div className="video-btn">
 									<a className="video-popup" onClick={() => setOpen(true)}><i className="las la-play" />
 											</a>
-								</div>
+								</div> */}
 								<div className="post-card">
 									<div className="post-content">
-										<Link href="/single-post-1" className="card-btn bg-green">Travel</Link>
+										<Link href="/single-post-1" className="card-btn bg-green">{data[2].category}</Link>
 										<h3 className="title">
-											<Link href="/single-post-1">Winners of the 2022 the Nature Conservancy any Photo
-												Contest</Link>
+											<Link href="/single-post-1">{data[2].title}</Link>
 										</h3>
 										<ul className="post-list">
 											<li className="author">
 												by <span><Link href="/author-details">David Bin</Link></span>
 											</li>
-											<li className="date">July 29, 2024</li>
-											<li><i className="las la-comments" />5</li>
+											<li className="date">{data[2].date}</li>
+											{/* <li><i className="las la-comments" />5</li> */}
 										</ul>
 									</div>
 								</div>
@@ -116,27 +139,34 @@ export default function Watch() {
 							<div className="carousel-post">
 								<div className="post-img">
 									<img src="/assets/img/images/post-carousel-img-1.jpg" />
+									{/* <Image
+  src={data[0].image}
+  alt="trend"
+  width={0}
+  height={0}
+  sizes="100vw"
+  className="w-full h-auto"
+/> */}
 								</div>
 								<div className="post-text">
 									<h3 className="header"><span /><span>What to Watch</span><span /></h3>
 								</div>
-								<div className="video-btn">
+								{/* <div className="video-btn">
 									<a className="video-popup" onClick={() => setOpen(true)}><i className="las la-play" />
 											</a>
-								</div>
+								</div> */}
 								<div className="post-card">
 									<div className="post-content">
-										<Link href="/single-post-1" className="card-btn bg-green">Travel</Link>
+										<Link href="/single-post-1" className="card-btn bg-green">{data[3].category}</Link>
 										<h3 className="title">
-											<Link href="/single-post-1">Winners of the 2022 the Nature Conservancy any Photo
-												Contest</Link>
+											<Link href="/single-post-1">{data[3].title}</Link>
 										</h3>
 										<ul className="post-list">
 											<li className="author">
 												by <span><Link href="/author-details">David Bin</Link></span>
 											</li>
-											<li className="date">July 29, 2024</li>
-											<li><i className="las la-comments" />5</li>
+											<li className="date">{data[3].date}</li>
+											{/* <li><i className="las la-comments" />5</li> */}
 										</ul>
 									</div>
 								</div>
@@ -160,75 +190,100 @@ export default function Watch() {
 							<SwiperSlide>
 								<div className="carousel-thumb-post">
 									<div className="carousel-thumb">
-										<img src="/assets/img/images/post-carousel-thumb-1.jpg" />
+										{/* <img src="/assets/img/images/post-carousel-thumb-1.jpg" /> */}
+										<Image
+											src={data[4].image}
+											alt="trend"
+											width={500}
+											height={180}
+										/>
 									</div>
 									<div className="thumb-content">
-									<a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
-											</a>
-										<h4 className="thumb-title"><Link href="/#">The Season Courses and Salads wow!</Link></h4>
+										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}>
+										<i className="las la-play" />
+											</a> */}
+										<h4 className="thumb-title"><Link href="/#">{data[4].title}</Link></h4>
 									</div>
-									<div className="thumb-time">
+									{/* <div className="thumb-time">
 										<span>9.37</span>
-									</div>
+									</div> */}
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className="carousel-thumb-post">
 									<div className="carousel-thumb">
-										<img src="/assets/img/images/post-carousel-thumb-2.jpg" />
+										{/* <img src="/assets/img/images/post-carousel-thumb-2.jpg" /> */}
+										<Image
+											src={data[5].image}
+											alt="trend"
+											width={500}
+											height={180}
+										/>
 									</div>
 									<div className="thumb-content">
-										<a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
-											</a>
-										<h4 className="thumb-title"><Link href="/#">The Season Courses and Salads wow!</Link></h4>
+										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
+											</a> */}
+										<h4 className="thumb-title"><Link href="/#">{data[5].title}</Link></h4>
 									</div>
-									<div className="thumb-time">
+									{/* <div className="thumb-time">
 										<span>9.37</span>
-									</div>
+									</div> */}
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className="carousel-thumb-post">
 									<div className="carousel-thumb">
-										<img src="/assets/img/images/post-carousel-thumb-3.jpg" />
+										{/* <img src="/assets/img/images/post-carousel-thumb-3.jpg" /> */}
+										<Image
+											src={data[6].image}
+											alt="trend"
+											width={500}
+											height={180}
+										/>
 									</div>
 									<div className="thumb-content">
-										<a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
-											</a>
-										<h4 className="thumb-title"><Link href="/#">The Season Courses and Salads wow!</Link></h4>
+										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
+											</a> */}
+										<h4 className="thumb-title"><Link href="/#">{data[5].title}</Link></h4>
 									</div>
-									<div className="thumb-time">
+									{/* <div className="thumb-time">
 										<span>9.37</span>
-									</div>
+									</div> */}
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className="carousel-thumb-post">
 									<div className="carousel-thumb">
-										<img src="/assets/img/images/post-carousel-thumb-4.jpg" />
+										{/* <img src="/assets/img/images/post-carousel-thumb-4.jpg" /> */}
+										<Image
+											src={data[6	].image}
+											alt="trend"
+											width={500}
+											height={180}
+										/>
 									</div>
 									<div className="thumb-content">
-										<a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
-											</a>
-										<h4 className="thumb-title"><Link href="/#">The Season Courses and Salads wow!</Link></h4>
+										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
+											</a> */}
+										<h4 className="thumb-title"><Link href="/#">{data[6].title}</Link></h4>
 									</div>
-									<div className="thumb-time">
+									{/* <div className="thumb-time">
 										<span>9.37</span>
-									</div>
+									</div> */}
 								</div>
 							</SwiperSlide>
 						</Swiper>
 					</div>
 				</div>
 			</section>
-				<ModalVideo
+			{/* <ModalVideo
 				channel='youtube'
 				autoplay
 				isOpen={isOpen}
 				videoId={"QiqQoqtnHrk"}
 				onClose={() => setOpen(false)}
 				allowFullScreen={true}
-			/>
+			/> */}
 		</>
 	)
 }

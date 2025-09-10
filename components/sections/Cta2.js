@@ -1,7 +1,8 @@
 
 import Link from 'next/link'
 
-export default function Cta2() {
+
+export default function Cta2({data}) {
     return (
         <>
             <section className="cta-section cta-2">

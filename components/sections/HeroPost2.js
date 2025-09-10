@@ -1,7 +1,8 @@
 
 import Link from 'next/link'
+import Image from "next/image";
 
-export default function HeroPost2() {
+export default function HeroPost2({ data }) {
     return (
         <>
             <section className="hero-post-area area-2 bg-grey-2">
@@ -17,19 +18,27 @@ export default function HeroPost2() {
                     <div className="post-area-wrap wrap-2">
                         <div className="post-carousel-card">
                             <div className="post-carousel-thumb">
-                                <Link href="/single-post-1"><img src="/assets/img/post/read-post-img-1.jpg" alt="img" /></Link>
+                                <Link href="/single-post-1">
+                                    {/* <img src="/assets/img/post/read-post-img-1.jpg" alt="img" /> */}
+                                    <Image
+                                        src={data[0].image}
+                                        alt="trend"
+                                        width={500}
+                                        height={300}
+                                    />
+                                </Link>
                             </div>
                             <div className="post-carousel-content">
-                                <Link href="/single-post-1" className="card-btn bg-green">Travel</Link>
+                                <Link href="/single-post-1" className="card-btn bg-green">{data[0].category}</Link>
                                 <h3 className="title">
-                                    <Link href="/single-post-2">Extraordinary Snoqualmie Falls and Seattle Tour</Link>
+                                    <Link href="/single-post-2">{data[0].title}</Link>
                                 </h3>
                                 <ul className="post-list">
                                     <li className="author">
                                         by <span><Link href="/author-details">David Bin</Link></span>
                                     </li>
-                                    <li className="date">July 29, 2024</li>
-                                    <li><i className="las la-comments" />5</li>
+                                    <li className="date">{data[0].date}</li>
+                                    {/* <li><i className="las la-comments" />5</li> */}
                                 </ul>
                             </div>
                             {/* /. post-card-content */}
@@ -38,38 +47,53 @@ export default function HeroPost2() {
                             <div className="post-card-wrap wrap-2">
                                 <div className="post-card">
                                     <div className="post-thumb">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/post-img-3.jpg" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                            {/* <img src="/assets/img/post/post-img-3.jpg" alt="post" /> */}
+                                            <Image
+                                                src={data[1].image}
+                                                alt="trend"
+                                                width={500}
+                                                height={300}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link href="/single-post-1" className="card-btn bg-blue">Tech</Link>
+                                        <Link href="/single-post-1" className="card-btn bg-blue">{data[1].category}</Link>
                                         <h3 className="title">
-                                            <Link href="/single-post-1">15 ways you can your phone any your productivity</Link>
+                                            <Link href="/single-post-1">{data[1].title}</Link>
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
                                                 by <span><Link href="/author-details">David Bin</Link></span>
                                             </li>
-                                            <li className="date">July 29, 2024</li>
-                                            <li><i className="las la-comments" />5</li>
+                                            <li className="date">{data[1].date}</li>
+                                            {/* <li><i className="las la-comments" />5</li> */}
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="post-card">
                                     <div className="post-thumb">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/post-img-4.jpg" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                            {/* <img src="/assets/img/post/post-img-4.jpg" alt="post" /> */}
+                                            <Image
+                                                src={data[2].image}
+                                                alt="trend"
+                                                width={500}
+                                                height={300}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link href="/single-post-1" className="card-btn bg-pink">Lifestyle</Link>
+                                        <Link href="/single-post-1" className="card-btn bg-pink">{data[2].category}</Link>
                                         <h3 className="title">
-                                            <Link href="/single-post-1">The Power of Big Data in Discovery and Decision
-                                                Making</Link>
+                                            <Link href="/single-post-1">{data[2].title}</Link>
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
                                                 by <span><Link href="/author-details">David Bin</Link></span>
                                             </li>
-                                            <li className="date">July 29, 2024</li>
-                                            <li><i className="las la-comments" />5</li>
+                                            <li className="date">{data[2].date}</li>
+                                            {/* <li><i className="las la-comments" />5</li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -77,68 +101,116 @@ export default function HeroPost2() {
                             <div className="list-post-area list-2">
                                 <div className="list-post-card">
                                     <div className="post-img">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/list-post-img-6.png" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                            {/* <img src="/assets/img/post/list-post-img-6.png" alt="post" /> */}
+                                            <Image
+                                                src={data[3].image}
+                                                alt="trend"
+                                                width={150}
+                                                height={120}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <h3 className="title">
-                                            <Link href="/single-post-1">The Season Courses and Salads wow!</Link>
+                                            <Link href="/single-post-1">{data[3].title}</Link>
                                         </h3>
-                                        <span>July 29, 2024</span>
+                                        <span>{data[3].date}</span>
                                     </div>
                                 </div>
                                 <div className="list-post-card">
                                     <div className="post-img">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/list-post-img-7.png" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                            {/* <img src="/assets/img/post/list-post-img-7.png" alt="post" /> */}
+                                            <Image
+                                                src={data[4].image}
+                                                alt="trend"
+                                                width={150}
+                                                height={120}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <h3 className="title">
-                                            <Link href="/single-post-1">Laptops for Working from Remote Work</Link>
+                                            <Link href="/single-post-1">{data[4].title}</Link>
                                         </h3>
-                                        <span>July 29, 2024</span>
+                                        <span>{data[4].date}</span>
                                     </div>
                                 </div>
                                 <div className="list-post-card">
                                     <div className="post-img">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/list-post-img-8.png" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                            {/* <img src="/assets/img/post/list-post-img-8.png" alt="post" /> */}
+                                            <Image
+                                                src={data[5].image}
+                                                alt="trend"
+                                                width={150}
+                                                height={120}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <h3 className="title">
-                                            <Link href="/single-post-1">The Power of Big Data in Discovery.</Link>
+                                            <Link href="/single-post-1">{data[5].title}</Link>
                                         </h3>
-                                        <span>July 29, 2024</span>
+                                        <span>{data[5].date}</span>
                                     </div>
                                 </div>
                                 <div className="list-post-card">
                                     <div className="post-img">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/list-post-img-9.png" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                            {/* <img src="/assets/img/post/list-post-img-9.png" alt="post" /> */}
+                                            <Image
+                                                src={data[6].image}
+                                                alt="trend"
+                                                width={150}
+                                                height={120}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <h3 className="title">
-                                            <Link href="/single-post-1">A Guide to Animating Mobile Data.</Link>
+                                            <Link href="/single-post-1">{data[6].title}</Link>
                                         </h3>
-                                        <span>July 29, 2024</span>
+                                        <span>{data[6].date}</span>
                                     </div>
                                 </div>
                                 <div className="list-post-card">
                                     <div className="post-img">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/list-post-img-10.png" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                            {/* <img src="/assets/img/post/list-post-img-10.png" alt="post" /> */}
+                                            <Image
+                                                src={data[7].image}
+                                                alt="trend"
+                                                width={150}
+                                                height={120}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <h3 className="title">
-                                            <Link href="/single-post-1">Marathon Paces for Racing Distance</Link>
+                                            <Link href="/single-post-1">{data[7].title}</Link>
                                         </h3>
-                                        <span>July 29, 2024</span>
+                                        <span>{data[7].date}</span>
                                     </div>
                                 </div>
                                 <div className="list-post-card">
                                     <div className="post-img">
-                                        <Link href="/single-post-1"><img src="/assets/img/post/list-post-img-11.png" alt="post" /></Link>
+                                        <Link href="/single-post-1">
+                                            {/* <img src="/assets/img/post/list-post-img-11.png" alt="post" /> */}
+                                            <Image
+                                                src={data[8].image}
+                                                alt="trend"
+                                                width={150}
+                                                height={120}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="post-content">
                                         <h3 className="title">
-                                            <Link href="/single-post-1">There May Be More Than You Realize</Link>
+                                            <Link href="/single-post-1">{data[8].title}</Link>
                                         </h3>
-                                        <span>July 29, 2024</span>
+                                        <span>{data[8].date}</span>
                                     </div>
                                 </div>
                             </div>

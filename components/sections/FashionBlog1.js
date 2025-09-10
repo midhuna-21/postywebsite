@@ -1,7 +1,7 @@
-
 import Link from 'next/link'
+import Image from "next/image";
 
-export default function FashionBlog1() {
+export default function FashionBlog1({data}) {
     return (
         <>
             <section className="fashion-blog-area padding">
@@ -18,19 +18,27 @@ export default function FashionBlog1() {
                         <div className="col-lg-4 col-md-6">
                             <div className="post-card">
                                 <div className="post-thumb">
-                                    <Link href="/single-post-1"><img src="/assets/img/post/fasion-post-1.jpg" alt="post" /></Link>
+                                    <Link href="/single-post-1">
+                                    {/* <img src="/assets/img/post/fasion-post-1.jpg" alt="post" /> */}
+                                     <Image
+                                                                                    src={data[0].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+                                    </Link>
                                 </div>
                                 <div className="post-content">
-                                    <Link href="/single-post-1" className="card-btn bg-pink">Lifestyle</Link>
+                                    <Link href="/single-post-1" className="card-btn bg-pink">{data[0].category}</Link>
                                     <h3 className="title">
-                                        <Link href="/single-post-1">Timeless and Chic Outfits for Your an Endless Wardrobe</Link>
+                                        <Link href="/single-post-1">{data[0].title}</Link>
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
                                             by <span><Link href="/author-details">David Bin</Link></span>
                                         </li>
-                                        <li className="date">July 29, 2024</li>
-                                        <li><i className="las la-comments" />5</li>
+                                        <li className="date">{data[0].date}</li>
+                                        {/* <li><i className="las la-comments" />5</li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -38,20 +46,27 @@ export default function FashionBlog1() {
                         <div className="col-lg-4 col-md-6">
                             <div className="post-card">
                                 <div className="post-thumb">
-                                    <Link href="/single-post-1"><img src="/assets/img/post/fasion-post-2.jpg" alt="post" /></Link>
+                                    <Link href="/single-post-1">
+                                    {/* <img src="/assets/img/post/fasion-post-2.jpg" alt="post" /> */}
+                                     <Image
+                                                                                    src={data[1].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+                                    </Link>
                                 </div>
                                 <div className="post-content">
-                                    <Link href="/single-post-1" className="card-btn bg-pink">Lifestyle</Link>
+                                    <Link href="/single-post-1" className="card-btn bg-pink">{data[1].category}</Link>
                                     <h3 className="title">
-                                        <Link href="/single-post-1">Accessorizing for Impact with Top Trends of the Fall
-                                            Season</Link>
+                                        <Link href="/single-post-1">{data[1].title}</Link>
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
                                             by <span><Link href="/author-details">David Bin</Link></span>
                                         </li>
-                                        <li className="date">July 29, 2024</li>
-                                        <li><i className="las la-comments" />5</li>
+                                        <li className="date">{data[1].date}</li>
+                                        {/* <li><i className="las la-comments" />5</li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -59,19 +74,27 @@ export default function FashionBlog1() {
                         <div className="col-lg-4 col-md-6">
                             <div className="post-card">
                                 <div className="post-thumb">
-                                    <Link href="/single-post-1"><img src="/assets/img/post/fasion-post-3.jpg" alt="post" /></Link>
+                                    <Link href="/single-post-1">
+                                    {/* <img src="/assets/img/post/fasion-post-3.jpg" alt="post" /> */}
+                                     <Image
+                                                                                    src={data[2].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+                                    </Link>
                                 </div>
                                 <div className="post-content">
-                                    <Link href="/single-post-1" className="card-btn bg-pink">Lifestyle</Link>
+                                    <Link href="/single-post-1" className="card-btn bg-pink">{data[2].category}</Link>
                                     <h3 className="title">
-                                        <Link href="/single-post-1">Your Body Type Flatter Your Figure with man Style</Link>
+                                        <Link href="/single-post-1">{data[2].title}</Link>
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
                                             by <span><Link href="/author-details">David Bin</Link></span>
                                         </li>
-                                        <li className="date">July 29, 2024</li>
-                                        <li><i className="las la-comments" />5</li>
+                                        <li className="date">{data[2].date}</li>
+                                        {/* <li><i className="las la-comments" />5</li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -81,39 +104,64 @@ export default function FashionBlog1() {
                         <div className="col-lg-4 col-md-6">
                             <div className="list-post-card">
                                 <div className="post-img">
-                                    <Link href="/single-post-1"><img src="/assets/img/post/fasion-post-4.jpg" alt="post" /></Link>
+                                    <Link href="/single-post-1">
+                                    {/* <img src="/assets/img/post/fasion-post-4.jpg" alt="post" /> */}
+                                     <Image
+                                                                                    src={data[3].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+                                    </Link>
                                 </div>
                                 <div className="post-content">
                                     <h3 className="title">
-                                        <Link href="/single-post-1">Fashion Essentials the Top Accessories</Link>
+                                        <Link href="/single-post-1">{data[3].title}</Link>
                                     </h3>
-                                    <span>July 29, 2024</span>
+                                    <span>{data[3].date}</span>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
                             <div className="list-post-card">
                                 <div className="post-img">
-                                    <Link href="/single-post-1"><img src="/assets/img/post/fasion-post-5.jpg" alt="post" /></Link>
+                                    <Link href="/single-post-1">
+                                    {/* <img src="/assets/img/post/fasion-post-5.jpg" alt="post" /> */}
+                                     <Image
+                                                                                    src={data[4].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+                                    </Link>
                                 </div>
                                 <div className="post-content">
                                     <h3 className="title">
-                                        <Link href="/single-post-1">Confidence and Authority through Tailored Fashion</Link>
+                                        <Link href="/single-post-1">{data[4].title}</Link>
                                     </h3>
-                                    <span>July 29, 2024</span>
+
+                                    <span>{data[4].date}</span>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
                             <div className="list-post-card card-2">
                                 <div className="post-img">
-                                    <Link href="/single-post-1"><img src="/assets/img/post/fasion-post-6.jpg" alt="post" /></Link>
+                                    <Link href="/single-post-1">
+                                    {/* <img src="/assets/img/post/fasion-post-6.jpg" alt="post" /> */}
+                                     <Image
+                                                                                    src={data[5].image}
+                                                                                    alt="trend"
+                                                                                    width={500}
+                                                                                    height={300}
+                                                                                />
+                                    </Link>
                                 </div>
                                 <div className="post-content">
                                     <h3 className="title">
-                                        <Link href="/single-post-1">Wardrobe Refreshing Your Style for a New Season</Link>
+                                        <Link href="/single-post-1">{data[5].title}</Link>
                                     </h3>
-                                    <span>July 29, 2024</span>
+                                    <span>{data[5].date}</span>
                                 </div>
                             </div>
                         </div>

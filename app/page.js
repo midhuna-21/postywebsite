@@ -22,17 +22,17 @@ export default function Home() {
 				<News data={[businessData[0],businessData[1]]}/>	
 				<Trending1 data={[businessData[2],businessData[3],businessData[2],businessData[3]]}/>
 				<HeroPost1 data={[businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3]]}/>
-				<Cta1 />
-				<EditorBlog1 />
-				<HeroPost2 />
-				<Categories />
-				<NewsPost1 />
-				<Watch />
-				<FashionBlog1 />
-				<Cta2 />
-				<HeroPost3 />
-				<Subscribe1 />
-				<RecentPost />
+				{/* <Cta1 /> */}
+				<EditorBlog1 data={[businessData[2],businessData[3],businessData[2],businessData[3]]}/>
+				<HeroPost2 data={[businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3]]}/>
+				<Categories data={[businessData[2],businessData[3],businessData[2],businessData[3]]}/>
+				<NewsPost1 data={[businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3]]}/>
+				<Watch data={[businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2]]}/>
+				<FashionBlog1 data={[businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2]]}/>
+				{/* <Cta2 /> */}
+				<HeroPost3 data={[businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2]]}/>
+				{/* <Subscribe1 /> */}
+				<RecentPost data={[businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2],businessData[3],businessData[2]]}/>
 			</Layout>
 		</>
 	)
