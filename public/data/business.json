@@ -1,232 +1,209 @@
 [
   {
-  "category": "business",
-  "title": "200 Arrested in France as Protesters Clash With Police Amid New PM Appointment",
-  "shortdescription": "Widespread protests in France disrupt daily life as citizens react to political changes, prompting mass arrests and police intervention.",
-  "description": "Tensions erupted across France as protesters clashed with police following the appointment of a new prime minister by President Emmanuel Macron. Demonstrators blocked roads, set fires, and faced tear gas from law enforcement in Paris and other cities. Authorities reported approximately 200 arrests, highlighting the scale of civil unrest. Analysts note that such protests can have significant economic implications, including disruptions to businesses, transportation, and investor confidence, emphasizing the intersection of political events and economic stability.",
-  "image": "/images/france-protests-arrests.webp",
-  "slug": "france-protests-arrests-new-pm",
-  "date": "10th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Novo Nordisk to Cut 9,000 Jobs to Focus on Obesity and Diabetes Treatments",
-  "shortdescription": "Pharmaceutical giant Novo Nordisk announces a major workforce reduction to sharpen focus on growth in obesity and diabetes medications.",
-  "description": "Danish pharmaceutical company Novo Nordisk, known for its weight-loss drug Wegovy, has announced plans to cut 9,000 jobs globally, including 5,000 positions in Denmark. The move aims to streamline operations and strengthen the company's focus on growth opportunities in obesity and diabetes treatments, where competition is intensifying. Analysts note that the restructuring could improve efficiency and innovation, enabling Novo Nordisk to better respond to market demands while maintaining its position as a leader in metabolic therapies.",
-  "image": "/images/novo-nordisk-job-cuts.webp",
-  "slug": "novo-nordisk-job-cuts-obesity-diabetes",
-  "date": "10th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Global Shares Rise Following Wall Street Rally on Job Market Optimism",
-  "shortdescription": "Global stock markets gain momentum as Wall Street records a rally, fueled by positive U.S. job market data and expectations of interest rate cuts.",
-  "description": "Global equity markets mostly rose as investors responded positively to a strong rally on Wall Street. The surge came after new U.S. job market data raised hopes that the Federal Reserve may ease interest rates, supporting economic growth and boosting investor confidence. Analysts suggest that this optimism is driving gains across multiple sectors worldwide, reflecting renewed enthusiasm for equities and a more favorable environment for global investment. However, some caution remains amid ongoing geopolitical and economic uncertainties.",
-  "image": "/images/global-shares-wall-street-rally.webp",
-  "slug": "global-shares-rise-wall-street-rally",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "South Korea Sends Plane to U.S. to Repatriate Workers Detained in Immigration Raid",
-  "shortdescription": "A charter plane has been dispatched to bring back South Korean workers detained during an immigration raid in Georgia, highlighting labor and immigration challenges.",
-  "description": "South Korean authorities have sent a charter plane to the United States to repatriate workers who were detained in an immigration raid in Georgia. The operation follows reports that dozens of South Korean nationals faced detention, raising concerns about labor rights, immigration enforcement, and diplomatic coordination. Officials emphasize the importance of protecting citizens abroad while ensuring compliance with U.S. immigration regulations. Analysts note that incidents like these can impact international labor mobility and highlight the need for clear policies and communication between countries.",
-  "image": "/images/south-korea-us-workers-raid.webp",
-  "slug": "south-korea-us-workers-immigration-raid",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Court Allows Fed Governor Lisa Cook to Stay While Fighting Trump’s Attempt to Remove Her",
-  "shortdescription": "A federal court rules that Federal Reserve Governor Lisa Cook can remain in her role while challenging efforts by former President Trump to dismiss her.",
-  "description": "A federal court has temporarily blocked the removal of Federal Reserve Governor Lisa Cook, allowing her to continue serving while she contests former President Donald Trump’s attempt to fire her. The ruling underscores the legal protections for independent Federal Reserve officials and highlights the ongoing tensions between political authorities and central bank governance. Analysts suggest that maintaining stability within the Fed is crucial for financial markets, as leadership disputes can influence monetary policy decisions, investor confidence, and broader economic stability.",
-  "image": "/images/lisa-cook-fed-governor.webp",
-  "slug": "lisa-cook-fed-court-ruling",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Trump’s Policies Strain U.S. Alliances Key to Countering China",
-  "shortdescription": "President Trump’s trade and immigration decisions are putting pressure on critical alliances with countries like South Korea and India.",
-  "description": "President Donald Trump’s approach to trade and immigration is creating tensions with vital U.S. allies, including South Korea and India, which play strategic roles in countering China’s global influence. Analysts warn that strained diplomatic relationships could complicate economic cooperation, security partnerships, and regional stability in Asia. Experts emphasize the importance of balancing domestic policy goals with international alliances to maintain influence and coordinate effectively on global economic and geopolitical challenges.",
-  "image": "/images/trump-us-allies-china.webp",
-  "slug": "trump-policies-strain-us-allies-china",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Klarna Prices IPO at $40, Valuing BNPL Company at $15 Billion",
-  "shortdescription": "Swedish fintech Klarna sets its IPO price at $40 per share, giving the buy now, pay later company a market valuation of $15 billion ahead of its trading debut.",
-  "description": "Klarna, the Swedish buy now, pay later (BNPL) fintech, has priced its highly anticipated initial public offering at $40 per share, valuing the company at approximately $15 billion. The IPO reflects growing investor interest in alternative payment solutions and fintech innovation, even as the sector faces regulatory scrutiny and increasing competition. Analysts note that Klarna’s market debut will be closely watched as a benchmark for the broader BNPL industry, providing insights into investor appetite for consumer finance platforms and the future trajectory of digital payment services.",
-  "image": "/images/klarna-ipo-40.webp",
-  "slug": "klarna-ipo-40bnpl-15billion",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Trump’s Tariffs Impact U.S. Company Sales in China, Survey Finds",
-  "shortdescription": "A recent survey shows that U.S. companies operating in China expect declining sales due to tariffs and retaliatory measures.",
-  "description": "Many U.S. companies with operations in China anticipate a decline in sales this year as a result of tariffs imposed by former President Donald Trump and China’s retaliatory trade measures. The survey highlights the economic ripple effects of trade tensions on multinational businesses, supply chains, and market strategies. Analysts warn that continued tariff-related uncertainty could hinder growth, disrupt planning, and affect profitability for firms reliant on the Chinese market, underscoring the complex interplay between policy decisions and international business operations.",
-  "image": "/images/trump-tariffs-us-china.webp",
-  "slug": "trump-tariffs-impact-us-china-sales",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "NTSB Details Severe Turbulence That Injured Passengers on Delta Flight",
-  "shortdescription": "The NTSB report describes how passengers were thrown around the cabin during a Delta flight encountering violent turbulence en route to Europe.",
-  "description": "A recent National Transportation Safety Board (NTSB) report reveals that passengers on a Delta Air Lines flight to Europe were violently tossed around the cabin during severe turbulence in July. Those who were not wearing seatbelts were thrown against the ceiling and then back to the floor, resulting in injuries. The incident underscores the importance of following airline safety protocols, particularly fastening seatbelts whenever seated. Aviation experts note that turbulence can occur unexpectedly and that such reports highlight the ongoing need for passenger awareness and crew preparedness to minimize injury risks.",
-  "image": "/images/delta-flight-turbulence.webp",
-  "slug": "ntsbturbulence-delta-flight-report",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "UN Chief Urges Investment in Poverty Reduction Over Military Spending",
-  "shortdescription": "The UN warns that excessive global military expenditures are limiting investments in health, education, and job creation, impacting long-term security.",
-  "description": "United Nations leadership has called for a shift in global priorities, emphasizing that investing in poverty reduction, education, healthcare, and employment opportunities can foster a more secure world than escalating military spending. The UN chief highlighted that soaring defense budgets do not guarantee peace and often divert resources from programs that directly improve societal well-being. Experts note that rebalancing investments toward social development could mitigate conflict drivers, enhance economic resilience, and create sustainable pathways to global stability.",
-  "image": "/images/un-poverty-investment.webp",
-  "slug": "un-chief-invest-poverty-security",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Chief Justice Roberts Maintains Trump-Era Foreign Aid Freeze",
-  "shortdescription": "The Supreme Court temporarily upholds the freeze on nearly $5 billion in foreign aid, affecting international development programs.",
-  "description": "Chief Justice John Roberts has temporarily allowed the Trump administration’s freeze on nearly $5 billion in foreign aid to remain in effect. The ruling affects a range of international development programs and could delay funding for critical projects around the world. Legal experts emphasize that the decision highlights the complex intersection of domestic policy, judicial oversight, and global economic implications. The temporary freeze raises questions about the impact on U.S. diplomatic relations and the operational stability of foreign aid initiatives dependent on timely funding.",
-  "image": "/images/foreign-aid-freeze.webp",
-  "slug": "roberts-trump-foreign-aid-freeze",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Alex Jones Appeals $1.4 Billion Sandy Hook Judgment to U.S. Supreme Court",
-  "shortdescription": "Far-right commentator Alex Jones requests the Supreme Court to review the $1.4 billion judgment against him over false claims about the Sandy Hook shooting.",
-  "description": "Conspiracy theorist Alex Jones has filed a petition asking the U.S. Supreme Court to hear his appeal of a $1.4 billion judgment imposed by a Connecticut court. The original ruling held Jones liable for defamation and emotional distress after he falsely claimed that the 2012 Sandy Hook Elementary School shooting was a hoax. Legal experts note that the case raises significant questions about freedom of speech, accountability for misinformation, and the financial consequences of spreading harmful falsehoods. The Supreme Court’s decision to accept or decline the appeal will have wide-ranging implications for media and public discourse.",
-  "image": "/images/alex-jones-sandy-hook-appeal.webp",
-  "slug": "alex-jones-supreme-court-appeal-sandy-hook",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Over 60 Containers Fall Off Cargo Ship at Long Beach Port",
-  "shortdescription": "A cargo mishap at the Port of Long Beach caused more than 60 containers to fall into the water, disrupting shipping operations.",
-  "description": "More than 60 shipping containers toppled from a cargo vessel at the Port of Long Beach, landing in the water and posing potential hazards to navigation and the environment. Authorities are working to recover the containers and assess any damages, while port operations may face temporary disruptions. Shipping analysts note that such incidents highlight the importance of stringent safety protocols, secure cargo handling, and monitoring to prevent similar accidents. The event underscores the challenges faced by major ports in managing high volumes of international trade.",
-  "image": "/images/long-beach-port-containers.webp",
-  "slug": "long-beach-port-containers-fall",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "South Korea Moves to Repatriate Workers Detained in U.S. Raid Amid Ongoing Concerns",
-  "shortdescription": "South Korea’s foreign minister visits the U.S. to manage the return of over 300 workers detained in a recent immigration raid, while local residents remain anxious.",
-  "description": "The South Korean government is taking steps to repatriate more than 300 workers detained during a U.S. immigration raid, with the country’s foreign minister traveling to the United States to coordinate their return. While plans are underway to ensure safe repatriation, concerns linger among local communities regarding the impact of immigration enforcement on residents and labor conditions. Experts highlight that such incidents underscore the importance of diplomatic engagement, labor protections, and clear policies to manage international workforce issues effectively.",
-  "image": "/images/korean-workers-us-raid.webp",
-  "slug": "south-korea-us-workers-repatriation",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Supreme Court to Expedite Review of Trump’s Authority to Impose Broad Tariffs",
-  "shortdescription": "The U.S. Supreme Court will quickly hear a case assessing whether former President Trump had legal authority to implement sweeping tariffs.",
-  "description": "The Supreme Court has announced an expedited hearing to determine whether former President Donald Trump had the legal authority under federal law to impose wide-ranging tariffs. The case raises critical questions about executive power, trade policy, and the balance of authority between the presidency and Congress. Legal analysts note that the court’s decision could have far-reaching implications for U.S. trade policy, international relations, and the precedent for future tariff actions by the executive branch.",
-  "image": "/images/supreme-court-trump-tariffs.webp",
-  "slug": "supreme-court-trump-tariffs-authority",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Apple Unveils iPhone 17 Lineup, Introducing the First iPhone Air",
-  "shortdescription": "Apple launches its iPhone 17 series, featuring the brand-new iPhone Air, with updates across design, performance, and camera capabilities.",
-  "description": "Apple has officially unveiled its iPhone 17 lineup, including the first-ever iPhone Air. The new series brings several innovations, including enhanced processing power, improved camera systems, and refined designs aimed at both performance and user experience. The iPhone Air offers a lighter, more compact option for users seeking portability without sacrificing key features. Industry analysts suggest that the iPhone 17 launch reinforces Apple’s position in the competitive smartphone market and highlights ongoing trends in technology innovation and consumer demand.",
-  "image": "/images/apple-iphone-17-air.webp",
-  "slug": "apple-iphone-17-lineup-air",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Man Pleads Guilty to Attempted Drone Attack on Nashville Power Substation",
-  "shortdescription": "A 24-year-old man linked to white nationalist groups admits to trying to bomb a Nashville electricity site using a drone.",
-  "description": "A Nashville man has pleaded guilty to charges related to an attempted attack on a local electricity substation using a bomb-laden drone. Prosecutors reported that the 24-year-old suspect, associated with white nationalist movements, intended to disrupt power infrastructure, posing serious risks to public safety and regional energy security. Experts emphasize the growing threat of drones in criminal and extremist activities, highlighting the need for advanced security measures, regulatory oversight, and vigilance in protecting critical infrastructure.",
-  "image": "/images/nashville-drone-attack.webp",
-  "slug": "nashville-drone-power-substation-guilty",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Georgia Governor’s Electric Mobility Vision Faces Test After South Korean Workers Detained",
-  "shortdescription": "Governor Brian Kemp’s push for foreign investment in Georgia’s electric mobility sector coincides with controversy over detained South Korean workers.",
-  "description": "Georgia Governor Brian Kemp has been promoting his vision for electric mobility and welcoming foreign investment into the state’s transportation and clean energy sectors. However, his plans face scrutiny following the detention of South Korean workers in an immigration raid, raising concerns about labor relations and investor confidence. The situation highlights the delicate balance between fostering economic growth, ensuring fair labor practices, and maintaining Georgia’s reputation as a hub for innovative industries.",
-  "image": "/images/georgia-electric-mobility.webp",
-  "slug": "georgia-electric-mobility-south-korea-raid",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Aroldis Chapman Signs $13.3 Million, 1-Year Deal With Boston Red Sox for 2026",
-  "shortdescription": "Pitcher Aroldis Chapman agrees to a one-year contract with the Red Sox worth $13.3 million, securing his spot for the 2026 season.",
-  "description": "The Boston Red Sox have finalized a one-year contract with star pitcher Aroldis Chapman, valued at $13.3 million for the 2026 season. Chapman, known for his powerful fastball and closing abilities, brings experience and stability to the Red Sox bullpen. The deal reflects both his on-field value and the competitive dynamics of Major League Baseball salaries. Analysts note that such contracts are crucial for teams managing roster talent, payroll strategy, and long-term championship aspirations.",
-  "image": "/images/aroldis-chapman-red-sox-contract.webp",
-  "slug": "aroldis-chapman-red-sox-2026-contract",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "U.S. Steel Halts Production at Illinois Plant Without Layoffs",
-  "shortdescription": "U.S. Steel will stop processing steel slabs at Granite City Works in Illinois, but workers will not face layoffs following the production shift.",
-  "description": "U.S. Steel announced that it will cease steel slab production at its Granite City Works plant in Illinois. The company emphasized that this operational change will not result in layoffs, ensuring job security for its employees. The decision comes three months after Nippon Steel finalized a deal with former President Donald Trump to acquire the iconic American steelmaker. Industry analysts note that while production adjustments are part of modern manufacturing strategies, maintaining the workforce demonstrates a commitment to employee stability amid operational restructuring.",
-  "image": "/images/us-steel-illinois-plant.webp",
-  "slug": "us-steel-illinois-plant-production-halt",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "NY Prosecutor Warns of More Raids After 57 Detained at Snack Bar Plant",
-  "shortdescription": "Federal authorities detained 57 workers during a raid on an upstate New York snack bar facility, signaling potential further enforcement actions.",
-  "description": "Federal prosecutors in New York detained 57 individuals following a raid on a snack bar manufacturing plant in upstate New York. Authorities have warned that additional raids could occur as part of ongoing enforcement efforts targeting labor violations and compliance issues. The incident has raised concerns about workforce management, regulatory adherence, and the broader implications for food manufacturing operations. Experts highlight that companies must maintain strict oversight of labor practices to avoid legal consequences and ensure safe, lawful operations.",
-  "image": "/images/ny-snack-bar-raid.webp",
-  "slug": "ny-snack-bar-plant-raid-57-detained",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "Katseye’s ‘Gap’ Ad Hits 400 Million Views in 3 Days – The Viral Success Story",
-  "shortdescription": "Global girl group Katseye sees massive exposure as their advertisement ‘Gap’ reaches 400 million views in just three days.",
-  "description": "Global girl group Katseye has skyrocketed to international fame after their advertisement for ‘Gap’ went viral, amassing 400 million views within three days. The rapid surge in attention demonstrates the power of strategic marketing, social media engagement, and fan-driven promotion. Industry analysts note that such viral campaigns can significantly boost brand recognition, streaming numbers, and concert demand. Katseye’s success story highlights how modern entertainment marketing leverages digital platforms to create immediate, global impact.",
-  "image": "/images/katseye-gap-viral.webp",
-  "slug": "katseye-gap-ad-viral-success",
-  "date": "9th September 2025"
-}
-,
-{
-  "category": "business",
-  "title": "CBS News Appoints Ombudsman With Expanded Role and Unique Background",
-  "shortdescription": "CBS News names Kenneth Weinstein as its new ombudsman, with duties and a background that differ from traditional journalism definitions of the role.",
-  "description": "CBS News has appointed Kenneth Weinstein as its new ombudsman, tasked with reviewing consumer complaints and ensuring accountability. Unlike traditional ombudsmen in journalism, Weinstein brings a unique background and a broader set of responsibilities that go beyond standard editorial oversight. Media analysts suggest that this move reflects a growing trend of redefining oversight roles in news organizations to address evolving audience expectations, enhance transparency, and maintain trust in an era of rapid information dissemination.",
-  "image": "/images/cbs-news-ombudsman.webp",
-  "slug": "cbs-news-ombudsman-kenneth-weinstein",
-  "date": "9th September 2025"
-}
-
+    "category": "business",
+    "title": "Protesters Clash With Police in France; 200 Arrested After New PM Announced",
+    "shortdescription": "Massive protests disrupt daily life in France as citizens react to political turmoil and changes, resulting in mass arrests and police interventions.",
+    "description": "Demonstrations erupted nationwide as protestors clashed with police officers after President Emmanuel Macron announced a new prime minister. Protesters were blocking streets and starting fires while getting hit with tear gas in Paris and other cities. Authorities have arrested an estimated 200 people, suggesting a national civil disturbance. Analysts write, while protests may look like a civil disturbance with little or no economic repercussions, they can have very real economic repercussions that can disrupt business, transportation for everyday people and investors and that political events have a devastating effect on economic stability and liquidity in the market.",
+    "image": "/images/france-protests-arrests.webp",
+    "slug": "france-protests-arrests-new-pm",
+    "date": "10th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Novo Nordisk to Slash 9,000 Jobs and Focus More on Obesity and Diabetes Treatments",
+    "shortdescription": "Pharmaceutical major Novo Nordisk undertakes a massive workforce cut to sharpen focus on growing obesity and diabetes meds.",
+    "description": "Danish pharmaceutical company Novo Nordisk, famous for weight-loss drug Wegovy, has just announced major restructuring for expunging of 9,000 jobs worldwide, with 5,000 reduced in Denmark alone. The stated aim of the layoffs is to streamline operations and refocus the company on opportunities for growth in obesity and diabetes treatments, where competition is mounting unabated. Analysts argue that the reorganization will enhance efficiency and innovation so that Novo Nordisk can better respond to market demands whilst holding its leadership position in metabolic therapies.",
+    "image": "/images/novo-nordisk-job-cuts.webp",
+    "slug": "novo-nordisk-job-cuts-obesity-diabetes",
+    "date": "10th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Global Markets Edge Higher After Wall Street Rally",
+    "shortdescription": "Stocks around the world gained after Wall Street’s strong finish, helped by solid U.S. jobs data and growing talk of possible rate cuts.",
+    "description": "Markets across Europe and Asia followed Wall Street higher on Tuesday. The jump came after new jobs figures in the United States raised hopes that the Federal Reserve could start cutting interest rates sooner rather than later. Traders say lower rates would ease borrowing costs, giving businesses and consumers a lift and improving sentiment across financial markets. The upbeat mood pushed gains across sectors worldwide, with investors showing more appetite for risk. Despite the optimism, concerns about the economy and geopolitical flare-ups are keeping some investors on edge.",
+    "image": "/images/global-shares-wall-street-rally.webp",
+    "slug": "global-shares-rise-wall-street-rally",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "South Korea Sends Charter Flight to Repatriate Workers Detained in U.S. Immigration Raid",
+    "shortdescription": "Seoul has dispatched a plane to bring home South Korean workers held in an immigration raid in Georgia, underscoring labor and immigration concerns.",
+    "description": "The South Korean government has dispatched a charter flight to the United States to bring back citizens detained in an immigration raid in Georgia. Several South Koreans ended up in custody, a move that has stirred questions about worker protections and U.S. immigration practices. Officials in Seoul said they are working to safeguard their citizens while respecting U.S. immigration law. Diplomats and analysts warn that such incidents could strain labor mobility and underline the need for clearer policies and stronger communication between the two countries.",
+    "image": "/images/south-korea-us-workers-raid.webp",
+    "slug": "south-korea-us-workers-immigration-raid",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Court Says Fed Governor Lisa Cook Can Stay While She Fights Trump’s Removal Effort",
+    "shortdescription": "A federal judge has ruled that Lisa Cook can remain on the Federal Reserve Board as she challenges former President Trump’s attempt to remove her.",
+    "description": "A federal judge has halted efforts to remove Federal Reserve Governor Lisa Cook, allowing her to stay in her post while she fights former President Donald Trump’s attempt to dismiss her. The decision reinforces the independence of the central bank and the legal protections given to its officials. Observers say stability inside the Fed is vital for financial markets, warning that disputes over leadership could affect monetary policy, investor confidence, and the broader economy.",
+    "image": "/images/lisa-cook-fed-governor.webp",
+    "slug": "lisa-cook-fed-court-ruling",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Trump’s Trade and Immigration Moves Put Pressure on Key U.S. Alliances",
+    "shortdescription": "Decisions by President Trump on trade and immigration are straining ties with partners such as South Korea and India, both central to countering China.",
+    "description": "President Trump's trade and immigration initiatives are certainly putting pressure on U.S. relationships with South Korea and India. These countries form the backbone of U.S. attempts to counter China, and any deterioration in the relationships between Washington and either of these countries is likely to have consequences for trade, security, and even regional cooperation. Officials in both Seoul and New Delhi expressed views privately that trade restrictions and visa measures will at a minimum, make joint projects and long-term strategic planning more complicated. Analysts say it is entirely prudent for Washington to pursue domestic policies to satisfy its constituents, but carefully balancing domestic policies against engaging allies is really the critical task. If the situation escalates, the ultimate effect could lead to stalled economic engagements, strained military relations, and possible degradation of investor confidence in the region. Observers of alliances typically agree that alliances are not fragile, but nevertheless require consistent focus, interpersonal contact, and good faith to maintain effectiveness. In this case, we are reminded that while domestic issues are important each is relative to the other, and even very small policy changes domestically can affect the course of negotiations abroad, and highlight how interconnected global politics is to domestic decision-making. The next few months will be important in determining if these partnerships can remain durable or become irreversible issues. Even in the short term, maintaining consistent contact, mutual acknowledgement of issues, and recognizing concerns of the partner nation will go a long way to making sure that all parties benefit.",
+    "image": "/images/trump-us-allies-china.webp",
+    "slug": "trump-policies-strain-us-allies-china",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Klarna Sets IPO Price at $40, Valuing BNPL Fintech at $15 Billion",
+    "shortdescription": "Swedish fintech Klarna prices its IPO at $40 per share, putting the buy now, pay later company’s market value at $15 billion ahead of trading.",
+    "description": "Swedish fintech Klarna has set the price of its much-anticipated initial public offering at $40 a share, giving the BNPL company a market valuation of around $15 billion. The IPO launches at a moment when alternative payment types are receiving considerable attention from both investors and consumers indicating sustained interest in fintech innovation in the face of regulatory headwinds. Analysts believe Klarna’s IPO will act as a bellwether event for the BNPL space, offering a good barometer on the sentiment investors have surrounding digital payment platforms and their potential growth in the years to come. The company has established an offering around providing flexible payment options for consumers, which has led to rapid brand growth around the world as well as consumer adoption. While the majority of market watchers will be looking for updates on results after the Klarna IPO, others will be investigating how it manages increasing competition from rivals and financial regulation in many of their notable markets including the US and Europe. The IPO will aim to raise more capital for Kalrna to develop their technology infrastructure, expansion in to new geographic markets, and development of strategic relationships. Industry observers anticipate there to be a large pipeline of IPO including BNPL companies, fintech startups, and other alternative payment mechanisms.",
+    "image": "/images/klarna-ipo-40.webp",
+    "slug": "klarna-ipo-40bnpl-15billion",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Trump’s Tariffs Impact U.S. Company Sales in China, Survey Finds",
+    "shortdescription": "A recent survey shows that U.S. companies operating in China expect declining sales due to tariffs and retaliatory measures.",
+    "description": "A recent study of U.S. businesses doing business in China suggests that many expect sales to decrease in this year due to tariffs imposed while Trump was President, and tariffs that China put in place on goods sold in China. In addition, survey responses shed light on larger challenges multinational companies must manage when they experience trade tensions between the largest economies in the world. Companies report problems including: supply chain disruptions, increased costs, lost competitiveness, and changes to marketing plans to account for new cost pressures from tariffs. Analysts have pointed out that uncertainty around trade policy disincentivizes long-term planning and creates complications around investments or profitability.  Many respondents also indicate they are considering alternative supply sources or moving the production of goods to countries other than China, while a number of companies are evaluating alternative ways to rationalize pricing and marketing programs in China.  Many of the responses illustrate how national decisions can ripple into the global marketplace and constrain company behavior and consumer prices, as well as, reposition them competitively. For companies that are U.S.-based and depend on China for revenues, these results serve as reminders of the degree of interconnectedness in international trade and the importance of adapting their business.",
+    "image": "/images/trump-tariffs-us-china.webp",
+    "slug": "trump-tariffs-impact-us-china-sales",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "NTSB Details Severe Turbulence That Injured Passengers on Delta Flight",
+    "shortdescription": "The NTSB report describes how passengers were thrown around the cabin during a Delta flight encountering violent turbulence en route to Europe.",
+    "description": "The National Transportation Safety Board (NTSB) released a report on a serious incident of turbulence that happened aboard a Delta Air Lines flight to Europe in July. The report describes how passengers who were not in their seat belts were violently thrown about the cabin, with some hitting the roof before landing back on the floor, and injuring themselves in the process. This incident apparently illustrates how important it is to adhere to all air carrier safety information, specifically the importance of remaining with your seatbelt fastened whenever you are in your seat, which should occur even when the seatbelt sign is off. Aviation experts indicate that turbulence is unpredictable, which is why preparation is important - for both passengers and the crew. The report alluded to the significant role of the flight attendants in helping passengers to stay safe, and that air carriers regularly engage in some level of review of safety practices to minimize exposure to the risk of turbulence even occurring. Overall, the experts identified another important message to travelers to remain vigilant throughout the duration of the flight, and that turbulence is a contributing factor to the predominance of in-flight injuries on modern aircraft. Overall, the report reinforces the need to identify proactive ways to remain safe and vigilant while on board to prevent injury as a result of sporadic turbulence event.",
+    "image": "/images/delta-flight-turbulence.webp",
+    "slug": "ntsbturbulence-delta-flight-report",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "The UN Chief Encourages Countries to Invest Money to Reduce Poverty Instead of Military Spending",
+    "shortdescription": "The United Nations' message is clear: excessive military expenditures worldwide are distracting from investments in health, education, and job creation to improve long-term security.",
+    "description": "On Monday, United Nations Secretary-General Antonio Guterres, on behalf of all leaders of the United Nations and the United Nations Organization, called on world leaders to re-evaluate their spending priorities to include addressing poverty, increasing investment in healthcare and education, and promoting job creation, rather than focusing on military increases, which generally do not prevent conflicts from escalating or guarantee peace or stability.  The UN chief emphasized in varying language that adding to military spending does little to ensure peace and security, and the makeup of military expenditures often conflates the means for development, xi taking funding from poverty reducing projects benefitting people.  Experts believe reducing poverty and funding social development and resilience in the economic and human factors that manage the reasons for conflicts, tackle inequality, and are sustainable actions for stability building.  United Nations call to action for greater investment in poverty reduction happens amid military budgets that have answered the increased costs associated with military assets while the millions of people on Earth cannot meet the basic of services.  Some commentators have noted that if all countries can spend some of the military budgets on poverty reduction and human development, most people would have access to education, healthcare, and dignified work, and more resilient societies with greater capacity for more prolonged growth and stability can emerge.  The appeal from the United Nations reflected the heart of security and development relationships: those communities that depend on and have access to education, healthcare and dignified forms of paid work have less likely social unrest making investment in human capital one of the more reliable ways of achieving secure development.",
+    "image": "/images/un-poverty-investment.webp",
+    "slug": "un-chief-invest-poverty-security",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Chief Justice Roberts Upholds Trump-Era Foreign Aid Freeze",
+    "shortdescription": "The Supreme Court temporarily upholds the freeze on nearly $5 billion in foreign aid, affecting international development programs.",
+    "description": "Chief Justice John Roberts has issued a provisional setback to the Trump administration's freeze on almost $5 billion in overseas assistance, in a way that could complicate several international development affairs. The freeze stops the supply of billions of dollars meant to support foreign states in many countries that relate to critical health, education, and infrastructure programs. Legally, the ruling expresses the balancing of competing interests of internal policy debate and judicial scrutiny; and reflects how matters of the U.S. budgetary process can extend far beyond the shores of the United States. Meanwhile, foreign diplomats and aid organizations have expressed concern, that even these brief interruptions could negatively affect existing program engagements and blur the lines for their touchdown partners. Many experts believe these freezes can lead to the diminishing of U.S. relationships and ability to act in the world, by making aid programming and action reliant on already known or expected funds. While this temporary ruling will not resolve the larger legal issue at hand, it illustrates the practicalities of implementing government spending in this manner, on this scale. Moving forward, however, observers will be curious about how this freeze plays itself out for both the domestic and global ramifications this could have for U.S. relations.",
+    "image": "/images/foreign-aid-freeze.webp",
+    "slug": "roberts-trump-foreign-aid-freeze",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Alex Jones Asks U.S. Supreme Court to Review $1.4 Billion Sandy Hook Judgment ",
+    "shortdescription": "Far-right commentator Alex Jones requests the Supreme Court to review the $1.4 billion judgment against him over false claims about the Sandy Hook shooting.",
+    "description": "Conspiracy theorist Alex Jones has petitioned the U.S. Supreme Court to review a $1.4 billion judgment handed down by a Connecticut court. The ruling found Jones liable for defamation and intentional infliction of emotional distress after he repeatedly claimed that the 2012 Sandy Hook Elementary School shooting was staged. Legal analysts say the case highlights the complex balance between protecting free speech and holding individuals accountable for spreading harmful misinformation. If the Supreme Court agrees to hear the appeal, it could set a significant precedent for how courts handle cases involving false claims and online platforms. Advocates for the families of the victims emphasize the importance of upholding the judgment to ensure accountability, while free speech proponents caution against broad limitations on public commentary. The outcome of the petition, whether the court takes the case or declines, is expected to reverberate across media, legal, and public discourse circles. Observers note that the decision could influence how misinformation is addressed legally in the United States and shape the responsibilities of media figures in reporting and commentary.",
+    "image": "/images/alex-jones-sandy-hook-appeal.webp",
+    "slug": "alex-jones-supreme-court-appeal-sandy-hook",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Over 60 Containers Fall Off Cargo Ship at Long Beach Port",
+    "shortdescription": "AA cargo mishap at the Port of Long Beach caused more than 60 containers to fall into the water, disrupting shipping operations.",
+    "description": "Over 60 shipping containers fell from a cargo ship at the Port of Long Beach into the water and create a navigational hazard as well as a potential environmental hazard. Port authorities have dispatched recovery teams to recover containers from the water and troubleshoot any potential damage to the vessel or surrounding infrastructure. Shipping actions and activity are ongoing, but shipping schedules might incur some legitimate delays while safety is prioritized and cleanup is conducted. Looking at the incident, analysts said this clearly illustrates reasons we need to have safe systems in place, cargo is secured properly, and the importance of being aware and monitoring activity at busy ports may not be easy but is very critical. The shipping process not only may be plagued by issues out of their control with timely deliveries but also sometimes with all the logistical planning required for heavy amounts of trade and complex international trades. Environmental Analysts have said they will continue to monitor the incident, noting the sheared off container debris, lack of mangled containers in the water which would call for more caution, and to whatever leaking materials from containers going into marine systems could and would be worse than hazard materials but worse some chemical transformation would go unnoticed, potentially setting in motion lifecycle chemicals and waste being introduced into the nearby port waters for prolonged periods. Depending on the potential volume of containers criticized for trying to move at the same pace like most ports have been adopting to sustain, it is easy to take for granted all the safety mechanisms being put in place for front-of-mind delivery timelines over operational safety. This is the trouble port authorities would prefer to be concerned with operational improvement prior to scheduling times , but the focuses are typically mutually exclusive in practice as operational efficiency comes to market losses on the focus. Port authorities are expected to release ongoing updates based on daily recovery updates.",
+    "image": "/images/long-beach-port-containers.webp",
+    "slug": "long-beach-port-containers-fall",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "South Korea Moves to Repatriate Workers Detained in U.S. Raid Amid Ongoing Concerns",
+    "shortdescription": "South Korea’s foreign minister visits the U.S. to manage the return of over 300 workers detained in a recent immigration raid, while local residents remain anxious.",
+    "description": "The South Korean government has acted to repatriate the workers seized from a U.S. immigration raid. The foreign minister traveled to the U. S. to consult with that government on returning their citizens, and to discuss the various diplomatic and logistical issues involved. Once the various South Korean government officials worked with U.S. officials to handle the repatriation of the workers, local communities were still left to deal with concerns about the more widespread ramifications of immigration enforcement on workers, and labor conditions in general. Several experts commented that once again this exemplified the need for the creation of solid policies, reinforced labor protections, and proactive diplomatic engagement on international labor issues. Further, the situation highlights how regulatory enforcement impedes global labor mobility, and how labor rights for domestic and foreign workers may need safeguarding on an international basis. Analysts commented that the repatriation will further help to manage the situation in terms of the humanitarian issue and may even serve as a 'case study' for future governmental engagement to address overseas labor situations. Lastly, advocates and family members of the detained workers were observing the situation closely, which they hoped would resolve in a safe and in a timely manner.",
+    "image": "/images/korean-workers-us-raid.webp",
+    "slug": "south-korea-us-workers-repatriation",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Supreme Court to Expedite Review of Trump's Authority to Impose Broad Tariffs",
+    "shortdescription": "The U.S. Supreme Court will quickly hear a case that is examining whether Congress gave former President Trump the legal right to impose sweeping tariffs.",
+    "description": "The U.S. Supreme Court has indicated it will expedite a case that seeks to determine whether Congress gave former President Donald Trump the legal authority to impose broad tariffs under U.S. law. The case is asking what limits there might be, if any, concerning executive power and Congress' role in trade policy under U.S. law. Some outside legal experts believe the Court’s decision, either way, would have important implications, not only for U.S. trade policy, but also for international economic relations, and for the use of tariffs and duties by future administrations. If the Court rules the government has this authority, it may genuinely bolster the idea that the President can expeditiously act in this regard. If it limits executive power, it will open the possibility for more Congressional control over trade policy and it may direct how future cases involving trade disputes are resolved. Analysts say that businesses, investors, and trading partners are following the case very closely, because its outcome may affect tariffs that are already imposed, and may also change expectations for U.S. trade enforcement. The specific test used by the Court to evaluate the likelihood of dissenting from the lower court decision also indicates that the review",
+    "image": "/images/supreme-court-trump-tariffs.webp",
+    "slug": "supreme-court-trump-tariffs-authority",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Apple Unveils iPhone 17 Lineup, Introducing the First iPhone Air",
+    "shortdescription": "This marks the launch of Apple's iPhone 17 series with the introduction of the first-ever iPhone Air, with the similarities and differences across design, performance, and camera quality.",
+    "description": "Apple has launched its first iPhone 17 series and the first-ever iPhone Air. Apple's new iPhone 17 series has many great features including: a faster processing chip, a better camera system, and an overall better design that has improved user interface and user experience. The iPhone Air is designed to be smaller to fulfill the needs of consumers who want a phone that is easier to carry and handle, but still provides good performance. From our reports, the iPhone 17 series shows how Apple continues to innovate in the smartphone market and continue to drive trends in hardware and software designs. Consumers want the very best and best designed technology, and as with the Apple brand, the products are similar, fast, and easy to use, and wallets are not always a deciding factor. Other features of the new iPhone 17 series (besides performance) includes: longer battery life, new photography functions, and improved overall design supports potential larger usage for the brand ecosystem. We believe that the introduction of the new iPhone Air could provide additional consumers that are looking for something in between, however still a premium device that is lighter and accessible at a lower price of entry, for Apple, it could further solidify their market share.",
+    "image": "/images/apple-iphone-17-air.webp",
+    "slug": "apple-iphone-17-lineup-air",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Man Pleads Guilty to Attempted Drone Attack on Nashville Power Substation",
+    "shortdescription": "A 24-year-old man with links to white nationalist groups has confessed to trying to bomb a Nashville electric installation with a drone. ",
+    "description": "A Nashville-area man has pleaded guilty in connection with the attempted attack to a Nashville area power substation with a drone with explosives. In announcing the arrest, officials pointed out the defendant’s associations with white nationalist groups and that his plan involved interrupting electricity service which posed serious risks to public safety and critical regional energy infrastructure. Prosecutors noted that the facts around the attempted attack were serious as an attack could have caused a cascading sequence of power outages and jeopardized the safety of residents. This incident highlighted the increasing criminal use of drones and extremist use, and that this incident is not unique as drone incidents are becoming more frequent; and further stresses the need for increased monitoring, regulation, and deterrence of criminal threats to critical infrastructure. The incident, also highlighted the challenges associated with unconventional threats that law enforcement and utilities are coping with in accepting their responsibility to protect the public. Authorities noted that in the aftermath of incidents, increased public awareness about the possibility for incidents to occur and subsequent reporting after incidents occur may help mitigate, and ultimately lessen harm to the wider community. Analysts underscore that, this incident is both a disturbing example of a emerging and ongoing threat and also a memento of the",
+    "image": "/images/nashville-drone-attack.webp",
+    "slug": "nashville-drone-power-substation-guilty",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Georgia Governor’s Electric Mobility Vision Faces Scrutiny After South Korean Workers Sought By Immigration Officials",
+    "shortdescription": "Governor Brian Kemp’s campaign for foreign investment, ultimately focusing on the electric mobility industry, is reportedly facing scrutiny from contractors and workers alike in regard to a recently-publicized situation related to a detainment of South Korean workers.",
+    "description": "Georgia Governor Brian Kemp is working to advance his vision for electric mobility and wants the state to be considered as the next destination for attracting foreign investment and innovation by improving transportation and energy systems. As a once major source of electric mobility and electric infrastructure, Georgia was back in the spotlight. However, a recent detainment of South Korean workers by U.S. Immigration was the cause of concern for many workers and investors with regards to labor relations. Experts noted that foreign labor is often a necessity for investors to engage with transformative, high-tech projects. When events such as immigration raids happen, they have an immediate impact on foreign direct investment in the place that advanced their plans in the first place, and whether it will be able to engage or retain talent and stable workforce as well as follow local regulations. And it can be frustrating for those who are trying to courage others to invest and develop ideas in Georgia's electric mobility sector. While there are many things to consider when making decisions as to whether to invest or begin business, the question of how or whether to attract investment is an ongoing theme that came to the forefront again during discussions about the second local worker situation. Many who have these kind of challenges in practice often relayed concerns over other parts that social systems operated that do not work in ways that administration, companies, or someone expected. Analysts stated the way that the state recieved this situation with workers and companies directly impacted or involved will inform or influence potential decisions in the future by different companies deciding on expanding in Georgia with or without a change in policy, but it also raises questions about the local aspects of intersecting policy and talent management.",
+    "image": "/images/georgia-electric-mobility.webp",
+    "slug": "georgia-electric-mobility-south-korea-raid",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Aroldis Chapman Signs $13.3 Million, 1-Year Deal With Boston Red Sox for 2026",
+     "shortdescription": "Pitcher Aroldis Chapman agrees to a one-year contract with the Red Sox worth $13.3 million, securing his spot for the 2026 season.",
+      "description": "TThe Boston Red Sox have signed veteran pitcher Aroldis Chapman to a one-year contract worth $13.3 million for the 2026 season. Chapman is notable for his fastball and capable closing role, which gives the Red Sox more finishing strength to the bullpen and late-ending situation. Several analysts believe this contract indicates the importance of experienced relief pitchers in the MLB today, especially for teams trying to field competitive rosters while meeting payroll at the same time. The report suggests Chapman can reduce volatile high-pressure moments, as the team tries to accomplish the championship they are aspiring to. In addition, this contract reflects MLB-wide salary trends with proven reliability and quality on a roster. There is some skepticism towards this strategy, as the game looks externally and across the league for managers who will balance both short-term wins against the daily preservation of individual value of the player, in the case Chapman can help demonstrate to others in the future that the Red Sox are a team that needs to be taken seriously in the future, both in terms of talent pedigree and the ability to pay its players. Ultimately, if Chapman can provide quality play, say through innings and credibility to playing and assisting to qualified stressful moments, it can deliver team confidence and optimism that a points chart will be developed in a future complex and external dollar-costed sense; acknowledging that winning takes precedent over all. Chapman returns to the Red Sox to further help pitch successfully, pending the effort of others, and whatever the team requires to further accentuate themselves, specifically through veteran experience; something fans hope could add to the qualities they can get with Chapman in the team's future.",
+      "image": "/images/aroldis-chapman-red-sox-contract.webp",
+    "slug": "aroldis-chapman-red-sox-2026-contract",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "U.S. Steel Halts Production at Illinois Plant Without Layoffs",
+    "shortdescription": "U.S. Steel will stop processing steel slabs at Granite City Works in Illinois, but workers will not face layoffs following the production shift.",
+    "description": "U.S. Steel has notified the stakeholders that it has stopped steel slab manufacturing at the Granite City Works site in Illinois temporarily. The company has communicated that there will not be any layoffs in respect to this production change, offering some level of comfort to the employees, while, at the same time, valuing job security. This announcement follows closely on the heels of Nippon Steel finalizing a major deal with former President Donald Trump to buy the American steelmaker, signaling perhaps some new operational changes will occur. Market participants note that temporary shut downs in production are typically part of larger programs to improve efficiencies, save costs, and respond to changes in demand, especially in the unpredictable steel market. Although the Granite City Works facility will be temporarily halting slab production, actions taken by U.S. Steel represent a calculated effort to keep employees and job security while re-engineering operations. Analysts note that having a consistent team during an organizational change helps solidify internal changes by capturing institutional knowledge, and maintains the company's identity in the marketplace. U.S. Steel could represent a case study to show the other manufacturers who may be undertaking production changes and be consciously trying to preserve the dignity of their employees.",
+    "image": "/images/us-steel-illinois-plant.webp",
+    "slug": "us-steel-illinois-plant-production-halt",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "NY Prosecutor Warns of More Raids After 57 Detained at Snack Bar Factory",
+    "shortdescription": "The NTSB report describes how passengers were thrown around the cabin during a Delta flight encountering violent turbulence en route to Europe.",
+    "description": "The U.S. federal authorities in New York apprehended 57 workers after raiding a snack bar factory in upstate New York. Prosecutors have stated that larger enforcement actions may be on the way! The enforcement action is part of a wider national strategy to ensure adherence to the legal obligations associated with utilizing the immigrant workforce. This has raised questions about Labor Force Management, Operational Control, and Compliance in food manufacturing. Experts have insisted that businesses need to be constantly engaged in robust Labor Practices, which means businesses must be using documentation, treating employees legally, and complying with Federal requirements in order to avoid liability and reputational risks. Analysts believe that these raids appears to be local events but cause broader repercussions as it concerns investor confidence, supply chain management, and operational plans. Moreover, it is a good reminder that compliance programs and regular audits can help businesses avoid violations, and get ready for enforcement actions. Law enforcement continues to investigate the facility, and businesses in other parts of the country are watching closely.",
+     "image": "/images/ny-snack-bar-raid.webp",
+    "slug": "ny-snack-bar-plant-raid-57-detained",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "Katseye’s ‘Gap’ Ad Hits 400 Million Views in 3 Days – The Viral Success Story",
+    "shortdescription": "Global girl group Katseye sees massive exposure as their advertisement ‘Gap’ reaches 400 million views in just three days.",
+    "description": "Katseye, a worldwide girl group, has achieved remarkable worldwide visibility - whole it's many facets of publicity - after their 'Gap' ad went viral with over 400 million views in just three days. This rapid growth is indicative of successful marketing practices, social media acceleration, and a passionate fan commitment. Considerable excitement is generated by industry experts with this around viral campaigns like this have huge ripple effects that can enhance brand visibility, music streaming, – translate to merchandise sales, and potentially fuel concert business. Katseye's come-so-fast, comes down and shows that the audiance – where business fuctionation - becomes spectacular reach without loom. How does it help? The analysts suggest the viability of a value and 'here and now' aspect in their analysis of the 'Gap' ad's success applies 'without regret'. They validated and research support fostering social media trends into marketing with value – for artist and brands, allowing for fans, social media connection, and model whiel maximizing audience engagement. Ultimately, Katseye's case presents a context for viral and to maximize audiences and measurement incduced commercial intent. Even from just views, this case put Majestic Katseye on the world stage all the more validate the power of marketing based on entertainment and inspire future aspects of both artist and brand relevance on a grander scheme.",
+    "image": "/images/katseye-gap-viral.webp",
+    "slug": "katseye-gap-ad-viral-success",
+    "date": "9th September 2025"
+  },
+  {
+    "category": "business",
+    "title": "CBS News Appoints Ombudsman With Expanded Role and Unique Background",
+    "shortdescription": "CBS News names Kenneth Weinstein as its new ombudsman, with duties and a background that differ from traditional journalism definitions of the role..",
+    "description": "CBS announced early this week Kenneth Weinstein has been named the new ombudsman for CBS News. Weinstein is responsible for consumer complaints, accountability, and transparency, including investigative oversight. Ombudsmen mostly focus on editorial type things--and in this respect, Weinstein's background and job description won't limit him to the standard journalism expectations. Media experts say the screen ascribes that CBS embraced ombudsman and all the responsibilities and meaning it is capable of have in a time where there is a very fast and constant flow of digital information (who ultimately can lead others to question their trust in information from news organizations). It should come as no surprise that broadcasting organizations (not just CBS News) are all trying to considered their area of journalism responsible while finding ways to engage their audiences (because audiences are demanding who can be more transparent and reliable). Analysts adapted ombudsman, along with investigative oversight and customers complaints, as something ones with Wheimstein's background were left outside the world of public accountability, and accountability in emerging organizational forms. New approaches to media oversight can also serve as prototypes or examples to news organizations who want to retain editorial accountability or integrity for others or themselves, who are increasingly demanding clearer, responsive, and reliable news information and trust will build in various news organizations.",
+     "image": "/images/cbs-news-ombudsman.webp",
+    "slug": "cbs-news-ombudsman-kenneth-weinstein",
+    "date": "9th September 2025"
+  }
 ]
