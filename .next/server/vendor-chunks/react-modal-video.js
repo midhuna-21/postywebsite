@@ -11,16 +11,6 @@ exports.id = "vendor-chunks/react-modal-video";
 exports.ids = ["vendor-chunks/react-modal-video"];
 exports.modules = {
 
-/***/ "(rsc)/./node_modules/react-modal-video/css/modal-video.css":
-/*!************************************************************!*\
-  !*** ./node_modules/react-modal-video/css/modal-video.css ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"54f8a2c82859\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvcmVhY3QtbW9kYWwtdmlkZW8vY3NzL21vZGFsLXZpZGVvLmNzcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsY0FBYztBQUM3QixJQUFJLEtBQVUsRUFBRSxFQUF1QiIsInNvdXJjZXMiOlsiQzpcXE1pZGh1bmFcXHByZXNzdXJhaHViXFxub2RlX21vZHVsZXNcXHJlYWN0LW1vZGFsLXZpZGVvXFxjc3NcXG1vZGFsLXZpZGVvLmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBcIjU0ZjhhMmM4Mjg1OVwiXG5pZiAobW9kdWxlLmhvdCkgeyBtb2R1bGUuaG90LmFjY2VwdCgpIH1cbiJdLCJuYW1lcyI6W10sImlnbm9yZUxpc3QiOlswXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/react-modal-video/css/modal-video.css\n");
-
-/***/ }),
-
 /***/ "(ssr)/./node_modules/react-modal-video/lib/index.js":
 /*!*****************************************************!*\
   !*** ./node_modules/react-modal-video/lib/index.js ***!

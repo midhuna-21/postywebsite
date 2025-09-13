@@ -9,7 +9,12 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                         <ul>
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="#">Pages</Link></li>
-                            <li className="active"><Link href="/">About Us</Link></li>
+                            <li className="active">
+                                <Link href="/">
+                                    {breadcrumbTitle.charAt(0).toUpperCase() + breadcrumbTitle.slice(1).toLowerCase()}
+                                </Link>
+                            </li>
+
                         </ul>
                     </div>
                 </div>

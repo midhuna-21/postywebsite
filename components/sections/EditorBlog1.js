@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from "next/image";
 
 
-export default function EditorBlog1({data}) {
+export default function EditorBlog1({ data }) {
     return (
         <>
             <section className="editor-blog-area">
@@ -15,27 +15,31 @@ export default function EditorBlog1({data}) {
                             </div>
                             <div className="post-card editor-post-card">
                                 <div className="post-thumb">
-                                    <Link href="/single-post-1">
-                                    {/* <img src={data[0].image} alt="post" /> */}
-                                      <Image
-                                                                                src={data[0].image}
-                                                                                alt="trend"
-                                                                                width={500}
-                                                                                height={300}
-                                                                            />
+                                    <Link title={data[0].slug}
+                                        href={`/${data[0].category}/${data[0].slug}`}>
+                                        {/* <img src={data[0].image} alt="post" /> */}
+                                        <Image
+                                            src={data[0].image}
+                                            alt="trend"
+                                            width={500}
+                                            height={300}
+                                        />
                                     </Link>
                                 </div>
                                 <div className="post-content">
-                                    <Link href="/single-post-1" className="card-btn bg-green">{data[0].category}</Link>
+                                    <Link title={data[0].slug}
+                                        href={`/${data[0].category}/${data[0].slug}`} className="card-btn bg-green">{data[0].category}</Link>
                                     <h3 className="title">
-                                        <Link href="/single-post-1">{data[0].title}</Link>
+                                        <Link title={data[0].slug}
+                                            href={`/${data[0].category}/${data[0].slug}`}>{data[0].title}</Link>
                                     </h3>
                                     <p>{data[0].shortdescription}</p>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link title={data[0].slug}
+                                                href={`/${data[0].category}/${data[0].slug}`}>David Bin</Link></span>
                                         </li>
-                                        <li className="date">July 29, 2024</li>
+                                        <li className="date">{data[0].date}</li>
                                         <li><i className="las la-comments" />5</li>
                                     </ul>
                                 </div>
@@ -43,21 +47,52 @@ export default function EditorBlog1({data}) {
                             <div className="editor-post-wrap">
                                 <div className="post-card editor-post">
                                     <div className="post-thumb">
-                                        <Link href="/single-post-1">
-                                        {/* <img src={data[0].image} alt="post" /> */}
-                                          <Image
-                                                                                    src={data[0].image}
-                                                                                    alt="trend"
-                                                                                    width={500}
-                                                                                    height={300}
-                                                                                />
+                                        <Link title={data[1].slug}
+                                            href={`/${data[1].category}/${data[1].slug}`}>
+                                            {/* <img src={data[0].image} alt="post" /> */}
+                                            <Image
+                                                src={data[1].image}
+                                                alt="trend"
+                                                width={500}
+                                                height={300}
+                                            />
 
                                         </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link href="/single-post-1" className="card-btn bg-yellow">{data[1].category}</Link>
+                                        <Link title={data[1].slug}
+                                            href={`/${data[1].category}/${data[1].slug}`} className="card-btn bg-yellow">{data[1].category}</Link>
                                         <h3 className="title">
-                                            <Link href="/single-post-1">{data[1].title}</Link>
+                                            <Link title={data[1].slug}
+                                                href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
+                                        </h3>
+                                        <ul className="post-list">
+                                            <li className="author">
+                                                by <span><Link href="#">David Bin</Link></span>
+                                            </li>
+                                            <li className="date">July 29, 2024</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="post-card editor-post">
+                                    <div className="post-thumb">
+                                        <Link title={data[2].slug}
+                                            href={`/${data[2].category}/${data[2].slug}`}>
+                                            {/* <img src={data[0].image} alt="post" /> */}
+                                            <Image
+                                                src={data[2].image}
+                                                alt="trend"
+                                                width={500}
+                                                height={300}
+                                            />
+                                        </Link>
+                                    </div>
+                                    <div className="post-content">
+                                        <Link title={data[2].slug}
+                                            href={`/${data[2].category}/${data[2].slug}`} className="card-btn bg-blue">{data[2].category}</Link>
+                                        <h3 className="title">
+                                            <Link title={data[2].slug}
+                                                href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
@@ -69,50 +104,28 @@ export default function EditorBlog1({data}) {
                                 </div>
                                 <div className="post-card editor-post">
                                     <div className="post-thumb">
-                                        <Link href="/single-post-1">
-                                        {/* <img src={data[0].image} alt="post" /> */}
-                                          <Image
-                                                                                    src={data[0].image}
-                                                                                    alt="trend"
-                                                                                    width={500}
-                                                                                    height={300}
-                                                                                />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content">
-                                        <Link href="/single-post-1" className="card-btn bg-blue">{data[2].category}</Link>
-                                        <h3 className="title">
-                                            <Link href="/single-post-1">{data[2].title}</Link>
-                                        </h3>
-                                        <ul className="post-list">
-                                            <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
-                                            </li>
-                                            <li className="date">July 29, 2024</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="post-card editor-post">
-                                    <div className="post-thumb">
-                                        <Link href="/single-post-1">
-                                                                           {/* <img src={data[0].image} alt="post" /> */}
+                                        <Link title={data[3].slug}
+                                            href={`/${data[3].category}/${data[3].slug}`}>
+                                            {/* <img src={data[0].image} alt="post" /> */}
 
-                                          <Image
-                                                                                    src={data[0].image}
-                                                                                    alt="trend"
-                                                                                    width={500}
-                                                                                    height={300}
-                                                                                />
+                                            <Image
+                                                src={data[0].image}
+                                                alt="trend"
+                                                width={500}
+                                                height={300}
+                                            />
                                         </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link href="/single-post-1" className="card-btn bg-blue-light">{data[3].category}</Link>
+                                        <Link title={data[3].slug}
+                                            href={`/${data[3].category}/${data[3].slug}`} className="card-btn bg-blue-light">{data[3].category}</Link>
                                         <h3 className="title">
-                                            <Link href="/single-post-1">{data[3].title}</Link>
+                                            <Link title={data[3].slug}
+                                                href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
+                                                by <span><Link href="3">David Bin</Link></span>
                                             </li>
                                             <li className="date">July 29, 2024</li>
                                         </ul>

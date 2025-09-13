@@ -45,18 +45,28 @@ export default function Trending1({ data }) {
                             <SwiperSlide>
                                 <div className="trending-item">
                                     <div className="trending-thumb">
-                                        <Link href="/single-post-1" ><Image
-                                            src={data[0].image}
-                                            alt="trend"
-                                            width={80}  
-                                            height={80} 
-                                        />
+                                        <Link
+                                            title={data[0].slug}
+                                            href={`/${data[0].category}/${data[0].slug}`}
+                                            className="text-decoration-none"
+                                            style={{ color: 'inherit', display: 'block' }}
+                                        ><Image
+                                                src={data[0].image}
+                                                alt="trend"
+                                                width={80}
+                                                height={80}
+                                            />
                                         </Link>
                                     </div>
                                     <div className="post-content trending-content">
                                         <span>{data[0].category}</span>
                                         <h4 className="title trending-title">
-                                            <Link href="/single-post-1">{data[0].title}</Link>
+                                            <Link
+                                                title={data[0].slug}
+                                                href={`/${data[0].category}/${data[0].slug}`}
+                                                className="text-decoration-none"
+                                                style={{ color: 'inherit', display: 'block' }}
+                                            >{data[0].title}</Link>
                                         </h4>
                                     </div>
                                 </div>
@@ -64,18 +74,28 @@ export default function Trending1({ data }) {
                             <SwiperSlide>
                                 <div className="trending-item">
                                     <div className="trending-thumb">
-                                        <Link href="/single-post-1" ><Image
-                                            src={data[1].image}
-                                            alt="trend"
-                                            width={80}  
-                                            height={80} 
-                                        />
+                                        <Link
+                                            title={data[1].slug}
+                                            href={`/${data[1].category}/${data[1].slug}`}
+                                            className="text-decoration-none"
+                                            style={{ color: 'inherit', display: 'block' }}
+                                        ><Image
+                                                src={data[1].image}
+                                                alt="trend"
+                                                width={80}
+                                                height={80}
+                                            />
                                         </Link>
                                     </div>
                                     <div className="post-content trending-content">
                                         <span>{data[1].category}</span>
                                         <h4 className="title trending-title">
-                                            <Link href="/single-post-1">{data[1].title}</Link>
+                                            <Link
+                                                title={data[1].slug}
+                                                href={`/${data[1].category}/${data[1].slug}`}
+                                                className="text-decoration-none"
+                                                style={{ color: 'inherit', display: 'block' }}
+                                            >{data[1].title}</Link>
                                         </h4>
                                     </div>
                                 </div>
@@ -83,18 +103,28 @@ export default function Trending1({ data }) {
                             <SwiperSlide>
                                 <div className="trending-item">
                                     <div className="trending-thumb">
-                                        <Link href="/single-post-1" ><Image
-                                            src={data[2].image}
-                                            alt="trend"
-                                            width={80}   
-                                            height={80}  
-                                        />
+                                        <Link
+                                            title={data[2].slug}
+                                            href={`/${data[2].category}/${data[2].slug}`}
+                                            className="text-decoration-none"
+                                            style={{ color: 'inherit', display: 'block' }}
+                                        ><Image
+                                                src={data[2].image}
+                                                alt="trend"
+                                                width={80}
+                                                height={80}
+                                            />
                                         </Link>
                                     </div>
                                     <div className="post-content trending-content">
                                         <span>{data[2].category}</span>
                                         <h4 className="title trending-title">
-                                            <Link href="/single-post-1">{data[2].title}</Link>
+                                            <Link
+                                                title={data[2].slug}
+                                                href={`/${data[2].category}/${data[2].slug}`}
+                                                className="text-decoration-none"
+                                                style={{ color: 'inherit', display: 'block' }}
+                                            >{data[2].title}</Link>
                                         </h4>
                                     </div>
                                 </div>
@@ -102,18 +132,28 @@ export default function Trending1({ data }) {
                             <SwiperSlide>
                                 <div className="trending-item">
                                     <div className="trending-thumb">
-                                        <Link href="/single-post-1" ><Image
-                                            src={data[3].image}
-                                            alt="trend"
-                                            width={80}  
-                                            height={80}  
-                                        />
+                                        <Link
+                                            title={data[3].slug}
+                                            href={`/${data[3].category}/${data[3].slug}`}
+                                            className="text-decoration-none"
+                                            style={{ color: 'inherit', display: 'block' }}
+                                        ><Image
+                                                src={data[3].image}
+                                                alt="trend"
+                                                width={80}
+                                                height={80}
+                                            />
                                         </Link>
                                     </div>
                                     <div className="post-content trending-content">
                                         <span>{data[3].category}</span>
                                         <h4 className="title trending-title">
-                                            <Link href="/single-post-1">{data[3].title}</Link>
+                                            <Link
+                                                title={data[3].slug}
+                                                href={`/${data[3].category}/${data[3].slug}`}
+                                                className="text-decoration-none"
+                                                style={{ color: 'inherit', display: 'block' }}
+                                            >{data[3].title}</Link>
                                         </h4>
                                     </div>
                                 </div>

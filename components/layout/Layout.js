@@ -50,7 +50,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 				handleSearch={handleSearch}
 			/>
 			
-			{headerStyle == 1 ? <Header
+			 <Header
 				scroll={scroll}
 				isMobileMenu={isMobileMenu}
 				handleMobileMenu={handleMobileMenu}
@@ -58,7 +58,9 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 				handleSidebar={handleSidebar}
 				isSearch={isSearch}
 				handleSearch={handleSearch}
-			/> : null}
+			/> 
+
+			{breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
 
 			{children}
 

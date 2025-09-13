@@ -38,7 +38,7 @@ export default function Watch({ data }) {
 
 								</div>
 								<div className="post-text">
-									<h3 className="header"><span /><span>What to Watch</span><span /></h3>
+									<h3 className="header"><span /><span>What to Look</span><span /></h3>
 								</div>
 								{/* <div className="video-btn">
 								<a className="video-popup" onClick={() => setOpen(true)}><i className="las la-play" />
@@ -46,9 +46,11 @@ export default function Watch({ data }) {
 								</div> */}
 								<div className="post-card">
 									<div className="post-content">
-										<Link href="/single-post-1" className="card-btn bg-green">{data[0].category}</Link>
+										<Link title={data[0].slug}
+												href={`/${data[0].category}/${data[0].slug}`} className="card-btn bg-green">{data[0].category}</Link>
 										<h3 className="title">
-											<Link href="/single-post-1">{data[0].title}</Link>
+											<Link title={data[0].slug}
+												href={`/${data[0].category}/${data[0].slug}`}>{data[0].title}</Link>
 										</h3>
 										<ul className="post-list">
 											<li className="author">
@@ -83,13 +85,15 @@ export default function Watch({ data }) {
 								</div> */}
 								<div className="post-card">
 									<div className="post-content">
-										<Link href="/single-post-1" className="card-btn bg-green">{data[1].category}</Link>
+										<Link title={data[1].slug}
+												href={`/${data[1].category}/${data[1].slug}`} className="card-btn bg-green">{data[1].category}</Link>
 										<h3 className="title">
-											<Link href="/single-post-1">{data[1].title}</Link>
+											<Link title={data[1].slug}
+												href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
 										</h3>
 										<ul className="post-list">
 											<li className="author">
-												by <span><Link href="/author-details">David Bin</Link></span>
+												by <span><Link href="#">David Bin</Link></span>
 											</li>
 											<li className="date">{data[1].date}</li>
 											{/* <li><i className="las la-comments" />5</li> */}
@@ -120,13 +124,15 @@ export default function Watch({ data }) {
 								</div> */}
 								<div className="post-card">
 									<div className="post-content">
-										<Link href="/single-post-1" className="card-btn bg-green">{data[2].category}</Link>
+										<Link title={data[2].slug}
+												href={`/${data[2].category}/${data[2].slug}`} className="card-btn bg-green">{data[2].category}</Link>
 										<h3 className="title">
-											<Link href="/single-post-1">{data[2].title}</Link>
+											<Link title={data[2].slug}
+												href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
 										</h3>
 										<ul className="post-list">
 											<li className="author">
-												by <span><Link href="/author-details">David Bin</Link></span>
+												by <span><Link href="#">David Bin</Link></span>
 											</li>
 											<li className="date">{data[2].date}</li>
 											{/* <li><i className="las la-comments" />5</li> */}
@@ -157,13 +163,15 @@ export default function Watch({ data }) {
 								</div> */}
 								<div className="post-card">
 									<div className="post-content">
-										<Link href="/single-post-1" className="card-btn bg-green">{data[3].category}</Link>
+										<Link title={data[3].slug}
+												href={`/${data[3].category}/${data[3].slug}`} className="card-btn bg-green">{data[3].category}</Link>
 										<h3 className="title">
-											<Link href="/single-post-1">{data[3].title}</Link>
+											<Link title={data[3].slug}
+												href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
 										</h3>
 										<ul className="post-list">
 											<li className="author">
-												by <span><Link href="/author-details">David Bin</Link></span>
+												by <span><Link href="#">David Bin</Link></span>
 											</li>
 											<li className="date">{data[3].date}</li>
 											{/* <li><i className="las la-comments" />5</li> */}
@@ -202,7 +210,8 @@ export default function Watch({ data }) {
 										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}>
 										<i className="las la-play" />
 											</a> */}
-										<h4 className="thumb-title"><Link href="/#">{data[4].title}</Link></h4>
+										<h4 className="thumb-title"><Link title={data[4].slug}
+												href={`/${data[4].category}/${data[4].slug}`}>{data[4].title}</Link></h4>
 									</div>
 									{/* <div className="thumb-time">
 										<span>9.37</span>
@@ -223,7 +232,8 @@ export default function Watch({ data }) {
 									<div className="thumb-content">
 										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
 											</a> */}
-										<h4 className="thumb-title"><Link href="/#">{data[5].title}</Link></h4>
+										<h4 className="thumb-title"><Link title={data[5].slug}
+												href={`/${data[5].category}/${data[5].slug}`}>{data[5].title}</Link></h4>
 									</div>
 									{/* <div className="thumb-time">
 										<span>9.37</span>
@@ -244,7 +254,8 @@ export default function Watch({ data }) {
 									<div className="thumb-content">
 										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
 											</a> */}
-										<h4 className="thumb-title"><Link href="/#">{data[5].title}</Link></h4>
+										<h4 className="thumb-title"><Link title={data[5].slug}
+												href={`/${data[5].category}/${data[5].slug}`}>{data[5].title}</Link></h4>
 									</div>
 									{/* <div className="thumb-time">
 										<span>9.37</span>
@@ -256,7 +267,7 @@ export default function Watch({ data }) {
 									<div className="carousel-thumb">
 										{/* <img src="/assets/img/images/post-carousel-thumb-4.jpg" /> */}
 										<Image
-											src={data[6	].image}
+											src={data[6].image}
 											alt="trend"
 											width={500}
 											height={180}
@@ -265,7 +276,8 @@ export default function Watch({ data }) {
 									<div className="thumb-content">
 										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
 											</a> */}
-										<h4 className="thumb-title"><Link href="/#">{data[6].title}</Link></h4>
+										<h4 className="thumb-title"><Link title={data[6].slug}
+												href={`/${data[6].category}/${data[6].slug}`}>{data[6].title}</Link></h4>
 									</div>
 									{/* <div className="thumb-time">
 										<span>9.37</span>

@@ -1,4 +1,7 @@
 {
   "/single-post-1/page": "app/single-post-1/page.js",
-  "/page": "app/page.js"
+  "/single-post-2/page": "app/single-post-2/page.js",
+  "/single-post-3/page": "app/single-post-3/page.js",
+  "/page": "app/page.js",
+  "/[category]/[slug]/page": "app/[category]/[slug]/page.js"
 }

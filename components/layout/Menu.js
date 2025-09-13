@@ -3,13 +3,12 @@ import Link from 'next/link'
 const categories = [
 	{ label: 'Home  ', category: '' },
 	{ label: 'Business', category: 'business' },
-	{ label: 'Sports', category: 'sports' },
-	{ label: 'Politics', category: 'politics' },
-	//   { label: 'Technology', category: 'technology' },
-	{ label: 'Health', category: 'health' },
+	{ label: 'Investing', category: 'investing' },
+	{ label: 'Enterprise', category: 'enterprise' },
+	{ label: 'Innovation', category: 'innovation' },
 	//   { label: 'Science', category: 'science' },	
 	//   { label: 'Entertainment', category: 'entertainment' },
-	{ label: 'Education', category: 'education' },
+	{ label: 'U.S', category: 'us' },
 ];
 
 

@@ -10,7 +10,8 @@ export default function Categories({ data }) {
                         <div className="col-lg-3 col-md-6">
                             <div className="categorie-item">
                                 <div className="categorie-thumb">
-                                    <Link href="/blog-default">
+                                    <Link title={data[0].category}
+												href={`/${data[0].category}`}>
                                         {/* <img src="/assets/img/images/categori-img-1.jpg" alt="img" /> */}
                                         <Image
                                             src={data[0].image}
@@ -22,15 +23,18 @@ export default function Categories({ data }) {
                                 </div>
                                 <div className="categorie-content">
                                     {/* <span>3 Post</span> */}
-                                    <h3 className="categorie-title"><Link href="/blog-default">{data[0].category}</Link></h3>
-                                    <Link href="/blog-default" className="default-btn categorie-btn">See All Post</Link>
+                                    <h3 className="categorie-title"><Link title={data[0].category}
+												href={`/${data[0].category}`}>{data[0].category}</Link></h3>
+                                    <Link title={data[0].category}
+												href={`/${data[0].category}`} className="default-btn categorie-btn">See All Post</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div className="categorie-item">
                                 <div className="categorie-thumb">
-                                    <Link href="/blog-default">
+                                    <Link title={data[1].category}
+												href={`/${data[1].category}`}>
                                         {/* <img src="/assets/img/images/categori-img-2.jpg" alt="img" /> */}
                                         <Image
                                             src={data[1].image}
@@ -42,15 +46,18 @@ export default function Categories({ data }) {
                                 </div>
                                 <div className="categorie-content">
                                     {/* <span>3 Post</span> */}
-                                    <h3 className="categorie-title"><Link href="/blog-default">{data[1].category}</Link></h3>
-                                    <Link href="/blog-default" className="default-btn categorie-btn">See All Post</Link>
+                                    <h3 className="categorie-title"><Link title={data[1].category}
+												href={`/${data[1].category}`}>{data[1].category}</Link></h3>
+                                    <Link title={data[1].category}
+												href={`/${data[1].category}`} className="default-btn categorie-btn">See All Post</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div className="categorie-item">
                                 <div className="categorie-thumb">
-                                    <Link href="/blog-default">
+                                    <Link title={data[2].category}
+												href={`/${data[2].category}`}>
                                         {/* <img src="/assets/img/images/categori-img-3.jpg" alt="img" /> */}
                                         <Image
                                             src={data[2].image}
@@ -62,15 +69,18 @@ export default function Categories({ data }) {
                                 </div>
                                 <div className="categorie-content">
                                     {/* <span>3 Post</span> */}
-                                    <h3 className="categorie-title"><Link href="/blog-default">{data[2].category}</Link></h3>
-                                    <Link href="/blog-default" className="default-btn categorie-btn">See All Post</Link>
+                                    <h3 className="categorie-title"><Link title={data[2].category}
+												href={`/${data[2].category}`}>{data[2].category}</Link></h3>
+                                    <Link title={data[2].category}
+												href={`/${data[2].category}`} className="default-btn categorie-btn">See All Post</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div className="categorie-item">
                                 <div className="categorie-thumb">
-                                    <Link href="/blog-default">
+                                    <Link title={data[3].category}
+												href={`/${data[3].category}`}>
                                         {/* <img src="/assets/img/images/categori-img-8.jpg" alt="img" /> */}
 
                                         <Image
@@ -83,8 +93,10 @@ export default function Categories({ data }) {
                                 </div>
                                 <div className="categorie-content">
                                     {/* <span>3 Post</span>  */}
-                                    <h3 className="categorie-title"><Link href="/blog-default">{data[3].category}</Link></h3>
-                                    <Link href="/blog-default" className="default-btn categorie-btn">See All Post</Link>
+                                    <h3 className="categorie-title"><Link title={data[3].category}
+												href={`/${data[3].category}`}>{data[3].category}</Link></h3>
+                                    <Link title={data[3].category}
+												href={`/${data[3].category}`} className="default-btn categorie-btn">See All Post</Link>
                                 </div>
                             </div>
                         </div>

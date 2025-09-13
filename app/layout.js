@@ -1,4 +1,3 @@
-import "@/node_modules/react-modal-video/css/modal-video.css"
 import { Inter, Jost } from 'next/font/google'
 import "/public/assets/css/bootstrap.min.css"
 import "/public/assets/css/common-style.css"
