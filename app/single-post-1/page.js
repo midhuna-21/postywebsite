@@ -1,10 +1,9 @@
-import Layout from "@/components/layout/Layout"
+import Layout from "../../components/layout/Layout"
 import Link from "next/link"
 export default function SinglePost1() {
 	return (
 		<>
 			<Layout breadcrumbTitle="title">
-
 				<div>
 					<section className="post-layout-1 padding">
 						<div className="container">
