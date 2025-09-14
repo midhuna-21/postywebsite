@@ -1,6 +1,7 @@
 import PostCard from "./PostCard";
 
 export default function RecentPosts({ data }) {
+  console.log(data,'data')
   return (
     <section className="recent-post-area padding">
       <div className="container">
@@ -11,8 +12,7 @@ export default function RecentPosts({ data }) {
               {data.slice(0, 5).map((post, index) => (
                 <PostCard
                   key={index}
-                  post={post}
-                  imgSrc={`/assets/img/post/news-post-${index + 1}.jpg`}
+                  data={post}
                 />
               ))}
             </div>
@@ -24,8 +24,7 @@ export default function RecentPosts({ data }) {
               {data.slice(5, 10).map((post, index) => (
                 <PostCard
                   key={index + 5}
-                  post={post}
-                  imgSrc={`/assets/img/post/news-post-${index + 6}.jpg`}
+                  data={post}
                 />
               ))}
             </div>

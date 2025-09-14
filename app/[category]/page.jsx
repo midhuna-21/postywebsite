@@ -1,12 +1,12 @@
 import React from 'react';
-import Layout from "@/components/layout/Layout"
+import Layout from "../../components/layout/Layout"
 import Link from "next/link"
 import businessData from '../../public/data/business.json';
 import investingData from '../../public/data/investing.json';
 import innovationData from '../../public/data/innovation.json';
 import enterpriseData from '../../public/data/enterprise.json';
 import usData from '../../public/data/us.json';
-import RecentPosts from '@/components/sections/RecentPosts';
+import RecentPosts from '../../components/sections/RecentPosts';
 
 
 const allData = {
@@ -86,8 +86,6 @@ export default async function CategoryPage({
 
 				<div>
 				<RecentPosts data={data} />
-
-
 
 					{/* ./ recent-post-area */}
 					<section className="subscribe-section bg-grey-2">

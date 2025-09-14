@@ -52,7 +52,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 								</Link>
 							</div>
 							<div className="mid-header-right">
-								<Link href="/contact" className="default-btn header-btn">Subscribe</Link>
+								{/* <Link href="/contact" className="default-btn header-btn">Subscribe</Link> */}
 								<Link href="/author-details" className="user"><i className="las la-user" /></Link>
 							</div>
 						</div>

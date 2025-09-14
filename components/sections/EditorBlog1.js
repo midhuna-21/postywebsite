@@ -109,7 +109,7 @@ export default function EditorBlog1({ data }) {
                                             {/* <img src={data[0].image} alt="post" /> */}
 
                                             <Image
-                                                src={data[0].image}
+                                                src={data[3].image}
                                                 alt="trend"
                                                 width={500}
                                                 height={300}

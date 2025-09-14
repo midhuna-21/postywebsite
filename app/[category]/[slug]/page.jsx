@@ -6,6 +6,7 @@ import usData from '../../../public/data/us.json';
 import innovationData from '../../../public/data/innovation.json';
 import investingData from '../../../public/data/investing.json';
 import Layout from "@/components/layout/Layout"
+import Image from 'next/image'
 import Link from "next/link"
 
 export async function generateStaticParams() {
@@ -110,7 +111,7 @@ export default async function DetailPage({ params }) {
 
     return (
         <>
-            <Layout breadcrumbTitle="title">
+            <Layout breadcrumbTitle={article.slug}>
 
                 <div>
                     <section className="post-layout-1 padding">
@@ -156,7 +157,14 @@ export default async function DetailPage({ params }) {
                                 <div className="col-lg-8">
                                     <div className="post-layout-content">
                                         <div className="layout-thumb mb-30">
-                                            <img src="/assets/img/blog/layout-img.jpg" alt="layout" />
+                                            {/* <img src="/assets/img/blog/layout-img.jpg" alt="layout" /> */}
+                                            <Image
+                                                src={article.image}
+                                                alt="layout"
+                                                width={1200}
+                                                height={800}
+                                                priority
+                                            />
                                         </div>
                                         <p className="layout-desc">
                                             {article.description}
@@ -169,7 +177,13 @@ export default async function DetailPage({ params }) {
                                             <div className="article-item left-article">
                                                 <Link href="/#" className="arrow"><i className="las la-angle-left" />Previous News</Link>
                                                 <div className="article-thumb">
-                                                    <img src="/assets/img/blog/article-1.jpg" alt="thumb" />
+                                                    {/* <img src="/assets/img/blog/article-1.jpg" alt="thumb" /> */}
+                                                    <Image
+                                                        src={otherArticles[0].image}
+                                                        alt="thumb"
+                                                        width={100}
+                                                        height={60}
+                                                    />
                                                     <h3>
                                                         <Link href="/#" className="title">{otherArticles[0].title}</Link>
                                                     </h3>
@@ -182,7 +196,13 @@ export default async function DetailPage({ params }) {
                                                         <Link title={otherArticles[1].slug}
                                                             href={`/${otherArticles[1].category}/${otherArticles[1].slug}`} className="title">{otherArticles[1].title}</Link>
                                                     </h3>
-                                                    <img src="/assets/img/blog/article-2.jpg" alt="thumb" />
+                                                    {/* <img src="/assets/img/blog/article-2.jpg" alt="thumb" /> */}
+                                                    <Image
+                                                        src={otherArticles[1].image}
+                                                        alt="thumb"
+                                                        width={100}
+                                                        height={60}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
@@ -280,7 +300,15 @@ export default async function DetailPage({ params }) {
                                         <div className="list-post-area list-2">
                                             <div className="list-post-card">
                                                 <div className="post-img">
-                                                    <Link href="/#"><img src="/assets/img/post/trending-post-1.jpg" alt="post" /></Link>
+                                                    <Link href="/#">
+                                                        {/* <img src="/assets/img/post/trending-post-1.jpg" alt="post" /> */}
+                                                        <Image
+                                                            src={otherArticles[2].image}
+                                                            alt="thumb"
+                                                            width={200}
+                                                            height={200}
+                                                        />
+                                                    </Link>
                                                 </div>
                                                 <div className="post-content">
                                                     <h3 className="title">
@@ -292,7 +320,15 @@ export default async function DetailPage({ params }) {
                                             </div>
                                             <div className="list-post-card">
                                                 <div className="post-img">
-                                                    <Link href="/#"><img src="/assets/img/post/trending-post-2.jpg" alt="post" /></Link>
+                                                    <Link href="/#">
+                                                        {/* <img src="/assets/img/post/trending-post-2.jpg" alt="post" /> */}
+                                                        <Image
+                                                            src={otherArticles[3].image}
+                                                            alt="thumb"
+                                                            width={200}
+                                                            height={200}
+                                                        />
+                                                    </Link>
                                                 </div>
                                                 <div className="post-content">
                                                     <h3 className="title">
@@ -304,7 +340,15 @@ export default async function DetailPage({ params }) {
                                             </div>
                                             <div className="list-post-card">
                                                 <div className="post-img">
-                                                    <Link href="/#"><img src="/assets/img/post/trending-post-3.jpg" alt="post" /></Link>
+                                                    <Link href="/#">
+                                                        {/* <img src="/assets/img/post/trending-post-3.jpg" alt="post" /> */}
+                                                        <Image
+                                                            src={otherArticles[4].image}
+                                                            alt="thumb"
+                                                            width={200}
+                                                            height={200}
+                                                        />
+                                                    </Link>
                                                 </div>
                                                 <div className="post-content">
                                                     <h3 className="title">
@@ -315,7 +359,15 @@ export default async function DetailPage({ params }) {
                                             </div>
                                             <div className="list-post-card">
                                                 <div className="post-img">
-                                                    <Link href="/#"><img src="/assets/img/post/trending-post-4.jpg" alt="post" /></Link>
+                                                    <Link href="/#">
+                                                        {/* <img src="/assets/img/post/trending-post-4.jpg" alt="post" /> */}
+                                                        <Image
+                                                            src={otherArticles[5].image}
+                                                            alt="thumb"
+                                                            width={200}
+                                                            height={200}
+                                                        />
+                                                    </Link>
                                                 </div>
                                                 <div className="post-content">
                                                     <h3 className="title">
@@ -334,7 +386,8 @@ export default async function DetailPage({ params }) {
                                         <ul className="categorie-list">
                                             <li>
                                                 <Link href="/single-post-1"><h4 className="list-title">Business</h4><i className="las la-arrow-right" />
-                                                </Link></li><Link href="/single-post-1">
+                                                </Link></li>
+                                            <Link href="/single-post-1">
                                             </Link>
                                             <li>
                                                 <Link href="/single-post-1"><h4 className="list-title">Investing</h4><i className="las la-arrow-right" /></Link>

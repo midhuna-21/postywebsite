@@ -132,9 +132,7 @@ export default function HeroPost1({ data }) {
 													<li className="date">{data[2].date}</li>
 												</ul>
 											</div>
-											{/* /. post-card-content */}
 										</div>
-										{/* ./post-card */}
 									</SwiperSlide>
 									<SwiperSlide>
 										<div className="post-carousel-card card-2 text-center">
@@ -168,9 +166,7 @@ export default function HeroPost1({ data }) {
 													<li className="date">{data[3].date}</li>
 												</ul>
 											</div>
-											{/* /. post-card-content */}
 										</div>
-										{/* ./post-card */}
 									</SwiperSlide>
 								</Swiper>
 								<div className="swiper-arrow">
@@ -418,7 +414,7 @@ export default function HeroPost1({ data }) {
 											 className="category">{data[12].category}</Link>
 												<h3 className="title">
 													<Link title={data[12].slug}
-												href={`/${data[1].category}/${data[12].slug}`}
+												href={`/${data[12].category}/${data[12].slug}`}
 											>{data[12].title}</Link>
 												</h3>
 											</div>

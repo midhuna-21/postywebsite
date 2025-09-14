@@ -25,16 +25,15 @@ export default function Watch({ data }) {
 						className="swiper-wrapper">
 						<SwiperSlide>
 							<div className="carousel-post">
+
 								<div className="post-img">
-									<img src={"/assets/img/images/post-carousel-img-1.jpg"} />
-									{/* <Image
-  src={data[0].image}
-  alt="trend"
-  width={0}
-  height={0}
-  sizes="100vw"
-  className="w-full h-auto"
-/> */}
+									<Image
+										src={data[0].image}
+										alt="post carousel"
+										width={1500}
+										height={600}
+										className="w-full"
+									/>
 
 								</div>
 								<div className="post-text">
@@ -47,7 +46,7 @@ export default function Watch({ data }) {
 								<div className="post-card">
 									<div className="post-content">
 										<Link title={data[0].slug}
-												href={`/${data[0].category}/${data[0].slug}`} className="card-btn bg-green">{data[0].category}</Link>
+											href={`/${data[0].category}/${data[0].slug}`} className="card-btn bg-green">{data[0].category}</Link>
 										<h3 className="title">
 											<Link title={data[0].slug}
 												href={`/${data[0].category}/${data[0].slug}`}>{data[0].title}</Link>
@@ -79,14 +78,11 @@ export default function Watch({ data }) {
 								<div className="post-text">
 									<h3 className="header"><span /><span>What to Watch</span><span /></h3>
 								</div>
-								{/* <div className="video-btn">
-									<a className="video-popup" onClick={() => setOpen(true)}><i className="las la-play" />
-											</a>
-								</div> */}
+								
 								<div className="post-card">
 									<div className="post-content">
 										<Link title={data[1].slug}
-												href={`/${data[1].category}/${data[1].slug}`} className="card-btn bg-green">{data[1].category}</Link>
+											href={`/${data[1].category}/${data[1].slug}`} className="card-btn bg-green">{data[1].category}</Link>
 										<h3 className="title">
 											<Link title={data[1].slug}
 												href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
@@ -125,7 +121,7 @@ export default function Watch({ data }) {
 								<div className="post-card">
 									<div className="post-content">
 										<Link title={data[2].slug}
-												href={`/${data[2].category}/${data[2].slug}`} className="card-btn bg-green">{data[2].category}</Link>
+											href={`/${data[2].category}/${data[2].slug}`} className="card-btn bg-green">{data[2].category}</Link>
 										<h3 className="title">
 											<Link title={data[2].slug}
 												href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
@@ -164,7 +160,7 @@ export default function Watch({ data }) {
 								<div className="post-card">
 									<div className="post-content">
 										<Link title={data[3].slug}
-												href={`/${data[3].category}/${data[3].slug}`} className="card-btn bg-green">{data[3].category}</Link>
+											href={`/${data[3].category}/${data[3].slug}`} className="card-btn bg-green">{data[3].category}</Link>
 										<h3 className="title">
 											<Link title={data[3].slug}
 												href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
@@ -196,94 +192,146 @@ export default function Watch({ data }) {
 							watchSlidesProgress={true}
 							modules={[FreeMode, Navigation, Thumbs]} className="swiper-wrapper">
 							<SwiperSlide>
-								<div className="carousel-thumb-post">
-									<div className="carousel-thumb">
-										{/* <img src="/assets/img/images/post-carousel-thumb-1.jpg" /> */}
-										<Image
-											src={data[4].image}
-											alt="trend"
-											width={500}
-											height={180}
-										/>
-									</div>
-									<div className="thumb-content">
-										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}>
-										<i className="las la-play" />
-											</a> */}
-										<h4 className="thumb-title"><Link title={data[4].slug}
-												href={`/${data[4].category}/${data[4].slug}`}>{data[4].title}</Link></h4>
-									</div>
-									{/* <div className="thumb-time">
-										<span>9.37</span>
-									</div> */}
-								</div>
-							</SwiperSlide>
-							<SwiperSlide>
-								<div className="carousel-thumb-post">
-									<div className="carousel-thumb">
-										{/* <img src="/assets/img/images/post-carousel-thumb-2.jpg" /> */}
-										<Image
-											src={data[5].image}
-											alt="trend"
-											width={500}
-											height={180}
-										/>
-									</div>
-									<div className="thumb-content">
-										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
-											</a> */}
-										<h4 className="thumb-title"><Link title={data[5].slug}
-												href={`/${data[5].category}/${data[5].slug}`}>{data[5].title}</Link></h4>
-									</div>
-									{/* <div className="thumb-time">
-										<span>9.37</span>
-									</div> */}
-								</div>
-							</SwiperSlide>
-							<SwiperSlide>
-								<div className="carousel-thumb-post">
-									<div className="carousel-thumb">
-										{/* <img src="/assets/img/images/post-carousel-thumb-3.jpg" /> */}
-										<Image
-											src={data[6].image}
-											alt="trend"
-											width={500}
-											height={180}
-										/>
-									</div>
-									<div className="thumb-content">
-										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
-											</a> */}
-										<h4 className="thumb-title"><Link title={data[5].slug}
-												href={`/${data[5].category}/${data[5].slug}`}>{data[5].title}</Link></h4>
-									</div>
-									{/* <div className="thumb-time">
-										<span>9.37</span>
-									</div> */}
-								</div>
-							</SwiperSlide>
-							<SwiperSlide>
-								<div className="carousel-thumb-post">
-									<div className="carousel-thumb">
-										{/* <img src="/assets/img/images/post-carousel-thumb-4.jpg" /> */}
-										<Image
-											src={data[6].image}
-											alt="trend"
-											width={500}
-											height={180}
-										/>
-									</div>
-									<div className="thumb-content">
-										{/* <a className="video-popup  thumb-video" onClick={() => setOpen(true)}><i className="las la-play" />
-											</a> */}
-										<h4 className="thumb-title"><Link title={data[6].slug}
-												href={`/${data[6].category}/${data[6].slug}`}>{data[6].title}</Link></h4>
-									</div>
-									{/* <div className="thumb-time">
-										<span>9.37</span>
-									</div> */}
-								</div>
-							</SwiperSlide>
+  <div className="carousel-thumb-post"  style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
+>
+    <Image
+      src={data[4].image}
+      alt="trend"
+      width={500}
+      height={180}
+      style={{ width: "100%", height: "auto" }}
+    />
+
+    {/* Text overlay at bottom, spanning full width */}
+    <div
+      style={{
+        position: "absolute",
+        bottom: "0",
+        left: "0",
+        right: "0",
+        padding: "12px 16px",
+        color: "#fff",
+        fontWeight: "600",
+      }}
+    >
+      <h4 className="thumb-title" style={{ margin: 0 }}>
+        <Link
+          title={data[4].slug}
+          href={`/${data[4].category}/${data[4].slug}`}
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          {data[4].title}
+        </Link>
+      </h4>
+    </div>
+  </div>
+</SwiperSlide>
+
+								<SwiperSlide>
+  <div className="carousel-thumb-post"  style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
+>
+    <Image
+      src={data[5].image}
+      alt="trend"
+      width={500}
+      height={180}
+      style={{ width: "100%", height: "auto" }}
+    />
+
+    {/* Text overlay at bottom, spanning full width */}
+    <div
+      style={{
+        position: "absolute",
+        bottom: "0",
+        left: "0",
+        right: "0",
+        padding: "12px 16px",
+        color: "#fff",
+        fontWeight: "600",
+      }}
+    >
+      <h4 className="thumb-title" style={{ margin: 0 }}>
+        <Link
+          title={data[5].slug}
+          href={`/${data[5].category}/${data[5].slug}`}
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          {data[5].title}
+        </Link>
+      </h4>
+    </div>
+  </div>
+</SwiperSlide>
+		<SwiperSlide>
+  <div className="carousel-thumb-post"  style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
+>
+    <Image
+      src={data[6].image}
+      alt="trend"
+      width={500}
+      height={180}
+      style={{ width: "100%", height: "auto" }}
+    />
+
+    {/* Text overlay at bottom, spanning full width */}
+    <div
+      style={{
+        position: "absolute",
+        bottom: "0",
+        left: "0",
+        right: "0",
+        padding: "12px 16px",
+        color: "#fff",
+        fontWeight: "600",
+      }}
+    >
+      <h4 className="thumb-title" style={{ margin: 0 }}>
+        <Link
+          title={data[6].slug}
+          href={`/${data[6].category}/${data[6].slug}`}
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          {data[6].title}
+        </Link>
+      </h4>
+    </div>
+  </div>
+</SwiperSlide>
+		<SwiperSlide>
+  <div className="carousel-thumb-post"  style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
+>
+    <Image
+      src={data[7].image}
+      alt="trend"
+      width={500}
+      height={180}
+      style={{ width: "100%", height: "auto" }}
+    />
+
+    {/* Text overlay at bottom, spanning full width */}
+    <div
+      style={{
+        position: "absolute",
+        bottom: "0",
+        left: "0",
+        right: "0",
+        padding: "12px 16px",
+        color: "#fff",
+        fontWeight: "600",
+      }}
+    >
+      <h4 className="thumb-title" style={{ margin: 0 }}>
+        <Link
+          title={data[7].slug}
+          href={`/${data[7].category}/${data[7].slug}`}
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          {data[7].title}
+        </Link>
+      </h4>
+    </div>
+  </div>
+</SwiperSlide>
 						</Swiper>
 					</div>
 				</div>
