@@ -2800,6 +2800,14 @@ header.main-header.transparent {
     display: block;
 }
 
+@media (max-width: 768px) {
+  .logo-dark,
+  .logo-light {
+    max-width: 130px; 
+    max-height: 40px;
+  }
+}
+
 .header-1 .sticky-header.sticky-fixed-top .navigation-wrapper .site-logo {
     display: block;
 }

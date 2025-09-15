@@ -46,6 +46,17 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 				handleSearch={handleSearch}
 			/> 
 
+			<Sidebar
+				isSidebar={isSidebar}
+				handleSidebar={handleSidebar}
+			/>
+			
+			{/* <MobileMenu
+				isMobileMenu={isMobileMenu}
+				handleMobileMenu={handleMobileMenu}
+			/> */}
+
+
 			{breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} category={category} />}
 
 			{children}

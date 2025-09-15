@@ -132,9 +132,9 @@ export default function ClientPage({ otherArticles }) {
                                                 height={60}
                                             />
                                             <h3>
-                                               <Link title={otherArticles[0].slug}
-                                                                    href={`/${otherArticles[0].category}/${otherArticles[0].slug}`} className="title">
-                                                    {otherArticles[0].title}
+                                                <Link title={otherArticles[0].slug}
+                                                                        href={`/${otherArticles[0].category}/${otherArticles[0].slug}`} className="title">
+                                                        {otherArticles[0].title}
                                                 </Link>
                                             </h3>
                                         </div>
