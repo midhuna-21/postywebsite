@@ -10,7 +10,7 @@ import MobileMenu from "./MobileMenu"
 import SearchBox from "./SearchBox"
 import Sidebar from "./Sidebar"
 
-export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, children }) {
+export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, children,category }) {
 	const [scroll, setScroll] = useState(false)
 	// MoblileMenu
 	const [isMobileMenu, setMobileMenu] = useState(false)
@@ -28,20 +28,6 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 		!isSearch ? document.body.classList.add("open-search-box") : document.body.classList.remove("open-search-box")
 	}
 
-	// useEffect(() => {
-	// 	const WOW = require('wowjs')
-	// 	window.wow = new WOW.WOW({
-	// 		live: false
-	// 	})
-	// 	window.wow.init()
-
-	// 	const onScroll = () => {
-    //         setScroll(window.scrollY > 100)
-    //     }
-
-    //     window.addEventListener("scroll", onScroll)
-    //     return () => window.removeEventListener("scroll", onScroll)
-	// }, [])
 	return (
 		<>
 		<div id="top" />
@@ -60,7 +46,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 				handleSearch={handleSearch}
 			/> 
 
-			{breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+			{breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} category={category} />}
 
 			{children}
 

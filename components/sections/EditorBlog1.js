@@ -171,7 +171,7 @@ export default function EditorBlog1({ data }) {
                                     Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus
                                     rutrum tellus eget ultrices pretium.
                                 </p>
-                                <Link href="/author-details" className="default-btn">About Me</Link>
+                                <Link href="#" className="default-btn">About Me</Link>
                             </div>
                         </div>
                     </div>

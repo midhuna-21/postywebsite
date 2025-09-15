@@ -1,6 +1,9 @@
 import Link from "next/link"
 import ThemeSwitch from "../elements/ThemeSwitch"
 import Menu from "./Menu"
+import Image from "next/image";
+// import logo from '../../public/images/pre';
+// import blacklogo from '../../public/images/pressorahub-logo.png';
 
 export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handleSidebar, isSearch, handleSearch }) {
 	return (
@@ -47,8 +50,23 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 							</div>
 							<div className="site-logo">
 								<Link href="/">
-									<img className="logo-dark" src="/assets/img/logo/logo-dark-2.png" alt="logo" />
-									<img className="logo-light" src="/assets/img/logo/logo-dark.png" alt="logo" />
+									<Image
+										className="logo-dark"
+										src="/images/pressorahub-black-logo.webp"
+										alt="PressoraHub Logo Dark"
+										width={350} 
+										height={70} 
+										priority
+									/>
+									{/* Light Logo */}
+									<Image
+										className="logo-light"
+										src="/images/pressorahub-logo.webp"
+										alt="PressoraHub Logo Light"
+										width={350} 
+										height={70} 
+										priority
+									/>
 								</Link>
 							</div>
 							<div className="mid-header-right">

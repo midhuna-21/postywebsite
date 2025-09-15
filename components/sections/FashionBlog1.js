@@ -11,7 +11,7 @@ export default function FashionBlog1({ data }) {
                             <h3 className="section-title"><span className="bg-grey-2">Most Read</span></h3>
                         </div>
                         <div className="right-btn">
-                            <Link href="/blog-layout-1" className="default-btn">See More</Link>
+                            <Link href="/enterprise" className="default-btn">See More</Link>
                         </div>
                     </div>
                     <div className="row justify-content-center fashion-blog-top">

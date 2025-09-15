@@ -98,7 +98,8 @@ export default function NewsPost1({ data }) {
                                         <Link title={data[2].slug}
 												href={`/${data[2].category}/${data[2].slug}`} className="card-btn bg-green">{data[2].category}</Link>
                                         <h3 className="title">
-                                            <Link href="/single-post-1">{data[2].title}</Link>
+                                             <Link title={data[2].slug}
+												href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">

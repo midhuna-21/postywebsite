@@ -12,7 +12,7 @@ export default function RecentPost({ data }) {
                             <h3 className="section-title"><span className="bg-grey-2">Recent Post</span></h3>
                         </div>
                         <div className="right-btn">
-                            <Link href="/blog-layout-1" className="default-btn">See More</Link>
+                            <Link href="/business" className="default-btn">See More</Link>
                         </div>
                     </div>
                     <div className="row">

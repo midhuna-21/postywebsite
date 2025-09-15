@@ -9,10 +9,10 @@ export default function HeroPost3({ data }) {
                 <div className="container">
                     <div className="top-area mb-40 title-border">
                         <div className="section-heading">
-                            <h3 className="section-title"><span className="bg-grey-2">Travel</span></h3>
+                            <h3 className="section-title"><span className="bg-grey-2">Investing</span></h3>
                         </div>
                         <div className="right-btn">
-                            <Link href="/blog-layout-1" className="default-btn">See More</Link>
+                            <Link href="/investing" className="default-btn">See More</Link>
                         </div>
                     </div>
                     <div className="post-area-wrap wrap-2">

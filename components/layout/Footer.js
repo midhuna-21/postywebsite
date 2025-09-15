@@ -1,4 +1,9 @@
+import Image from "next/image";
 import Link from "next/link"
+import businessData from '../../public/data/business.json';
+import usData from '../../public/data/us.json';
+import innovationData from '../../public/data/innovation.json';
+import { logo } from '../../public/images/pressorahub-black-logo.webp'
 
 export default function Footer() {
     return (
@@ -12,14 +17,12 @@ export default function Footer() {
                                     <h3 className="footer-header">About Us</h3>
                                     <div className="footer-content">
                                         <p className="desc">
-                                            Lorem ipsum dolo consectetur the a adipiscing Lobortis mattis neque any
-                                            adipiscing the nisl. dolo consectetur the a adipiscing.
-                                        </p>
+                                            PressoraHub brings you the latest news, breaking stories, and in-depth analysis from around the world.</p>
                                         <ul className="contact-list">
-                                            <li>
+                                            {/* <li>
                                                 Email Us: <Link href="/mailto:infouemail@gmail.com">infouemail@gmail.com</Link>
                                             </li>
-                                            <li>Contact: <Link href="/tel:+5-784-8894-678">+5-784-8894-678</Link></li>
+                                            <li>Contact: <Link href="/tel:+5-784-8894-678">+5-784-8894-678</Link></li> */}
                                             <li>
                                                 <ul className="footer-social">
                                                     <li>
@@ -49,31 +52,64 @@ export default function Footer() {
                                     <div className="footer-content">
                                         <ul className="footer-post-list">
                                             <li>
-                                                <Link href="/single-post-1"><img src="/assets/img/images/footer-post-1.jpg" alt="post" /></Link>
+                                                <Link title={businessData[0].slug}
+                                                    href={`/${businessData[0].category}/${businessData[0].slug}`}>
+                                                    <Image
+                                                        src={businessData[0].image}
+                                                        alt={businessData[0].slug}
+                                                        width={350}
+                                                        height={100}
+                                                        priority
+                                                    />
+
+                                                </Link>
                                                 <h4 className="post-title">
-                                                    <Link href="/single-post-1">The Season Courses and item Salads wow!
-                                                        <span>July 29, 2024</span></Link>
+                                                    <Link title={businessData[0].slug}
+                                                        href={`/${businessData[0].category}/${businessData[0].slug}`}>{businessData[0].title}
+                                                        <span>{businessData[0].date}</span></Link>
                                                 </h4>
                                             </li>
                                             <li>
-                                                <Link href="/single-post-1"><img src="/assets/img/images/footer-post-2.jpg" alt="post" /></Link>
+                                                <Link title={usData[0].slug}
+                                                    href={`/${usData[0].category}/${usData[0].slug}`}>
+                                                    {/* <img src="/assets/img/images/footer-post-2.jpg" alt="post" /> */}
+                                                    <Image
+                                                        src={usData[0].image}
+                                                        alt={usData[0].slug}
+                                                        width={350}
+                                                        height={100}
+                                                        priority
+                                                    />
+                                                </Link>
                                                 <h4 className="post-title">
-                                                    <Link href="/single-post-1">The Season Courses and item Salads wow!
-                                                        <span>July 29, 2024</span></Link>
+                                                    <Link title={usData[0].slug}
+                                                        href={`/${usData[0].category}/${usData[0].slug}`}>{usData[0].title}
+                                                        <span>{usData[0].date}</span></Link>
                                                 </h4>
                                             </li>
                                             <li>
-                                                <Link href="/single-post-1"><img src="/assets/img/images/footer-post-3.jpg" alt="post" /></Link>
+                                                <Link title={innovationData[0].slug}
+                                                    href={`/${innovationData[0].category}/${innovationData[0].slug}`}>
+                                                    {/* <img src="/assets/img/images/footer-post-3.jpg" alt="post" /> */}
+                                                    <Image
+                                                        src={innovationData[0].image}
+                                                        alt={innovationData[0].slug}
+                                                        width={350}
+                                                        height={100}
+                                                        priority
+                                                    />
+                                                </Link>
                                                 <h4 className="post-title">
-                                                    <Link href="/single-post-1">The Season Courses and item Salads wow!
-                                                        <span>July 29, 2024</span></Link>
+                                                    <Link title={innovationData[0].slug}
+                                                        href={`/${innovationData[0].category}/${innovationData[0].slug}`}>{innovationData[0].title}
+                                                        <span>{innovationData[0].date}</span></Link>
                                                 </h4>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-6">
+                            {/* <div className="col-lg-4 col-md-6">
                                 <div className="footer-item">
                                     <h3 className="footer-header">Top Comment</h3>
                                     <div className="footer-content">
@@ -117,7 +153,7 @@ export default function Footer() {
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -126,14 +162,26 @@ export default function Footer() {
                     <div className="container">
                         <div className="footer-bottom-wrap">
                             <div className="footer-logo">
-                                <Link href="/"><img src="/assets/img/logo/logo-light.png" alt="logo" /></Link>
+                                <Link href="/">
+                                    {/* <img src="/images/pressorahub-black-logo.webp" alt="logo" /> */}
+                                    <Image
+                                        //   className="logo-dark"
+                                        src="/images/pressorahub-black-logo.webp"
+                                        alt="PressoraHub Logo"
+                                        width={400}
+                                        height={40}
+                                        priority
+                                    />
+
+                                </Link>
                             </div>
                             <ul className="footer-menu-list">
-                                <li><Link href="/index-2">Home</Link></li>
-                                <li><Link href="/video-playlist-1">Features</Link></li>
-                                <li><Link href="/blog-default">Categories</Link></li>
-                                <li><Link href="/blog-layout-1">Design</Link></li>
-                                <li><Link href="/contact">Contact</Link></li>
+                                <li><Link href="/">Home</Link></li>
+                                <li><Link href="#contact">Contact</Link></li>
+                                <li><Link href="#">OUR TEAM</Link></li>
+                                <li><Link href="#">EDITORIAL POLICY</Link></li>
+                                <li><Link href="#">TERMS AND CONDITIONS</Link></li>
+
                             </ul>
                         </div>
                     </div>
@@ -142,13 +190,13 @@ export default function Footer() {
                 <div className="copyright-area">
                     <div className="container">
                         <div className="copyright-wrap">
-                            <p><span>Posty </span> {new Date().getFullYear()}. All Rights Reserved.</p>
-                            <ul className="list">
+                            <p><span>pressorahub</span> {new Date().getFullYear()}. All Rights Reserved.</p>
+                            {/* <ul className="list">
                                 <li><Link href="/contact">.Contact</Link></li>
                                 <li><Link href="/blog-default">.Blog</Link></li>
                                 <li><Link href="/contact">.Complaint</Link></li>
                                 <li><Link href="/contact">.Advertise</Link></li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
                 </div>

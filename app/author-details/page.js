@@ -1,5 +1,5 @@
 
-import Layout from "@/components/layout/Layout"
+import Layout from "../../components/layout/Layout"
 import Link from "next/link"
 export default function AuthorDetails() {
 	return (
@@ -236,7 +236,7 @@ export default function AuthorDetails() {
 											Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus
 											rutrum tellus eget ultrices pretium.
 										</p>
-										<Link href="/author-details" className="default-btn">About Me</Link>
+										<Link href="#" className="default-btn">About Me</Link>
 									</div>
 									<div className="trending-post-wrap">
 										<div className="section-heading mb-30">
