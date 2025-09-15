@@ -4,6 +4,36 @@ import image from '../../public/images/julio-herrera-velutini.webp';
 import Headline from '../sections/Headline';
 import CommentForm from '../sections/CommentForm';
 import SubscribeSection from '../sections/SubscribeSection';
+import FAQ from '../../components/sections/FAQ';
+
+
+const faqs = [
+  {
+    question: "What is PressoraHub?",
+    answer:
+      "PressoraHub is a trusted news platform delivering timely and accurate updates on business, innovation, investing, enterprise, and US news.",
+  },
+  {
+    question: "How often is the news updated?",
+    answer:
+      "Our news stories are updated in real-time to ensure you always have the latest information at your fingertips.",
+  },
+  {
+    question: "Which categories of news does PressoraHub focus on?",
+    answer:
+      "We focus on five key categories: Business, Investing, Innovation, Enterprise, and US news.",
+  },
+  {
+    question: "Does PressoraHub provide global coverage or only US-focused news?",
+    answer:
+      "While we highlight US news as a core category, PressoraHub also covers global updates in business, investing, and innovation to give readers a wider perspective.",
+  },
+  {
+    question: "How reliable is the information on PressoraHub?",
+    answer:
+      "All our articles are carefully curated from credible sources and undergo editorial checks to ensure accuracy and trustworthiness.",
+  },
+];
 
 export default function ClientPage({ otherArticles }) {
     console.log(otherArticles, 'othere aricle')
@@ -260,6 +290,8 @@ export default function ClientPage({ otherArticles }) {
                                     )}
                                 </ul>
                             </div>
+                      <FAQ faqs={faqs} />
+
                         </div>
                     </div>
                 </div>
