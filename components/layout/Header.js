@@ -20,9 +20,9 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 									<li><Link href="/single-post-1">Latest News</Link></li>
 								</ul>
 							</div>
-							<div className="top-bar-right">
+							{/* <div className="top-bar-right">
 								<span className="date"><i className="las la-calendar" />Saturday , 20 May 2024</span>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

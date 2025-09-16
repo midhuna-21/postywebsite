@@ -165,12 +165,19 @@ export default function EditorBlog1({ data }) {
                             </div>
                             <div className="post-author-box text-center">
                                 <div className="bg" />
-                                <img src="/assets/img/post/post-author.png" alt="post" />
-                                <h3 className="author">Hello, I'm James</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus
-                                    rutrum tellus eget ultrices pretium.
-                                </p>
+                                <div>
+                                    <Image
+                                        src="/images/daniel-ruiz.webp"
+                                        alt="Daniel Ruiz"
+                                        width={400}
+                                        height={400}
+                                        className="rounded-lg object-cover"
+                                    />
+                                    <h3 className="author">Hello, I'm Daniel Ruiz</h3>
+                                    <p>
+                                      Sharing timely stories and perspectives on business, culture, and the world around us.
+                                    </p>
+                                </div>
                                 <Link href="#" className="default-btn">About Me</Link>
                             </div>
                         </div>

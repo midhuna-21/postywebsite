@@ -7,7 +7,7 @@
     --dark-grey-1: #aeaeae;
 
 }
-
+       
 [data-theme="dark"] body {
     background-color: var(--theme-bg-dark);
 }
@@ -189,7 +189,7 @@
 }
 
 [data-theme="dark"] .subscribe-content .title {
-    color: var(--white-color);
+    color: var(--white-color);  
 }
 
 [data-theme="dark"] .hero-post-mid .post-card.card-2 {
@@ -241,7 +241,7 @@
 [data-theme="dark"] .hero-item.item-4 {
     background-color: var(--theme-bg-dark-2);
 }
-
+/* ////////////////////////// */
 
 [data-theme="dark"] .promo-wrap {
     border: none;

@@ -1,9 +1,0 @@
-{
-  "/_not-found/page": "/_not-found",
-  "/about/page": "/about",
-  "/contact/page": "/contact",
-  "/author-details/page": "/author-details",
-  "/page": "/",
-  "/[category]/page": "/[category]",
-  "/[category]/[slug]/page": "/[category]/[slug]"
-}

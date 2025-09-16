@@ -1,6 +1,7 @@
 "use client"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Image from "next/image";
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -18,37 +19,44 @@ const swiperOptions = {
         reverseDirection: true,
         disableOnInteraction: false,
     },
-    // grabcursor: true,
     speed: 400,
     effect: 'slide',
-}
-    export default function News({data}) {
+};
+
+export default function News({ data }) {
     return (
-        <>
-            <section className="news-area">
-                <div className="container">
-                    <div className="news-carousel swiper">
-                        <Swiper {...swiperOptions} className="swiper-wrapper">
-                            <SwiperSlide>
+        <section className="news-area">
+            <div className="container">
+                <div className="news-carousel swiper">
+                    <Swiper {...swiperOptions} className="swiper-wrapper">
+
+                        {data?.map((item, index) => (
+                            <SwiperSlide key={index}>
                                 <div className="hero-text">
-                                    <span className="news"><img src="/assets/img/images/news-icon.png" alt="icon" />Top News</span>
-                                    <span>{data[0].title}</span>
+                                    <span className="news">
+                                        <Image
+                                            src="/assets/img/images/news-icon.png"
+                                            alt="icon"
+                                            width={20}
+                                            height={20}
+                                        />
+                                        Top News
+                                    </span>
+                                    <span>{item.title}</span>
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="hero-text">
-                                    <span className="news"><img src="/assets/img/images/news-icon.png" alt="icon" />Top News</span>
-                                    <span>{data[1].title}</span>
-                                </div>  
-                            </SwiperSlide>
-                        </Swiper>
-                        <div className="swiper-arrow">
-                            <div className="swiper-nav swiper-next"><i className="las la-angle-left" /></div>
-                            <div className="swiper-nav swiper-prev"><i className="las la-angle-right" /></div>
+                        ))}
+                    </Swiper>
+                    <div className="swiper-arrow">
+                        <div className="swiper-nav swiper-next">
+                            <i className="las la-angle-left" />
+                        </div>
+                        <div className="swiper-nav swiper-prev">
+                            <i className="las la-angle-right" />
                         </div>
                     </div>
                 </div>
-            </section>
-        </>
-    )
+            </div>
+        </section>
+    );
 }

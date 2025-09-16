@@ -52,11 +52,11 @@ export default function Footer() {
                                     <div className="footer-content">
                                         <ul className="footer-post-list">
                                             <li>
-                                                <Link title={businessData[0].slug}
-                                                    href={`/${businessData[0].category}/${businessData[0].slug}`}>
+                                                <Link title={businessData[3].slug}
+                                                    href={`/${businessData[3].category}/${businessData[3].slug}`}>
                                                     <Image
-                                                        src={businessData[0].image}
-                                                        alt={businessData[0].slug}
+                                                        src={businessData[3].image}
+                                                        alt={businessData[3].slug}
                                                         width={350}
                                                         height={100}
                                                         priority
@@ -64,9 +64,9 @@ export default function Footer() {
 
                                                 </Link>
                                                 <h4 className="post-title">
-                                                    <Link title={businessData[0].slug}
-                                                        href={`/${businessData[0].category}/${businessData[0].slug}`}>{businessData[0].title}
-                                                        <span>{businessData[0].date}</span></Link>
+                                                    <Link title={businessData[3].slug}
+                                                        href={`/${businessData[3].category}/${businessData[3].slug}`}>{businessData[3].title}
+                                                        <span>{businessData[3].date}</span></Link>
                                                 </h4>
                                             </li>
                                             <li>
@@ -74,17 +74,17 @@ export default function Footer() {
                                                     href={`/${usData[0].category}/${usData[0].slug}`}>
                                                     {/* <img src="/assets/img/images/footer-post-2.jpg" alt="post" /> */}
                                                     <Image
-                                                        src={usData[0].image}
-                                                        alt={usData[0].slug}
+                                                        src={usData[6].image}
+                                                        alt={usData[6].slug}
                                                         width={350}
                                                         height={100}
                                                         priority
                                                     />
                                                 </Link>
                                                 <h4 className="post-title">
-                                                    <Link title={usData[0].slug}
-                                                        href={`/${usData[0].category}/${usData[0].slug}`}>{usData[0].title}
-                                                        <span>{usData[0].date}</span></Link>
+                                                    <Link title={usData[6].slug}
+                                                        href={`/${usData[6].category}/${usData[6].slug}`}>{usData[6].title}
+                                                        <span>{usData[6].date}</span></Link>
                                                 </h4>
                                             </li>
                                             <li>
@@ -92,17 +92,17 @@ export default function Footer() {
                                                     href={`/${innovationData[0].category}/${innovationData[0].slug}`}>
                                                     {/* <img src="/assets/img/images/footer-post-3.jpg" alt="post" /> */}
                                                     <Image
-                                                        src={innovationData[0].image}
-                                                        alt={innovationData[0].slug}
+                                                        src={innovationData[1].image}
+                                                        alt={innovationData[1].slug}
                                                         width={350}
                                                         height={100}
                                                         priority
                                                     />
                                                 </Link>
                                                 <h4 className="post-title">
-                                                    <Link title={innovationData[0].slug}
-                                                        href={`/${innovationData[0].category}/${innovationData[0].slug}`}>{innovationData[0].title}
-                                                        <span>{innovationData[0].date}</span></Link>
+                                                    <Link title={innovationData[1].slug}
+                                                        href={`/${innovationData[1].category}/${innovationData[1].slug}`}>{innovationData[1].title}
+                                                        <span>{innovationData[1].date}</span></Link>
                                                 </h4>
                                             </li>
                                         </ul>

@@ -1,6 +1,7 @@
 
 import Link from 'next/link'
 import Image from "next/image";
+import CategoriesList from '../../components/sections/CategoryList'
 
 export default function NewsPost1({ data }) {
     return (
@@ -307,55 +308,7 @@ export default function NewsPost1({ data }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="categorie-wrap">
-                                <div className="section-heading mb-30">
-                                    <h3 className="section-title title-border"><span>Categories</span></h3>
-                                </div>
-                                <ul className="categorie-list">
-                                    <li>
-                                        <Link href="/business">
-                                            <h4 className="list-title">business
-                                                {/* <span>(15)</span> */}
-                                            </h4>
-                                            <i className="las la-arrow-right" />
-                                        </Link>
-                                        </li>
-                                     
-                                    <li>
-                                        <Link href="/investing">
-                                            <h4 className="list-title">Investing
-                                                {/* <span>(29)</span> */}
-                                            </h4><i className="las la-arrow-right" />
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/enterprise">
-                                            <h4 className="list-title">Enterprise
-                                                {/* <span>(17)</span> */}
-                                            </h4><i className="las la-arrow-right" />
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/innovation">
-                                            <h4 className="list-title">Innovation
-                                                {/* <span>(21)</span> */}
-                                            </h4><i className="las la-arrow-right" />
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/us">
-                                            <h4 className="list-title">U.S
-                                                {/* <span>(11)</span> */}
-                                            </h4><i className="las la-arrow-right" />
-                                        </Link>
-                                    </li>
-                                    {/* <li>
-                                        <Link href="/single-post-1">
-                                            <h4 className="list-title">{data[0].category}<span>(30)</span></h4><i className="las la-arrow-right" />
-                                        </Link>
-                                    </li> */}
-                                </ul>
-                            </div>
+                        <CategoriesList />
                         </div>
                     </div>
                 </div>
