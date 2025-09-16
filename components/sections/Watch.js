@@ -53,7 +53,7 @@ export default function Watch({ data }) {
 										</h3>
 										<ul className="post-list">
 											<li className="author">
-												by <span><Link href="/author-details">David Bin</Link></span>
+												by <span><Link href="#">{data[0].author}</Link></span>
 											</li>
 											<li className="date">{data[0].date}</li>
 											{/* <li><i className="las la-comments" />5</li> */}
@@ -78,7 +78,7 @@ export default function Watch({ data }) {
 								<div className="post-text">
 									<h3 className="header"><span /><span>What to Watch</span><span /></h3>
 								</div>
-								
+
 								<div className="post-card">
 									<div className="post-content">
 										<Link title={data[1].slug}
@@ -89,7 +89,7 @@ export default function Watch({ data }) {
 										</h3>
 										<ul className="post-list">
 											<li className="author">
-												by <span><Link href="#">David Bin</Link></span>
+												by <span>{data[1].author}</span>
 											</li>
 											<li className="date">{data[1].date}</li>
 											{/* <li><i className="las la-comments" />5</li> */}
@@ -128,7 +128,7 @@ export default function Watch({ data }) {
 										</h3>
 										<ul className="post-list">
 											<li className="author">
-												by <span><Link href="#">David Bin</Link></span>
+												by <span>{data[2].author}</span>
 											</li>
 											<li className="date">{data[2].date}</li>
 											{/* <li><i className="las la-comments" />5</li> */}
@@ -167,7 +167,7 @@ export default function Watch({ data }) {
 										</h3>
 										<ul className="post-list">
 											<li className="author">
-												by <span><Link href="#">David Bin</Link></span>
+												by <span>{data[3].author}</span>
 											</li>
 											<li className="date">{data[3].date}</li>
 											{/* <li><i className="las la-comments" />5</li> */}
@@ -192,146 +192,186 @@ export default function Watch({ data }) {
 							watchSlidesProgress={true}
 							modules={[FreeMode, Navigation, Thumbs]} className="swiper-wrapper">
 							<SwiperSlide>
-  <div className="carousel-thumb-post"  style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
->
-    <Image
-      src={data[4].image}
-      alt="trend"
-      width={500}
-      height={180}
-      style={{ width: "100%", height: "auto" }}
-    />
+								<div className="carousel-thumb-post" style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
+								>
+									<Image
+										src={data[4].image}
+										alt="trend"
+										width={500}
+										height={180}
+										style={{ width: "100%", height: "auto" }}
+									/>
 
-    {/* Text overlay at bottom, spanning full width */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: "0",
-        left: "0",
-        right: "0",
-        padding: "12px 16px",
-        color: "#fff",
-        fontWeight: "600",
-      }}
-    >
-      <h4 className="thumb-title" style={{ margin: 0 }}>
-        <Link
-          title={data[4].slug}
-          href={`/${data[4].category}/${data[4].slug}`}
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          {data[4].title}
-        </Link>
-      </h4>
-    </div>
-  </div>
-</SwiperSlide>
+									{/* Text overlay at bottom, spanning full width */}
+									<div
+										style={{
+											position: "absolute",
+											bottom: "0",
+											left: "0",
+											right: "0",
+											padding: "12px 16px",
+											color: "#fff",
+											fontWeight: "600",
+										}}
+									>
+										<h4 className="thumb-title" style={{ margin: 0 }}>
+											<Link
+												title={data[4].slug}
+												href={`/${data[4].category}/${data[4].slug}`}
+												style={{ color: "#fff", textDecoration: "none" }}
+											>
+												{data[4].title}
+											</Link>
+										</h4>
+									<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+  <li style={{ fontSize: "0.65rem", color: "white" }}>
+    by{" "}
+    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+      {data[4].author}
+    </span>
+    , <span style={{ fontSize: "0.65rem", color: "white" }}>{data[4].date}</span>
+  </li>
+</ul>
 
-								<SwiperSlide>
-  <div className="carousel-thumb-post"  style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
->
-    <Image
-      src={data[5].image}
-      alt="trend"
-      width={500}
-      height={180}
-      style={{ width: "100%", height: "auto" }}
-    />
+									</div>
+								</div>
+							</SwiperSlide>
 
-    {/* Text overlay at bottom, spanning full width */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: "0",
-        left: "0",
-        right: "0",
-        padding: "12px 16px",
-        color: "#fff",
-        fontWeight: "600",
-      }}
-    >
-      <h4 className="thumb-title" style={{ margin: 0 }}>
-        <Link
-          title={data[5].slug}
-          href={`/${data[5].category}/${data[5].slug}`}
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          {data[5].title}
-        </Link>
-      </h4>
-    </div>
-  </div>
-</SwiperSlide>
-		<SwiperSlide>
-  <div className="carousel-thumb-post"  style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
->
-    <Image
-      src={data[6].image}
-      alt="trend"
-      width={500}
-      height={180}
-      style={{ width: "100%", height: "auto" }}
-    />
+							<SwiperSlide>
+								<div className="carousel-thumb-post" style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
+								>
+									<Image
+										src={data[5].image}
+										alt="trend"
+										width={500}
+										height={180}
+										style={{ width: "100%", height: "auto" }}
+									/>
 
-    {/* Text overlay at bottom, spanning full width */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: "0",
-        left: "0",
-        right: "0",
-        padding: "12px 16px",
-        color: "#fff",
-        fontWeight: "600",
-      }}
-    >
-      <h4 className="thumb-title" style={{ margin: 0 }}>
-        <Link
-          title={data[6].slug}
-          href={`/${data[6].category}/${data[6].slug}`}
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          {data[6].title}
-        </Link>
-      </h4>
-    </div>
-  </div>
-</SwiperSlide>
-		<SwiperSlide>
-  <div className="carousel-thumb-post"  style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
->
-    <Image
-      src={data[7].image}
-      alt="trend"
-      width={500}
-      height={180}
-      style={{ width: "100%", height: "auto" }}
-    />
+									{/* Text overlay at bottom, spanning full width */}
+									<div
+										style={{
+											position: "absolute",
+											bottom: "0",
+											left: "0",
+											right: "0",
+											padding: "12px 16px",
+											color: "#fff",
+											fontWeight: "600",
+										}}
+									>
+										<h4 className="thumb-title" style={{ margin: 0 }}>
+											<Link
+												title={data[5].slug}
+												href={`/${data[5].category}/${data[5].slug}`}
+												style={{ color: "#fff", textDecoration: "none" }}
+											>
+												{data[5].title}
+											</Link>
+										</h4>
+										<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+  <li style={{ fontSize: "0.65rem", color: "white" }}>
+    by{" "}
+    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+      {data[5].author}
+    </span>
+    , <span style={{ fontSize: "0.65rem", color: "white" }}>{data[5].date}</span>
+  </li>
+</ul>
 
-    {/* Text overlay at bottom, spanning full width */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: "0",
-        left: "0",
-        right: "0",
-        padding: "12px 16px",
-        color: "#fff",
-        fontWeight: "600",
-      }}
-    >
-      <h4 className="thumb-title" style={{ margin: 0 }}>
-        <Link
-          title={data[7].slug}
-          href={`/${data[7].category}/${data[7].slug}`}
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          {data[7].title}
-        </Link>
-      </h4>
-    </div>
-  </div>
-</SwiperSlide>
+									</div>
+								</div>
+							</SwiperSlide>
+							<SwiperSlide>
+								<div className="carousel-thumb-post" style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
+								>
+									<Image
+										src={data[6].image}
+										alt="trend"
+										width={500}
+										height={180}
+										style={{ width: "100%", height: "auto" }}
+									/>
+
+									{/* Text overlay at bottom, spanning full width */}
+									<div
+										style={{
+											position: "absolute",
+											bottom: "0",
+											left: "0",
+											right: "0",
+											padding: "12px 16px",
+											color: "#fff",
+											fontWeight: "600",
+										}}
+									>
+										<h4 className="thumb-title" style={{ margin: 0 }}>
+											<Link
+												title={data[6].slug}
+												href={`/${data[6].category}/${data[6].slug}`}
+												style={{ color: "#fff", textDecoration: "none" }}
+											>
+												{data[6].title}
+											</Link>
+										</h4>
+										<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+  <li style={{ fontSize: "0.65rem", color: "white" }}>
+    by{" "}
+    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+      {data[6].author}
+    </span>
+    , <span style={{ fontSize: "0.65rem", color: "white" }}>{data[6].date}</span>
+  </li>
+</ul>
+
+									</div>
+								</div>
+							</SwiperSlide>
+							<SwiperSlide>
+								<div className="carousel-thumb-post" style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
+								>
+									<Image
+										src={data[7].image}
+										alt="trend"
+										width={500}
+										height={180}
+										style={{ width: "100%", height: "auto" }}
+									/>
+
+									{/* Text overlay at bottom, spanning full width */}
+									<div
+										style={{
+											position: "absolute",
+											bottom: "0",
+											left: "0",
+											right: "0",
+											padding: "12px 16px",
+											color: "#fff",
+											fontWeight: "600",
+										}}
+									>
+										<h4 className="thumb-title" style={{ margin: 0 }}>
+											<Link
+												title={data[7].slug}
+												href={`/${data[7].category}/${data[7].slug}`}
+												style={{ color: "#fff", textDecoration: "none" }}
+											>
+												{data[7].title}
+											</Link>
+										</h4>
+										<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+  <li style={{ fontSize: "0.65rem", color: "white" }}>
+    by{" "}
+    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+      {data[7].author}
+    </span>
+    , <span style={{ fontSize: "0.65rem", color: "white" }}>{data[7].date}</span>
+  </li>
+</ul>
+
+									</div>
+								</div>
+							</SwiperSlide>
 						</Swiper>
 					</div>
 				</div>

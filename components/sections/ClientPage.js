@@ -53,7 +53,7 @@ export default function ClientPage({ otherArticles }) {
                                     <li className="author">
                                         by{" "}
                                         <span>
-                                            <Link href="/#">David Bin</Link>
+                                            David Miller
                                         </span>
                                     </li>
                                     <li className="date">September 13, 2025</li>

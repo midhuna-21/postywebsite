@@ -19,7 +19,7 @@ export default function DetailContent({ article, otherArticles }) {
                                 <h3 className="title">{article.title}</h3>
                                 <ul className="post-list">
                                     <li className="author">
-                                        by <span>David Bin</span>
+                                        by <span>{article.author}</span>
                                     </li>
                                     <li className="date">{article.date}</li>
                                 </ul>
@@ -103,71 +103,12 @@ export default function DetailContent({ article, otherArticles }) {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className="comment-area">
-                                                    <h3 className="layout-title">Comments</h3>
-                                                    <div className="comment-item">
-                                                        <div className="comment-thumb">
-                                                            <img src="/assets/img/blog/author-1.png" alt="author" />
-                                                        </div>
-                                                        <div className="comment-info-wrap">
-                                                            <div className="comment-info">
-                                                                <h3 className="author">David Martin <span>18.02.2024</span></h3>
-                                                                <Link href="/#" className="reply">Reply</Link>
-                                                            </div>
-                                                            <p>
-                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                                                doloremque laudantium, illo inventore veritatis et quasi architecto beatae
-                                                                vitae dicta sunt explicabo.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="comment-item item-2">
-                                                        <div className="comment-thumb">
-                                                            <img src="/assets/img/blog/author-2.png" alt="author" />
-                                                        </div>
-                                                        <div className="comment-info-wrap">
-                                                            <div className="comment-info">
-                                                                <h3 className="author">Maria Lapoti <span>18.02.2024</span></h3>
-                                                                <Link href="/#" className="reply">Reply</Link>
-                                                            </div>
-                                                            <p>
-                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                                                doloremque laudantium, illo inventore veritatis et quasi architecto beatae
-                                                                vitae dicta sunt explicabo.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="comment-item">
-                                                        <div className="comment-thumb">
-                                                            <img src="/assets/img/blog/author-3.png" alt="author" />
-                                                        </div>
-                                                        <div className="comment-info-wrap">
-                                                            <div className="comment-info">
-                                                                <h3 className="author">Martin Luis <span>18.02.2024</span></h3>
-                                                                <Link href="/#" className="reply">Reply</Link>
-                                                            </div>
-                                                            <p>
-                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                                                doloremque laudantium, illo inventore veritatis et quasi architecto beatae
-                                                                vitae dicta sunt explicabo.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div> */}
+                            
                                 <CommentForm />
                             </div>
                         </div>
                         <div className="col-lg-4">
-                            {/* <div className="post-author-box text-center mb-40">
-                                                <div className="bg" />
-                                                <img src="/assets/img/post/post-author.png" alt="post" />
-                                                <h3 className="author">Hello, I'm James</h3>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus
-                                                    rutrum tellus eget ultrices pretium.
-                                                </p>
-                                                <Link href="/#" className="default-btn">About Me</Link>
-                                            </div> */}
+                          
                             <div className="trending-post-wrap">
                                 <div className="section-heading mb-30">
                                     <h3 className="section-title title-border"><span>Trending Posts</span></h3>

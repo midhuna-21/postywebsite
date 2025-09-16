@@ -1,4 +1,3 @@
-
 import Link from 'next/link'
 import Image from "next/image";
 
@@ -34,14 +33,16 @@ export default function EditorBlog1({ data }) {
                                             href={`/${data[0].category}/${data[0].slug}`}>{data[0].title}</Link>
                                     </h3>
                                     <p>{data[0].shortdescription}</p>
-                                    <ul className="post-list">
-                                        <li className="author">
-                                            by <span><Link title={data[0].slug}
-                                                href={`/${data[0].category}/${data[0].slug}`}>David Bin</Link></span>
+                                    <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                        <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                            by{" "}
+                                            <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+                                                {data[0].author}
+                                            </span>
+                                            , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[0].date}</span>
                                         </li>
-                                        <li className="date">{data[0].date}</li>
-                                        <li><i className="las la-comments" />5</li>
                                     </ul>
+
                                 </div>
                             </div>
                             <div className="editor-post-wrap">
@@ -66,12 +67,16 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[1].slug}
                                                 href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
                                         </h3>
-                                        <ul className="post-list">
-                                            <li className="author">
-                                                by <span><Link href="#">David Bin</Link></span>
-                                            </li>
-                                            <li className="date">July 29, 2024</li>
-                                        </ul>
+                                       <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+  <li style={{ fontSize: "0.65rem", color: "#333" }}>
+    by{" "}
+    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+      {data[1].author}
+    </span>
+    , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
+  </li>
+</ul>
+
                                     </div>
                                 </div>
                                 <div className="post-card editor-post">
@@ -94,12 +99,16 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[2].slug}
                                                 href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                         </h3>
-                                        <ul className="post-list">
-                                            <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
-                                            </li>
-                                            <li className="date">July 29, 2024</li>
-                                        </ul>
+                                      <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+  <li style={{ fontSize: "0.65rem", color: "#333" }}>
+    by{" "}
+    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+      {data[2].author}
+    </span>
+    , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
+  </li>
+</ul>
+
                                     </div>
                                 </div>
                                 <div className="post-card editor-post">
@@ -123,12 +132,16 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[3].slug}
                                                 href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
                                         </h3>
-                                        <ul className="post-list">
-                                            <li className="author">
-                                                by <span><Link href="3">David Bin</Link></span>
-                                            </li>
-                                            <li className="date">July 29, 2024</li>
-                                        </ul>
+                                       <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+  <li style={{ fontSize: "0.65rem", color: "#333" }}>
+    by{" "}
+    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+      {data[3].author}
+    </span>
+    , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
+  </li>
+</ul>
+
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +188,7 @@ export default function EditorBlog1({ data }) {
                                     />
                                     <h3 className="author">Hello, I'm Daniel Ruiz</h3>
                                     <p>
-                                      Sharing timely stories and perspectives on business, culture, and the world around us.
+                                        Sharing timely stories and perspectives on business, culture, and the world around us.
                                     </p>
                                 </div>
                                 <Link href="#" className="default-btn">About Me</Link>

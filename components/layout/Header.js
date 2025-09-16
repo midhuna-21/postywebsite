@@ -54,24 +54,27 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 										className="logo-dark"
 										src="/images/pressorahub-black-logo.webp"
 										alt="PressoraHub Logo Dark"
-										width={350} 
-										height={70} 
+										width={350}
+										height={70}
 										priority
+										style={{ width: "100%", maxWidth: "350px", height: "auto" }}
 									/>
 									{/* Light Logo */}
 									<Image
 										className="logo-light"
 										src="/images/pressorahub-logo.webp"
 										alt="PressoraHub Logo Light"
-										width={350} 
-										height={70} 
+										width={350}
+										height={70}
 										priority
+										style={{ width: "100%", maxWidth: "350px", height: "auto" }}
 									/>
 								</Link>
 							</div>
+
 							<div className="mid-header-right">
 								{/* <Link href="/contact" className="default-btn header-btn">Subscribe</Link> */}
-								<Link href="/author-details" className="user"><i className="las la-user" /></Link>
+								<Link href="#" className="user"><i className="las la-user" /></Link>
 							</div>
 						</div>
 					</div>

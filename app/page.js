@@ -103,9 +103,9 @@ export default function Home() {
 
 				<NewsPost1 data={[enterpriseData[8], enterpriseData[9], businessData[9], innovationData[21], usData[11], businessData[10], enterpriseData[11], usData[13], innovationData[4]]} />
 
-				<Watch data={[enterpriseData[4], enterpriseData[12], enterpriseData[7], enterpriseData[15], enterpriseData[19], enterpriseData[18], enterpriseData[14], enterpriseData[5]]} />
+				<Watch data={[enterpriseData[4], enterpriseData[12], enterpriseData[7], enterpriseData[10], enterpriseData[19], enterpriseData[15], enterpriseData[14], enterpriseData[5]]} />
 
-				<FashionBlog1 data={[enterpriseData[13], usData[18], businessData[16], innovationData[18], businessData[15], usData[14]]} />
+				<FashionBlog1 data={[enterpriseData[13], usData[18], businessData[17], innovationData[18], businessData[15], usData[14]]} />
 				{/* <Cta2 /> */}
 				<HeroPost3 data={[investingData[7], investingData[2], investingData[9], investingData[10], investingData[11], investingData[12], investingData[13], investingData[14], investingData[15], investingData[16], investingData[17]]} />
 				{/* <Subscribe1 /> */}

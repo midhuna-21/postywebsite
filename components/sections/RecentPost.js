@@ -47,15 +47,13 @@ export default function RecentPost({ data }) {
                                                         {item.title}
                                                     </Link>
                                                 </h3>
-                                                <ul className="post-list">
-                                                    <li className="author">
+                                                <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                                    <li style={{ fontSize: "0.65rem", color: "#333" }}>
                                                         by{" "}
-                                                        <span>
-                                                            <Link href="#">David Bin</Link>
-                                                        </span>
+
+                                                        {item.author}
+                                                        , <span style={{ fontSize: "0.65rem", color: "#666" }}>{item.date}</span>
                                                     </li>
-                                                    <li className="date">{item.date}</li>
-                                                    {/* <li><i className="las la-comments" />5</li> */}
                                                 </ul>
                                             </div>
                                         </div>
@@ -95,15 +93,13 @@ export default function RecentPost({ data }) {
                                                         {item.title}
                                                     </Link>
                                                 </h3>
-                                                <ul className="post-list">
-                                                    <li className="author">
+                                                <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                                    <li style={{ fontSize: "0.65rem", color: "#333" }}>
                                                         by{" "}
-                                                        <span>
-                                                            <Link href="#">David Bin</Link>
-                                                        </span>
+
+                                                        {item.author}
+                                                        , <span style={{ fontSize: "0.65rem", color: "#666" }}>{item.date}</span>
                                                     </li>
-                                                    <li className="date">{item.date}</li>
-                                                    {/* <li><i className="las la-comments" />5</li> */}
                                                 </ul>
                                             </div>
                                         </div>

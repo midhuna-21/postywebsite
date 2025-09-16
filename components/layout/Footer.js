@@ -84,7 +84,8 @@ export default function Footer() {
                                                 <h4 className="post-title">
                                                     <Link title={usData[6].slug}
                                                         href={`/${usData[6].category}/${usData[6].slug}`}>{usData[6].title}
-                                                        <span>{usData[6].date}</span></Link>
+                                                        <span>{usData[6].date}</span>
+                                                        </Link>
                                                 </h4>
                                             </li>
                                             <li>
@@ -120,7 +121,7 @@ export default function Footer() {
                                                 </div>
                                                 <div className="comment-content">
                                                     <h4 className="comment-author">
-                                                        <Link href="/author-details">David Bin</Link> <span>On</span>
+                                                        <Link href="#"> </Link> <span>On</span>
                                                     </h4>
                                                     <span className="comment">Navigation System Doesn Work in Read Space? We’ll
                                                         See</span>
@@ -132,7 +133,7 @@ export default function Footer() {
                                                 </div>
                                                 <div className="comment-content">
                                                     <h4 className="comment-author">
-                                                        <Link href="/author-details">David Bin</Link> <span>On</span>
+                                                        <Link href="#"> </Link> <span>On</span>
                                                     </h4>
                                                     <span className="comment">Navigation System Doesn Work in Read Space? We’ll
                                                         See</span>
@@ -144,7 +145,7 @@ export default function Footer() {
                                                 </div>
                                                 <div className="comment-content">
                                                     <h4 className="comment-author">
-                                                        <Link href="/author-details">David Bin</Link> <span>On</span>
+                                                        <Link href="#"> </Link> <span>On</span>
                                                     </h4>
                                                     <span className="comment">Navigation System Doesn Work in Read Space? We’ll
                                                         See</span>
@@ -164,14 +165,15 @@ export default function Footer() {
                             <div className="footer-logo">
                                 <Link href="/">
                                     {/* <img src="/images/pressorahub-black-logo.webp" alt="logo" /> */}
-                                    <Image
-                                        //   className="logo-dark"
-                                        src="/images/pressorahub-black-logo.webp"
-                                        alt="PressoraHub Logo"
-                                        width={400}
-                                        height={40}
-                                        priority
-                                    />
+                                  <Image
+  src="/images/pressorahub-black-logo.webp"
+  alt="PressoraHub Logo"
+  width={400}
+  height={40}
+  priority
+  style={{ width: "100%", maxWidth: "400px", height: "auto" }}
+/>
+
 
                                 </Link>
                             </div>
@@ -180,7 +182,7 @@ export default function Footer() {
                                 <li><Link href="#contact">Contact</Link></li>
                                 <li><Link href="#">OUR TEAM</Link></li>
                                 <li><Link href="#">EDITORIAL POLICY</Link></li>
-                                <li><Link href="#">TERMS AND CONDITIONS</Link></li>
+                                {/* <li><Link href="#">TERMS AND CONDITIONS</Link></li> */}
 
                             </ul>
                         </div>

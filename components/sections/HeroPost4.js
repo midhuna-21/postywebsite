@@ -19,7 +19,7 @@ export default function HeroPost4() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -37,7 +37,7 @@ export default function HeroPost4() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -58,7 +58,7 @@ export default function HeroPost4() {
                                     </p>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -79,7 +79,7 @@ export default function HeroPost4() {
                                     </h3>
                                     <ul className="post-list mb-20">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -104,7 +104,7 @@ export default function HeroPost4() {
                                             </h3>
                                             <ul className="post-list mb-20">
                                                 <li className="author">
-                                                    by <span><Link href="/author-details">David Bin</Link></span>
+                                                    by <span><Link href="#"> </Link></span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -116,7 +116,7 @@ export default function HeroPost4() {
                                             </h3>
                                             <ul className="post-list mb-20">
                                                 <li className="author">
-                                                    by <span><Link href="/author-details">David Bin</Link></span>
+                                                    by <span><Link href="#"> </Link></span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -136,7 +136,7 @@ export default function HeroPost4() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -154,7 +154,7 @@ export default function HeroPost4() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -175,7 +175,7 @@ export default function HeroPost4() {
                                     </p>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>

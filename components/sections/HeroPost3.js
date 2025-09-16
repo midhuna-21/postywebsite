@@ -36,12 +36,11 @@ export default function HeroPost3({ data }) {
                                     <Link title={data[0].slug}
 												href={`/${data[0].category}/${data[0].slug}`}>{data[0].title}</Link>
                                 </h3>
-                                <ul className="post-list">
+                                 <ul className="post-list">
                                     <li className="author">
-                                        by <span><Link href="#">David Bin</Link></span>
+                                        by <span><Link href="#">{data[0].author}</Link></span>
                                     </li>
                                     <li className="date">{data[0].date}</li>
-                                    {/* <li><i className="las la-comments" />5</li> */}
                                 </ul>
                             </div>
                             {/* /. post-card-content */}
@@ -68,12 +67,14 @@ export default function HeroPost3({ data }) {
                                             <Link title={data[1].slug}
 												href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
                                         </h3>
-                                        <ul className="post-list">
-                                            <li className="author">
-                                                by <span><Link href="#">David Bin</Link></span>
+                                         <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[1].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
                                             </li>
-                                            <li className="date">{data[1].date}</li>
-                                            {/* <li><i className="las la-comments" />5</li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -97,12 +98,14 @@ export default function HeroPost3({ data }) {
                                             <Link title={data[2].slug}
 												href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                         </h3>
-                                        <ul className="post-list">
-                                            <li className="author">
-                                                by <span><Link href="#">David Bin</Link></span>
+                                         <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[2].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
                                             </li>
-                                            <li className="date">{data[2].date}</li>
-                                            {/* <li><i className="las la-comments" />5</li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -128,12 +131,14 @@ export default function HeroPost3({ data }) {
                                             <Link title={data[3].slug}
 												href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
                                         </h3>
-                                        <ul className="post-list">
-                                            <li className="author">
-                                                by <span><Link href="#">David Bin</Link></span>
+                                         <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[3].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
                                             </li>
-                                            <li className="date">{data[3].date}</li>
-                                            {/* <li><i className="las la-comments" />5</li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -157,12 +162,14 @@ export default function HeroPost3({ data }) {
                                             <Link title={data[4].slug}
 												href={`/${data[4].category}/${data[4].slug}`}>{data[4].title}</Link>
                                         </h3>
-                                        <ul className="post-list">
-                                            <li className="author">
-                                                by <span><Link href="/#">David Bin</Link></span>
+                                         <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[4].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[4].date}</span>
                                             </li>
-                                            <li className="date">{data[4].date}</li>
-                                            {/* <li><i className="las la-comments" />5</li> */}
                                         </ul>
                                     </div>
                                 </div>

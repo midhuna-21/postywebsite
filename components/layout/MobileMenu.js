@@ -26,7 +26,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
 					<li className={isAccordion == 2 ? "dropdown_menu dropdown-open" : "dropdown_menu"}>
 						<Link href="/#">Features<span /></Link>
 						<ul style={{ display: `${isAccordion  == 2 ? "block" : "none"}` }}>
-							<li><Link href="/author-details">Author Details<span /></Link></li>
+							<li><Link href="#">Author Details<span /></Link></li>
 							<li><Link href="/video-playlist-1">Video Playlist 1<span /></Link></li>
 							<li><Link href="/video-playlist-2">Video Playlist 2<span /></Link></li>
 							<li><Link href="/video-playlist-3">Video Playlist 3<span /></Link></li>

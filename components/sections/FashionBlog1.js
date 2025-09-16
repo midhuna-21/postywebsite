@@ -36,13 +36,15 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[0].slug}
                                             href={`/${data[0].category}/${data[0].slug}`}>{data[0].title}</Link>
                                     </h3>
-                                    <ul className="post-list">
-                                        <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
-                                        </li>
-                                        <li className="date">{data[0].date}</li>
-                                        {/* <li><i className="las la-comments" />5</li> */}
-                                    </ul>
+                                     <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[0].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[0].date}</span>
+                                            </li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
@@ -67,13 +69,15 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[1].slug}
                                             href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
                                     </h3>
-                                    <ul className="post-list">
-                                        <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
-                                        </li>
-                                        <li className="date">{data[1].date}</li>
-                                        {/* <li><i className="las la-comments" />5</li> */}
-                                    </ul>
+                                   <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[1].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
+                                            </li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
@@ -98,13 +102,15 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[2].slug}
                                             href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                     </h3>
-                                    <ul className="post-list">
-                                        <li className="author">
-                                            by <span><Link href="#">David Bin</Link></span>
-                                        </li>
-                                        <li className="date">{data[2].date}</li>
-                                        {/* <li><i className="las la-comments" />5</li> */}
-                                    </ul>
+                                     <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[2].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
+                                            </li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +135,15 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[3].slug}
                                             href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
                                     </h3>
-                                    <span>{data[3].date}</span>
+                                  <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[3].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
+                                            </li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +167,15 @@ export default function FashionBlog1({ data }) {
                                             href={`/${data[4].category}/${data[4].slug}`}>{data[4].title}</Link>
                                     </h3>
 
-                                    <span>{data[4].date}</span>
+                                    <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[4].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[4].date}</span>
+                                            </li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +198,15 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[5].slug}
                                             href={`/${data[5].category}/${data[5].slug}`}>{data[5].title}</Link>
                                     </h3>
-                                    <span>{data[5].date}</span>
+                                     <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                              
+                                                   {data[5].author}
+                                                
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[5].date}</span>
+                                            </li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>

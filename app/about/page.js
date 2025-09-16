@@ -111,11 +111,11 @@ export default function About() {
 								<div className="col-lg-4 col-md-6">
 									<div className="team-item">
 										<div className="team-thumb">
-											<Link href="/author-details"><img src="/assets/img/images/team-1.jpg" alt="team" /></Link>
+											<Link href="/#"><img src="/assets/img/images/team-1.jpg" alt="team" /></Link>
 										</div>
 										<div className="team-content">
 											<h3 className="title">
-												<Link href="/author-details">David bin</Link><span>Creative Director</span>
+												<Link href="#"> </Link><span>Creative Director</span>
 											</h3>
 											<ul className="team-social">
 												<li>
@@ -137,11 +137,11 @@ export default function About() {
 								<div className="col-lg-4 col-md-6">
 									<div className="team-item">
 										<div className="team-thumb">
-											<Link href="/author-details"><img src="/assets/img/images/team-2.jpg" alt="team" /></Link>
+											<Link href="#"><img src="/assets/img/images/team-2.jpg" alt="team" /></Link>
 										</div>
 										<div className="team-content">
 											<h3 className="title">
-												<Link href="/author-details">Maria David</Link><span>Manager &amp; QC</span>
+												<Link href="#">Maria David</Link><span>Manager &amp; QC</span>
 											</h3>
 											<ul className="team-social">
 												<li>
@@ -163,11 +163,11 @@ export default function About() {
 								<div className="col-lg-4 col-md-6">
 									<div className="team-item">
 										<div className="team-thumb">
-											<Link href="/author-details"><img src="/assets/img/images/team-3.jpg" alt="team" /></Link>
+											<Link href="#"><img src="/assets/img/images/team-3.jpg" alt="team" /></Link>
 										</div>
 										<div className="team-content">
 											<h3 className="title">
-												<Link href="/author-details">Martin Bin</Link><span>Creative Director</span>
+												<Link href="#">Martin Bin</Link><span>Creative Director</span>
 											</h3>
 											<ul className="team-social">
 												<li>

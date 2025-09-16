@@ -24,7 +24,7 @@ export default function NewsPost2() {
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
+                                                by <span><Link href="#"> </Link></span>
                                             </li>
                                             <li className="date">July 29, 2024</li>
                                             <li><i className="las la-comments" />5</li>
@@ -48,7 +48,7 @@ export default function NewsPost2() {
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
+                                                by <span><Link href="#"> </Link></span>
                                             </li>
                                             <li className="date">July 29, 2024</li>
                                             <li><i className="las la-comments" />5</li>
@@ -72,7 +72,7 @@ export default function NewsPost2() {
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
+                                                by <span><Link href="#"> </Link></span>
                                             </li>
                                             <li className="date">July 29, 2024</li>
                                             <li><i className="las la-comments" />5</li>
@@ -95,7 +95,7 @@ export default function NewsPost2() {
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
+                                                by <span><Link href="#"> </Link></span>
                                             </li>
                                             <li className="date">July 29, 2024</li>
                                             <li><i className="las la-comments" />5</li>
@@ -119,7 +119,7 @@ export default function NewsPost2() {
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
+                                                by <span><Link href="#"> </Link></span>
                                             </li>
                                             <li className="date">July 29, 2024</li>
                                             <li><i className="las la-comments" />5</li>
@@ -143,7 +143,7 @@ export default function NewsPost2() {
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
+                                                by <span><Link href="#"> </Link></span>
                                             </li>
                                             <li className="date">July 29, 2024</li>
                                             <li><i className="las la-comments" />5</li>
@@ -167,7 +167,7 @@ export default function NewsPost2() {
                                         </h3>
                                         <ul className="post-list">
                                             <li className="author">
-                                                by <span><Link href="/author-details">David Bin</Link></span>
+                                                by <span><Link href="#"> </Link></span>
                                             </li>
                                             <li className="date">July 29, 2024</li>
                                             <li><i className="las la-comments" />5</li>
@@ -200,7 +200,7 @@ export default function NewsPost2() {
                                     Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus
                                     rutrum tellus eget ultrices pretium.
                                 </p>
-                                <Link href="/author-details" className="default-btn">About Me</Link>
+                                <Link href="#" className="default-btn">About Me</Link>
                             </div>
                             <div className="trending-post-wrap">
                                 <div className="section-heading mb-30">

@@ -19,7 +19,7 @@ export default function AddClassBody() {
 				'/index-3': 'header-2',
 				'/index-4': 'header-2',
 				'/index-5': 'header-3',
-				'/author-details': 'header-1',
+				'#': 'header-1',
 				'/video-playlist-1': 'header-1',
 				'/video-playlist-2': 'header-1',
 				'/video-playlist-3': 'header-1',

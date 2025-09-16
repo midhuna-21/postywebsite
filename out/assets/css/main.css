@@ -2293,7 +2293,7 @@ header-1 .site-logo img {
 }
 
 .cta-wrap .cta-bg {
-    background-image: url(../img/bg-img/cta-bg.jpg);
+    /* background-image: url(../img/bg-img/cta-bg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2385,7 +2385,7 @@ header-1 .site-logo img {
 }
 
 .cta-2 .cta-wrap .cta-bg {
-    background-image: url(../img/bg-img/cta-bg-2.jpg);
+    /* background-image: url(../img/bg-img/cta-bg-2.jpg); */
 }
 
 .cta-2 .cta-wrap .cta-content-wrap {
@@ -2689,7 +2689,7 @@ header-1 .site-logo img {
 }
 
 .post-author-box .bg {
-    background-image: url(../img/bg-img/post-author-bg.png);
+    /* background-image: url(../img/bg-img/post-author-bg.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2991,7 +2991,7 @@ header-1 .site-logo img {
 }
 
 .poster .bg-shape {
-    background-image: url(../img/bg-img/poster-shape.png);
+    /* background-image: url(../img/bg-img/poster-shape.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -3048,7 +3048,7 @@ header-1 .site-logo img {
 .categorie-wrap .categorie-list {}
 
 .categorie-wrap .categorie-list li {
-    background-image: url(../img/bg-img/trending-list-bg-1.jpg);
+    background-image: url(../img/bg-img/business.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -3067,24 +3067,21 @@ header-1 .site-logo img {
 }
 
 .categorie-wrap .categorie-list li:nth-child(3) {
-    background-image: url(../img/bg-img/trending-list-bg-2.jpg);
+    background-image: url(../img/bg-img/investing.webp);
 }
 
 .categorie-wrap .categorie-list li:nth-child(4) {
-    background-image: url(../img/bg-img/trending-list-bg-3.jpg);
+    background-image: url(../img/bg-img/enterprise.webp);
 }
 
 .categorie-wrap .categorie-list li:nth-child(5) {
-    background-image: url(../img/bg-img/trending-list-bg-4.jpg);
+    background-image: url(../img/bg-img/innovation.webp);
 }
 
 .categorie-wrap .categorie-list li:nth-child(6) {
-    background-image: url(../img/bg-img/trending-list-bg-5.jpg);
+    background-image: url(../img/bg-img/us.webp);
 }
 
-.categorie-wrap .categorie-list li:nth-child(7) {
-    background-image: url(../img/bg-img/trending-list-bg-6.jpg);
-}
 
 .categorie-wrap .categorie-list li:not(:last-of-type) {
     margin-bottom: 20px;
@@ -5364,7 +5361,7 @@ blockquote span:before {
     Layout Header
 ====================================================*/
 .layout-header {
-    background-image: url(../img/bg-img/layout-header-bg.jpg);
+    /* background-image: url(../img/bg-img/layout-header-bg.jpg); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -5536,7 +5533,7 @@ blockquote span:before {
 }
 
 .skill-section .skill-bg {
-    background-image: url(../img/bg-img/skill-bg.jpg);
+    /* background-image: url(../img/bg-img/skill-bg.jpg); */
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;

@@ -27,7 +27,7 @@ export default function FashionBlog6() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -48,7 +48,7 @@ export default function FashionBlog6() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -68,7 +68,7 @@ export default function FashionBlog6() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -88,7 +88,7 @@ export default function FashionBlog6() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -108,7 +108,7 @@ export default function FashionBlog6() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>
@@ -128,7 +128,7 @@ export default function FashionBlog6() {
                                     </h3>
                                     <ul className="post-list">
                                         <li className="author">
-                                            by <span><Link href="/author-details">David Bin</Link></span>
+                                            by <span><Link href="#"> </Link></span>
                                         </li>
                                         <li className="date">July 29, 2024</li>
                                         <li><i className="las la-comments" />5</li>

@@ -71,6 +71,8 @@ export default function Trending1({ data }) {
                         {item.title}
                       </Link>
                     </h4>
+                   
+
                   </div>
                 </div>
               </SwiperSlide>

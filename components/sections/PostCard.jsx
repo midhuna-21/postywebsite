@@ -15,20 +15,14 @@ export default function PostCard({ data }) {
           <Link title={data.slug}
 												href={`/${data.category}/${data.slug}`}>{data.title}</Link>
         </h3>
-        <ul className="post-list">
-          <li className="author">
-            by{" "}
-            <span>
-              <Link href="#">David Bin</Link>
-            </span>
-          </li>
-          <li className="date">{data.date}</li>
-          {data.comments && (
-            <li>
-              <i className="las la-comments" /> {data.comments}
-            </li>
-          )}
-        </ul>
+        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                                    <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                        by{" "}
+
+                                                        {data.author}
+                                                        , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data.date}</span>
+                                                    </li>
+                                                </ul>
       </div>
     </div>
   );

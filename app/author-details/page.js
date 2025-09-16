@@ -14,7 +14,7 @@ export default function AuthorDetails() {
 									<img src="/assets/img/images/author-img.jpg" alt="author" />
 								</div>
 								<div className="author-info">
-									<h3 className="name">David Bin</h3>
+									<h3 className="name"> </h3>
 									<span className="prof">Posty Contributor</span>
 									<p>
 										Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus rutrum
@@ -65,7 +65,7 @@ export default function AuthorDetails() {
 												</h3>
 												<ul className="post-list">
 													<li className="author">
-														by <span><Link href="/author-details">David Bin</Link></span>
+														by <span><Link href="#"> </Link></span>
 													</li>
 													<li className="date">July 29, 2024</li>
 													<li><i className="las la-comments" />5</li>
@@ -88,7 +88,7 @@ export default function AuthorDetails() {
 												</h3>
 												<ul className="post-list">
 													<li className="author">
-														by <span><Link href="/author-details">David Bin</Link></span>
+														by <span><Link href="#"> </Link></span>
 													</li>
 													<li className="date">July 29, 2024</li>
 													<li><i className="las la-comments" />5</li>
@@ -111,7 +111,7 @@ export default function AuthorDetails() {
 												</h3>
 												<ul className="post-list">
 													<li className="author">
-														by <span><Link href="/author-details">David Bin</Link></span>
+														by <span><Link href="#"> </Link></span>
 													</li>
 													<li className="date">July 29, 2024</li>
 													<li><i className="las la-comments" />5</li>
@@ -134,7 +134,7 @@ export default function AuthorDetails() {
 												</h3>
 												<ul className="post-list">
 													<li className="author">
-														by <span><Link href="/author-details">David Bin</Link></span>
+														by <span><Link href="#"> </Link></span>
 													</li>
 													<li className="date">July 29, 2024</li>
 													<li><i className="las la-comments" />5</li>
@@ -157,7 +157,7 @@ export default function AuthorDetails() {
 												</h3>
 												<ul className="post-list">
 													<li className="author">
-														by <span><Link href="/author-details">David Bin</Link></span>
+														by <span><Link href="#"> </Link></span>
 													</li>
 													<li className="date">July 29, 2024</li>
 													<li><i className="las la-comments" />5</li>
@@ -180,7 +180,7 @@ export default function AuthorDetails() {
 												</h3>
 												<ul className="post-list">
 													<li className="author">
-														by <span><Link href="/author-details">David Bin</Link></span>
+														by <span><Link href="#"> </Link></span>
 													</li>
 													<li className="date">July 29, 2024</li>
 													<li><i className="las la-comments" />5</li>
@@ -203,7 +203,7 @@ export default function AuthorDetails() {
 												</h3>
 												<ul className="post-list">
 													<li className="author">
-														by <span><Link href="/author-details">David Bin</Link></span>
+														by <span><Link href="#"> </Link></span>
 													</li>
 													<li className="date">July 29, 2024</li>
 													<li><i className="las la-comments" />5</li>

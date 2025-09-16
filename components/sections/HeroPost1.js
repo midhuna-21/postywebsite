@@ -79,6 +79,12 @@ export default function HeroPost1({ data }) {
 													{item.title}
 												</Link>
 											</h3>
+											<div className="post-list" style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+												<p className="author" style={{ margin: 0, fontSize: "0.85rem" }}>
+													by <span>{item.author}</span>,
+												</p>
+												<p style={{ margin: 0, fontSize: "0.65rem", color: "#666" }}>{item.date}</p>
+											</div>
 										</div>
 									</div>
 								))}
@@ -123,7 +129,7 @@ export default function HeroPost1({ data }) {
 
 													<ul className="post-list">
 														<li className="author">
-															by <span><Link href="/author-details">David Bin</Link></span>
+															by <span style={{color:'white'}}>{item.author}</span>
 														</li>
 														<li className="date">{item.date}</li>
 													</ul>
@@ -185,6 +191,13 @@ export default function HeroPost1({ data }) {
 															{item.title}
 														</Link>
 													</h3>
+												<div className="post-list" style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "nowrap" }}>
+  <span style={{ fontSize: "0.55rem", color: "#333" }}>
+    by <span style={{ fontSize: "0.65rem" }}>{item.author}</span>,
+  </span>
+  <span style={{ fontSize: "0.55rem", color: "#666" }}>{item.date}</span>
+</div>
+
 												</div>
 											</div>
 										))}
@@ -222,6 +235,14 @@ export default function HeroPost1({ data }) {
 															{item.title}
 														</Link>
 													</h3>
+													<div className="post-list" style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "nowrap" }}>
+  <span style={{ fontSize: "0.55rem", color: "#333" }}>
+    by <span style={{ fontSize: "0.65rem" }}>{item.author}</span>,
+  </span>
+  <span style={{ fontSize: "0.55rem", color: "#666" }}>{item.date}</span>
+</div>
+
+
 												</div>
 											</div>
 										))}
