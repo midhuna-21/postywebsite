@@ -6,19 +6,36 @@ export default function SubscribeSection() {
   const [email, setEmail] = useState("");
   const [showModal, setShowModal] = useState(false);
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   if (!email) {
+  //     alert("Please enter a valid email."); 
+  //     return;
+  //   }
+
+  //   setShowModal(true);
+  //   setEmail("");
+
+  //   setTimeout(() => setShowModal(false), 3000);
+  // };
+
   const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!email) {
-      alert("Please enter a valid email."); 
-      return;
-    }
+  if (!email) {
+    alert("Please enter a valid email."); 
+    return;
+  }
 
+  setEmail("");
+
+  setTimeout(() => {
     setShowModal(true);
-    setEmail("");
 
     setTimeout(() => setShowModal(false), 3000);
-  };
+  }, 1000); 
+};
 
   return (
     <section className="subscribe-section bg-grey-2">

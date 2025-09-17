@@ -1,16 +1,14 @@
 
 'use client'
 import { useEffect, useState } from "react"
-import AddClassBody from "../elements/AddClassBody"
 import BackToTop from "./BackToTop"
 import Breadcrumb from './Breadcrumb'
 import Footer from './Footer'
 import Header from "./Header"
-import MobileMenu from "./MobileMenu"
 import SearchBox from "./SearchBox"
 import Sidebar from "./Sidebar"
 
-export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, children,category }) {
+export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, children, category }) {
 	const [scroll, setScroll] = useState(false)
 	// MoblileMenu
 	const [isMobileMenu, setMobileMenu] = useState(false)
@@ -30,13 +28,13 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 
 	return (
 		<>
-		<div id="top" />
+			<div id="top" />
 			<SearchBox
 				isSearch={isSearch}
 				handleSearch={handleSearch}
 			/>
-			
-			 <Header
+
+			<Header
 				scroll={scroll}
 				isMobileMenu={isMobileMenu}
 				handleMobileMenu={handleMobileMenu}
@@ -44,27 +42,30 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 				handleSidebar={handleSidebar}
 				isSearch={isSearch}
 				handleSearch={handleSearch}
-			/> 
+			/>
 
 			<Sidebar
 				isSidebar={isSidebar}
 				handleSidebar={handleSidebar}
 			/>
-			
+
 			{/* <MobileMenu
 				isMobileMenu={isMobileMenu}
 				handleMobileMenu={handleMobileMenu}
 			/> */}
 
 
-			{breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} category={category} />}
+			{breadcrumbTitle && <Breadcrumb
+				breadcrumbTitle={breadcrumbTitle.split(" ").slice(0, 4).join(" ")}
+				category={category}
+			/>}
 
 			{children}
 
 			< Footer />
 
 			<BackToTop target="#top" />
-			<AddClassBody />
+			{/* <AddClassBody />	 */}
 		</>
 	)
 }

@@ -1,0 +1,1 @@
+{"c":["app/page","app/[category]/page","app/about/page","app/[category]/[slug]/page","app/contact/page","app/editorial-policy/page","webpack"],"r":[],"m":["(app-pages-browser)/./components/elements/AddClassBody.js","(app-pages-browser)/./node_modules/next/dist/api/navigation.js"]}

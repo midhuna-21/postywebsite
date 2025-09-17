@@ -40,7 +40,6 @@ export default function Trending1({ data }) {
       <div className="container">
         <div className="trending-carousel swiper">
           <Swiper {...swiperOptions} className="swiper-wrapper swiper-container">
-
             {data?.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="trending-item">
@@ -71,13 +70,17 @@ export default function Trending1({ data }) {
                         {item.title}
                       </Link>
                     </h4>
-                   
-
+                    <div className="post-list">
+  <p style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
+    by <Link href="#" style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}>
+      {item.author}
+    </Link>, {item.date}
+  </p>
+</div>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
-
           </Swiper>
         </div>
       </div>

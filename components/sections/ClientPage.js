@@ -36,7 +36,6 @@ const faqs = [
 ];
 
 export default function ClientPage({ otherArticles }) {
-    console.log(otherArticles, 'othere aricle')
     return (
         <div>
             <section className="post-layout-1 padding">
@@ -48,7 +47,7 @@ export default function ClientPage({ otherArticles }) {
                                     href="/business" className="card-btn bg-green">
                                     Business
                                 </Link>
-                                <h3 className="title">Julio Herrera Velutini and the House That Preceded the Republic: A Profile in Financial Continuity</h3>
+                                <h3 className="title"style={{lineHeight:1.3}}>Julio Herrera Velutini and the House That Preceded the Republic: A Profile in Financial Continuity</h3>
                                 <ul className="post-list">
                                     <li className="author">
                                         by{" "}

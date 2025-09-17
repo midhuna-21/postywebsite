@@ -225,7 +225,7 @@ export default async function DetailPage({ params }) {
                         )
                     }}
                 />
-                <Layout breadcrumbTitle={article.slug} category={article.category}>
+                <Layout breadcrumbTitle={article.title} category={article.category}>
 
                     <ClientPage otherArticles={otherArticles} />
                 </Layout>
@@ -264,7 +264,7 @@ export default async function DetailPage({ params }) {
                     }),
                 }}
             />
-            <Layout breadcrumbTitle={article.slug} category={article.category}>
+            <Layout breadcrumbTitle={article.title} category={article.category}>
                 <DetailContent article={article} otherArticles={otherArticles} />
             </Layout>
         </>

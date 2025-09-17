@@ -1,13 +1,10 @@
-
 'use client'
-import ModalVideo from 'react-modal-video'
 import Link from 'next/link'
 import { useState } from 'react'
 import 'swiper/css/free-mode'
 import 'swiper/css/thumbs'
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import VideoPopup from '../elements/VideoPopup'
 import Image from "next/image";
 
 export default function Watch({ data }) {

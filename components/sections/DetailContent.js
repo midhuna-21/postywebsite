@@ -16,7 +16,7 @@ export default function DetailContent({ article, otherArticles }) {
                             <div className="post-content">
                                 <Link title={article.slug}
                                     href={`/${article.category}`} className="card-btn bg-green">{article.category}</Link>
-                                <h3 className="title">{article.title}</h3>
+                                <h3 className="title" style={{ lineHeight: 1.3 }}>{article.title}</h3>
                                 <ul className="post-list">
                                     <li className="author">
                                         by <span>{article.author}</span>
@@ -54,13 +54,14 @@ export default function DetailContent({ article, otherArticles }) {
                             <div className="post-layout-content">
                                 <div className="layout-thumb mb-30">
                                     {/* <img src="/assets/img/blog/layout-img.jpg" alt="layout" /> */}
-                                    <Image
-                                        src={article.image}
-                                        alt="layout"
-                                        width={1200}
-                                        height={800}
-                                        priority
-                                    />
+                                        <Image
+                                            src={article.image}
+                                            alt="layout"
+                                            width={1200}
+                                            height={800}
+                                            priority
+                                            style={{ width: "100%", height: "auto" }}
+                                        />
                                 </div>
                                 <p className="layout-desc">
                                     {article.description}
@@ -103,103 +104,59 @@ export default function DetailContent({ article, otherArticles }) {
                                         </div>
                                     </div>
                                 </div>
-                            
+
                                 <CommentForm />
                             </div>
                         </div>
                         <div className="col-lg-4">
-                          
+
                             <div className="trending-post-wrap">
                                 <div className="section-heading mb-30">
                                     <h3 className="section-title title-border"><span>Trending Posts</span></h3>
                                 </div>
                                 <div className="list-post-area list-2">
-                                    <div className="list-post-card">
-                                        <div className="post-img">
-                                            <Link title={otherArticles[2].slug}
-                                                href={`/${otherArticles[2].category}/${otherArticles[2].slug}`}>
-                                                {/* <img src="/assets/img/post/trending-post-1.jpg" alt="post" /> */}
-                                                <Image
-                                                    src={otherArticles[2].image}
-                                                    alt="thumb"
-                                                    width={200}
-                                                    height={200}
-                                                />
-                                            </Link>
+                                    {otherArticles.slice(2, 6).map((article, index) => (
+                                        <div key={index} className="list-post-card">
+                                            <div className="post-img">
+                                                <Link
+                                                    title={article.slug}
+                                                    href={`/${article.category}/${article.slug}`}
+                                                >
+                                                    <Image
+                                                        src={article.image}
+                                                        alt="thumb"
+                                                        width={200}
+                                                        height={200}
+                                                    />
+                                                </Link>
+                                            </div>
+                                            <div className="post-content">
+                                                <h3 className="title">
+                                                    <Link
+                                                        title={article.slug}
+                                                        href={`/${article.category}/${article.slug}`}
+                                                    >
+                                                        {article.title}
+                                                    </Link>
+                                                </h3>
+                                                <div className="post-list">
+                                                    <p style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
+                                                        by{" "}
+                                                        <Link
+                                                            href="#"
+                                                            style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}
+                                                        >
+                                                            {article.author}
+                                                        </Link>,{" "}{article.date}
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="post-content">
-                                            <h3 className="title">
-                                                <Link title={otherArticles[2].slug}
-                                                    href={`/${otherArticles[2].category}/${otherArticles[2].slug}`}>{otherArticles[2].title}</Link>
-                                            </h3>
-                                            <span>{otherArticles[2].date}</span>
-                                        </div>
-                                    </div>
-                                    <div className="list-post-card">
-                                        <div className="post-img">
-                                            <Link title={otherArticles[3].slug}
-                                                href={`/${otherArticles[3].category}/${otherArticles[3].slug}`}>
-                                                {/* <img src="/assets/img/post/trending-post-2.jpg" alt="post" /> */}
-                                                <Image
-                                                    src={otherArticles[3].image}
-                                                    alt="thumb"
-                                                    width={200}
-                                                    height={200}
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="post-content">
-                                            <h3 className="title">
-                                                <Link title={otherArticles[3].slug}
-                                                    href={`/${otherArticles[3].category}/${otherArticles[3].slug}`}>{otherArticles[3].title}</Link>
-                                            </h3>
-                                            <span>{otherArticles[3].date}</span>
-                                        </div>
-                                    </div>
-                                    <div className="list-post-card">
-                                        <div className="post-img">
-                                            <Link title={otherArticles[4].slug}
-                                                href={`/${otherArticles[4].category}/${otherArticles[4].slug}`}>
-                                                {/* <img src="/assets/img/post/trending-post-3.jpg" alt="post" /> */}
-                                                <Image
-                                                    src={otherArticles[4].image}
-                                                    alt="thumb"
-                                                    width={200}
-                                                    height={200}
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="post-content">
-                                            <h3 className="title">
-                                                <Link title={otherArticles[4].slug}
-                                                    href={`/${otherArticles[4].category}/${otherArticles[4].slug}`}>{otherArticles[4].title}</Link>
-                                            </h3>
-                                            <span>{otherArticles[4].date}</span>
-                                        </div>
-                                    </div>
-                                    <div className="list-post-card">
-                                        <div className="post-img">
-                                            <Link title={otherArticles[5].slug}
-                                                href={`/${otherArticles[5].category}/${otherArticles[5].slug}`}>
-                                                {/* <img src="/assets/img/post/trending-post-4.jpg" alt="post" /> */}
-                                                <Image
-                                                    src={otherArticles[5].image}
-                                                    alt="thumb"
-                                                    width={200}
-                                                    height={200}
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="post-content">
-                                            <h3 className="title">
-                                                <Link title={otherArticles[5].slug}
-                                                    href={`/${otherArticles[5].category}/${otherArticles[5].slug}`}>{otherArticles[5].title}</Link>
-                                            </h3>
-                                            <span>{otherArticles[5].date}</span>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
+
+
                             <div className="categorie-wrap">
                                 <div className="section-heading mb-30">
                                     <h3 className="section-title title-border"><span>Categories</span></h3>
@@ -228,7 +185,7 @@ export default function DetailContent({ article, otherArticles }) {
                 </div>
             </section>
             {/* ./ post-layout-1 */}
-                <SubscribeSection />
+            <SubscribeSection />
         </div>
     );
 }

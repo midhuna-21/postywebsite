@@ -67,15 +67,15 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[1].slug}
                                                 href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
                                         </h3>
-                                       <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-  <li style={{ fontSize: "0.65rem", color: "#333" }}>
-    by{" "}
-    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-      {data[1].author}
-    </span>
-    , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
-  </li>
-</ul>
+                                        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                                <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+                                                    {data[1].author}
+                                                </span>
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
+                                            </li>
+                                        </ul>
 
                                     </div>
                                 </div>
@@ -99,15 +99,15 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[2].slug}
                                                 href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                         </h3>
-                                      <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-  <li style={{ fontSize: "0.65rem", color: "#333" }}>
-    by{" "}
-    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-      {data[2].author}
-    </span>
-    , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
-  </li>
-</ul>
+                                        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                                <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+                                                    {data[2].author}
+                                                </span>
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
+                                            </li>
+                                        </ul>
 
                                     </div>
                                 </div>
@@ -132,15 +132,15 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[3].slug}
                                                 href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
                                         </h3>
-                                       <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-  <li style={{ fontSize: "0.65rem", color: "#333" }}>
-    by{" "}
-    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-      {data[3].author}
-    </span>
-    , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
-  </li>
-</ul>
+                                        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                                by{" "}
+                                                <span style={{ fontSize: "0.7rem", color: "inherit" }}>
+                                                    {data[3].author}
+                                                </span>
+                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
+                                            </li>
+                                        </ul>
 
                                     </div>
                                 </div>

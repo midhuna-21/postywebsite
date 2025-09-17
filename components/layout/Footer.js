@@ -66,7 +66,10 @@ export default function Footer() {
                                                 <h4 className="post-title">
                                                     <Link title={businessData[3].slug}
                                                         href={`/${businessData[3].category}/${businessData[3].slug}`}>{businessData[3].title}
-                                                        <span>{businessData[3].date}</span></Link>
+                                                       <span className="post-meta" style={{ fontSize: "0.75rem", color: "#555" }}>
+                                                        by {businessData[3].author} | {businessData[3].date}
+                                                    </span>
+                                                    </Link>
                                                 </h4>
                                             </li>
                                             <li>
@@ -84,14 +87,17 @@ export default function Footer() {
                                                 <h4 className="post-title">
                                                     <Link title={usData[6].slug}
                                                         href={`/${usData[6].category}/${usData[6].slug}`}>{usData[6].title}
-                                                        <span>{usData[6].date}</span>
-                                                        </Link>
+                                                         <span className="post-meta" style={{ fontSize: "0.75rem", color: "#555" }}>
+                                                        by {usData[6].author} | {usData[6].date}
+                                                    </span>
+                                                    </Link>
                                                 </h4>
                                             </li>
                                             <li>
-                                                <Link title={innovationData[0].slug}
-                                                    href={`/${innovationData[0].category}/${innovationData[0].slug}`}>
-                                                    {/* <img src="/assets/img/images/footer-post-3.jpg" alt="post" /> */}
+                                                <Link
+                                                    title={innovationData[0].slug}
+                                                    href={`/${innovationData[0].category}/${innovationData[0].slug}`}
+                                                >
                                                     <Image
                                                         src={innovationData[1].image}
                                                         alt={innovationData[1].slug}
@@ -100,12 +106,22 @@ export default function Footer() {
                                                         priority
                                                     />
                                                 </Link>
+
                                                 <h4 className="post-title">
-                                                    <Link title={innovationData[1].slug}
-                                                        href={`/${innovationData[1].category}/${innovationData[1].slug}`}>{innovationData[1].title}
-                                                        <span>{innovationData[1].date}</span></Link>
+                                                    <Link
+                                                        title={innovationData[1].slug}
+                                                        href={`/${innovationData[1].category}/${innovationData[1].slug}`}
+                                                    >
+                                                        {innovationData[1].title}
+                                                    <span className="post-meta" style={{ fontSize: "0.75rem", color: "#555" }}>
+                                                        by {innovationData[1].author} | {innovationData[1].date}
+                                                    </span>
+                                                    </Link>
+                                                    {/* Author and date below the h4 */}
                                                 </h4>
+
                                             </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -165,23 +181,23 @@ export default function Footer() {
                             <div className="footer-logo">
                                 <Link href="/">
                                     {/* <img src="/images/pressorahub-black-logo.webp" alt="logo" /> */}
-                                  <Image
-  src="/images/pressorahub-black-logo.webp"
-  alt="PressoraHub Logo"
-  width={400}
-  height={40}
-  priority
-  style={{ width: "100%", maxWidth: "400px", height: "auto" }}
-/>
+                                    <Image
+                                        src="/images/pressorahub-black-logo.webp"
+                                        alt="PressoraHub Logo"
+                                        width={400}
+                                        height={40}
+                                        priority
+                                        style={{ width: "100%", maxWidth: "400px", height: "auto" }}
+                                    />
 
 
                                 </Link>
                             </div>
                             <ul className="footer-menu-list">
                                 <li><Link href="/">Home</Link></li>
-                                <li><Link href="#contact">Contact</Link></li>
-                                <li><Link href="#">OUR TEAM</Link></li>
-                                <li><Link href="#">EDITORIAL POLICY</Link></li>
+                                <li><Link href="/about">About Us</Link></li>
+                                <li><Link href="/contact">Contact</Link></li>
+                                <li><Link href="/editorial-policy">EDITORIAL POLICY</Link></li>
                                 {/* <li><Link href="#">TERMS AND CONDITIONS</Link></li> */}
 
                             </ul>

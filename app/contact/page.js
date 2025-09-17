@@ -1,125 +1,291 @@
-
+"use client"
 import Layout from "../../components/layout/Layout"
-import Link from "next/link"
+import SubscribeSection from "../../components/sections/SubscribeSection"
+import { useState } from "react"
+
 export default function Contact() {
+	const [formData, setFormData] = useState({
+		fullname: '',
+		email: '',
+		phone: '',
+		subject: '',
+		message: ''
+	})
+	const [loading, setLoading] = useState(false)
+	const [showModal, setShowModal] = useState(false)
+
+	const handleInputChange = (e) => {
+		const { name, value } = e.target
+		setFormData(prev => ({ ...prev, [name]: value }))
+	}
+
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		setLoading(true)
+
+		setTimeout(() => {
+			setLoading(false)
+			setShowModal(true)
+			setFormData({
+				fullname: '',
+				email: '',
+				phone: '',
+				subject: '',
+				message: ''
+			})
+		}, 2000)
+	}
+
+	const closeModal = () => {
+		setShowModal(false)
+	}
+
 	return (
-		<>
-			<Layout breadcrumbTitle="title">
+		<Layout breadcrumbTitle="contact">
+			<section className="contact-section padding">
+				<div className="container">
+					<div className="row justify-content-center">
+						<div className="col-lg-8">
+							<div
+								className="contact-content"
+								style={{ maxWidth: "800px", margin: "0 auto", padding: "0 20px", position: "relative" }}
+							>
+								<h3 className="fw-bold mb-3 d-flex justify-content-center align-items-center gap-2"
+									style={{ fontSize: "1.75rem", color: "gray" }}>
+									Contact Us
+								</h3>
 
-				<div>
-					<section className="contact-section padding">
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-6">
-									<div className="contact-content">
-										<div className="contact-left">
-											<div className="adress-wrap">
-												<div className="adress-box">
-													<h3 className="title">Office Adress</h3>
-													<ul className="adress-list">
-														<li>
-															<i className="las la-map-marker" /><span>The Business Centre 132, My Street Kingston, New York 12401
-																<strong>United States</strong></span>
-														</li>
-													</ul>
-												</div>
-												<div className="adress-box">
-													<h3 className="title">Call Information</h3>
-													<ul className="adress-list list-2">
-														<li>
-															<i className="las la-mobile" />Phone:
-															<Link href="/tel:+123456789">(+1) 234 567 89</Link>
-														</li>
-														<li>
-															<i className="las la-tty" />Tel:
-															<Link href="/tel:+15412343010">+1-541-234-3010</Link>
-														</li>
-														<li>
-															<i className="las la-envelope" />Email:
-															<Link href="/mailto:envato@gmail.com">envato@gmail.com</Link>
-														</li>
-													</ul>
-												</div>
-											</div>
+								<p style={{ marginBottom: "40px", fontSize: "1rem", lineHeight: "1.6", color: "#444" }}>
+									We believe good journalism starts with listening. If you have a question, feedback, or a story tip, we'd love to hear from you.
+								</p>
+
+								<div
+									className="contact-form-wrap"
+									style={{ borderRadius: "8px" }}
+								>
+									<h3 className="title text-left" style={{ marginBottom: "10px", fontSize: "1.3rem", fontWeight: "600", color: "gray" }}>
+										Get in Touch
+									</h3>
+
+									<p style={{ marginBottom: "25px", fontSize: "0.95rem", color: "#555" }}>
+										Quickly share your thoughts or questions using the form below.
+									</p>
+
+									<form onSubmit={handleSubmit}>
+										<div style={{ display: "flex", gap: "15px", marginBottom: "15px" }}>
+											<input
+												type="text"
+												name="fullname"
+												placeholder="Name"
+												value={formData.fullname}
+												onChange={handleInputChange}
+												required
+												style={{ flex: 1, borderRadius: "6px", border: "1px solid #ddd", padding: "12px 14px", fontSize: "0.95rem" }}
+											/>
+											<input
+												type="email"
+												name="email"
+												placeholder="Email"
+												value={formData.email}
+												onChange={handleInputChange}
+												required
+												style={{ flex: 1, borderRadius: "6px", border: "1px solid #ddd", padding: "12px 14px", fontSize: "0.95rem" }}
+											/>
 										</div>
-										<div className="contact-form-wrap">
-											<h3 className="title">Get in Touch</h3>
-											<p>
-												Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-												doloremque laudantium, totam rem aperiam.
-											</p>
-											<div className="contact-form">
-												<form action="contact.php" method="post" id="ajax_contact" className="form-horizontal">
-													<div className="form-group colum-row row">
-														<div className="col-sm-6">
-															<input type="text" id="fullname" name="fullname" className="form-control" placeholder="Name" required />
-														</div>
-														<div className="col-sm-6">
-															<input type="email" id="email" name="email" className="form-control" placeholder="Email" required />
-														</div>
-													</div>
-													<div className="form-group row">
-														<div className="col-sm-6">
-															<input type="text" id="phone" name="phone" className="form-control" placeholder="Phone Number" required />
-														</div>
-														<div className="col-sm-6">
-															<input type="text" id="website" name="website" className="form-control" placeholder="Website Name" />
-														</div>
-													</div>
-													<div className="form-group row">
-														<div className="col-md-12">
-															<textarea id="message" name="message" cols={30} rows={5} className="form-control address" placeholder="Message" required />
-														</div>
-													</div>
-													<button id="submit" className="default-btn" type="submit">
-														Send Message<span style={{ top: '-154px', left: '-699.328px' }} />
-													</button>
-													<div id="form-messages" className="alert" role="alert" />
-												</form>
-											</div>
+
+										<div style={{ display: "flex", gap: "15px", marginBottom: "15px" }}>
+											<input
+												type="text"
+												name="phone"
+												placeholder="Phone Number"
+												value={formData.phone}
+												onChange={handleInputChange}
+												required
+												style={{ flex: 1, borderRadius: "6px", border: "1px solid #ddd", padding: "12px 14px", fontSize: "0.95rem" }}
+											/>
+											<input
+												type="text"
+												name="subject"
+												placeholder="Subject"
+												value={formData.subject}
+												onChange={handleInputChange}
+												required
+												style={{ flex: 1, borderRadius: "6px", border: "1px solid #ddd", padding: "12px 14px", fontSize: "0.95rem" }}
+											/>
 										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="map-wrapper">
-										<div style={{ width: '100%' }}>
-											<iframe width="100%" height={840} frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} src="https://maps.google.com/maps?width=100%25&height=640&hl=en&q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed">&lt;a href="https://www.maps.ie/population/"&gt;Find Population on Map&lt;/a&gt;</iframe>
+
+										<div style={{ marginBottom: "15px" }}>
+											<textarea
+												name="message"
+												cols={30}
+												rows={5}
+												placeholder="Message"
+												value={formData.message}
+												onChange={handleInputChange}
+												required
+												style={{ width: "100%", borderRadius: "6px", border: "1px solid #ddd", padding: "12px 14px", fontSize: "0.95rem" }}
+											/>
 										</div>
-									</div>
+
+										<button
+											type="submit"
+											disabled={loading}
+											style={{
+												background: loading ? "#ccc" : "#2077b6",
+												color: "#fff",
+												padding: "12px 28px",
+												border: "none",
+												borderRadius: "6px",
+												cursor: loading ? "not-allowed" : "pointer",
+												fontWeight: "500",
+												position: "relative",
+												minWidth: "140px",
+											}}
+										>
+											{loading ? "Sending..." : "Send Message"}
+										</button>
+									</form>
+
+									{/* Inline Loading */}
+									{loading && (
+										<div
+											style={{
+												position: "absolute",
+												top: 0,
+												left: 0,
+												width: "100%",
+												height: "100%",
+												background: "rgba(255, 255, 255, 0.8)",
+												display: "flex",
+												justifyContent: "center",
+												alignItems: "center",
+												zIndex: 10,
+												borderRadius: "8px",
+											}}
+										>
+											<div
+												style={{
+													border: "5px solid #f3f3f3",
+													borderTop: "5px solid #2077b6",
+													borderRadius: "50%",
+													width: "50px",
+													height: "50px",
+													animation: "spin 1s linear infinite",
+												}}
+											/>
+										</div>
+									)}
+
+									<style>{`
+                    @keyframes spin {
+                      0% { transform: rotate(0deg); }
+                      100% { transform: rotate(360deg); }
+                    }
+                  `}</style>
 								</div>
 							</div>
 						</div>
-					</section>
-					{/* ./ contact-section */}
-					<section className="subscribe-section bg-grey-2">
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-6">
-									<div className="subscribe-content">
-										<h3 className="title">Get the best blog stories into your inbox!</h3>
-										<div className="subscribe-form">
-											<input type="email" id="email" name="email" className="form-control" placeholder="Enter Your Email" />
-											<button id="submit" className="default-btn" type="submit">
-												<i className="lab la-telegram-plane" />Subscribe
-											</button>
-											<div className="form-icon">
-												<i className="las la-envelope" />
-											</div>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="subscribe-thumb">
-										<div className="line" />
-										<img src="/assets/img/images/subscribe-img.png" alt="img" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+					</div>
 				</div>
+			</section>
 
-			</Layout>
-		</>
+			{/* Success Modal */}
+			{showModal && (
+				<div
+					style={{
+						position: "fixed",
+						top: 0,
+						left: 0,
+						right: 0,
+						bottom: 0,
+						backgroundColor: "rgba(0, 0, 0, 0.6)",
+						display: "flex",
+						alignItems: "center",
+						justifyContent: "center",
+						zIndex: 1000,
+					}}
+					onClick={closeModal}
+				>
+					<div
+						style={{
+							backgroundColor: "#fff",
+							borderRadius: "12px",
+							padding: "40px",
+							maxWidth: "500px",
+							width: "90%",
+							boxShadow: "0 20px 60px rgba(0, 0, 0, 0.3)",
+							textAlign: "center",
+							position: "relative",
+						}}
+						onClick={(e) => e.stopPropagation()}
+					>
+						<div
+							style={{
+								width: "80px",
+								height: "80px",
+								backgroundColor: "#28a745",
+								borderRadius: "50%",
+								margin: "0 auto 25px",
+								display: "flex",
+								alignItems: "center",
+								justifyContent: "center",
+							}}
+						>
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+								<polyline points="20,6 9,17 4,12"></polyline>
+							</svg>
+						</div>
+
+						<h3 style={{ fontSize: "1.5rem", fontWeight: "600", color: "#222", marginBottom: "15px" }}>
+							Thank you for reaching out
+						</h3>
+
+						<p style={{ fontSize: "1rem", color: "#666", lineHeight: "1.5", marginBottom: "30px" }}>
+							We sincerely appreciate your message, and our team will review it carefully. </p>
+
+						<button
+							onClick={closeModal}
+							style={{
+								backgroundColor: "#2077b6",
+								color: "#fff",
+								border: "none",
+								padding: "12px 30px",
+								borderRadius: "6px",
+								fontSize: "1rem",
+								fontWeight: "500",
+								cursor: "pointer",
+								transition: "background-color 0.3s ease",
+							}}
+							onMouseOver={(e) => (e.target.style.backgroundColor = "#1a6ca3")}
+							onMouseOut={(e) => (e.target.style.backgroundColor = "#2077b6")}
+						>
+							Continue Reading
+						</button>
+
+						<button
+							onClick={closeModal}
+							style={{
+								position: "absolute",
+								top: "15px",
+								right: "15px",
+								background: "none",
+								border: "none",
+								fontSize: "24px",
+								color: "#999",
+								cursor: "pointer",
+								padding: "5px",
+								lineHeight: 1,
+							}}
+							onMouseOver={(e) => (e.target.style.color = "#666")}
+							onMouseOut={(e) => (e.target.style.color = "#999")}
+						>
+							×
+						</button>
+					</div>
+				</div>
+			)}
+
+			<SubscribeSection />
+		</Layout>
 	)
 }

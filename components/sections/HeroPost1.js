@@ -129,7 +129,7 @@ export default function HeroPost1({ data }) {
 
 													<ul className="post-list">
 														<li className="author">
-															by <span style={{color:'white'}}>{item.author}</span>
+															by <span style={{ color: 'white' }}>{item.author}</span>
 														</li>
 														<li className="date">{item.date}</li>
 													</ul>
@@ -191,12 +191,12 @@ export default function HeroPost1({ data }) {
 															{item.title}
 														</Link>
 													</h3>
-												<div className="post-list" style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "nowrap" }}>
-  <span style={{ fontSize: "0.55rem", color: "#333" }}>
-    by <span style={{ fontSize: "0.65rem" }}>{item.author}</span>,
-  </span>
-  <span style={{ fontSize: "0.55rem", color: "#666" }}>{item.date}</span>
-</div>
+													<div className="post-list" style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "nowrap" }}>
+														<span style={{ fontSize: "0.55rem", color: "#333" }}>
+															by <span style={{ fontSize: "0.65rem" }}>{item.author}</span>,
+														</span>
+														<span style={{ fontSize: "0.55rem", color: "#666" }}>{item.date}</span>
+													</div>
 
 												</div>
 											</div>
@@ -236,11 +236,11 @@ export default function HeroPost1({ data }) {
 														</Link>
 													</h3>
 													<div className="post-list" style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "nowrap" }}>
-  <span style={{ fontSize: "0.55rem", color: "#333" }}>
-    by <span style={{ fontSize: "0.65rem" }}>{item.author}</span>,
-  </span>
-  <span style={{ fontSize: "0.55rem", color: "#666" }}>{item.date}</span>
-</div>
+														<span style={{ fontSize: "0.55rem", color: "#333" }}>
+															by <span style={{ fontSize: "0.65rem" }}>{item.author}</span>,
+														</span>
+														<span style={{ fontSize: "0.55rem", color: "#666" }}>{item.date}</span>
+													</div>
 
 
 												</div>
