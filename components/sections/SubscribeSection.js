@@ -55,7 +55,7 @@ export default function SubscribeSection() {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
-                <button id="submit" className="default-btn" type="submit">
+                <button id="submit" aria-label="submit" className="default-btn" type="submit">
                   <i className="lab la-telegram-plane" /> Subscribe
                 </button>
                 <div className="form-icon">
@@ -156,6 +156,7 @@ export default function SubscribeSection() {
       </p>
       
       <button
+      aria-label="close"
         onClick={() => setShowModal(false)}
         style={{
           width: "100%",

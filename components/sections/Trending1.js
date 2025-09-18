@@ -51,6 +51,7 @@ export default function Trending1({ data }) {
                       style={{ color: 'inherit', display: 'block' }}
                     >
                       <Image
+                      title={item.title}
                         src={item.image}
                         alt="trend"
                         width={80}
@@ -71,12 +72,12 @@ export default function Trending1({ data }) {
                       </Link>
                     </h4>
                     <div className="post-list">
-  <p style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-    by <Link href="#" style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}>
-      {item.author}
-    </Link>, {item.date}
-  </p>
-</div>
+                      <p style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
+                        by <Link href="#" style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}>
+                          {item.author}
+                        </Link>, {item.date}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

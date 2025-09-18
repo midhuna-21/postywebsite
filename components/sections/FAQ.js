@@ -17,7 +17,7 @@ const FAQ = ({ faqs }) => {
           fontSize: "22px",
           fontWeight: "700",
           marginBottom: "16px",
-          color: "#222",
+          color: "gray",
         }}
       >
         Frequently Asked Questions

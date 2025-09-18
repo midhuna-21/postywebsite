@@ -25,6 +25,7 @@ export default function Watch({ data }) {
 
 								<div className="post-img">
 									<Image
+									title={data[0].title}
 										src={data[0].image}
 										alt="post carousel"
 										width={1500}
@@ -192,6 +193,7 @@ export default function Watch({ data }) {
 								<div className="carousel-thumb-post" style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
 								>
 									<Image
+									title={data[4].title}
 										src={data[4].image}
 										alt="trend"
 										width={500}
@@ -220,15 +222,15 @@ export default function Watch({ data }) {
 												{data[4].title}
 											</Link>
 										</h4>
-									<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-  <li style={{ fontSize: "0.65rem", color: "white" }}>
-    by{" "}
-    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-      {data[4].author}
-    </span>
-    , <span style={{ fontSize: "0.65rem", color: "white" }}>{data[4].date}</span>
-  </li>
-</ul>
+										<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+											<li style={{ fontSize: "0.65rem", color: "white" }}>
+												by{" "}
+												<span style={{ fontSize: "0.7rem", color: "inherit" }}>
+													{data[4].author}
+												</span>
+												, <span style={{ fontSize: "0.65rem", color: "white" }}>{data[4].date}</span>
+											</li>
+										</ul>
 
 									</div>
 								</div>
@@ -238,6 +240,7 @@ export default function Watch({ data }) {
 								<div className="carousel-thumb-post" style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
 								>
 									<Image
+									title={data[5].title}
 										src={data[5].image}
 										alt="trend"
 										width={500}
@@ -267,14 +270,14 @@ export default function Watch({ data }) {
 											</Link>
 										</h4>
 										<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-  <li style={{ fontSize: "0.65rem", color: "white" }}>
-    by{" "}
-    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-      {data[5].author}
-    </span>
-    , <span style={{ fontSize: "0.65rem", color: "white" }}>{data[5].date}</span>
-  </li>
-</ul>
+											<li style={{ fontSize: "0.65rem", color: "white" }}>
+												by{" "}
+												<span style={{ fontSize: "0.7rem", color: "inherit" }}>
+													{data[5].author}
+												</span>
+												, <span style={{ fontSize: "0.65rem", color: "white" }}>{data[5].date}</span>
+											</li>
+										</ul>
 
 									</div>
 								</div>
@@ -283,6 +286,7 @@ export default function Watch({ data }) {
 								<div className="carousel-thumb-post" style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
 								>
 									<Image
+									title={data[6].title}
 										src={data[6].image}
 										alt="trend"
 										width={500}
@@ -312,14 +316,14 @@ export default function Watch({ data }) {
 											</Link>
 										</h4>
 										<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-  <li style={{ fontSize: "0.65rem", color: "white" }}>
-    by{" "}
-    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-      {data[6].author}
-    </span>
-    , <span style={{ fontSize: "0.65rem", color: "white" }}>{data[6].date}</span>
-  </li>
-</ul>
+											<li style={{ fontSize: "0.65rem", color: "white" }}>
+												by{" "}
+												<span style={{ fontSize: "0.7rem", color: "inherit" }}>
+													{data[6].author}
+												</span>
+												, <span style={{ fontSize: "0.65rem", color: "white" }}>{data[6].date}</span>
+											</li>
+										</ul>
 
 									</div>
 								</div>
@@ -328,6 +332,7 @@ export default function Watch({ data }) {
 								<div className="carousel-thumb-post" style={{ position: "relative", borderRadius: "12px", overflow: "hidden" }}
 								>
 									<Image
+									title={data[7].title}
 										src={data[7].image}
 										alt="trend"
 										width={500}
@@ -357,14 +362,14 @@ export default function Watch({ data }) {
 											</Link>
 										</h4>
 										<ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-  <li style={{ fontSize: "0.65rem", color: "white" }}>
-    by{" "}
-    <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-      {data[7].author}
-    </span>
-    , <span style={{ fontSize: "0.65rem", color: "white" }}>{data[7].date}</span>
-  </li>
-</ul>
+											<li style={{ fontSize: "0.65rem", color: "white" }}>
+												by{" "}
+												<span style={{ fontSize: "0.7rem", color: "inherit" }}>
+													{data[7].author}
+												</span>
+												, <span style={{ fontSize: "0.65rem", color: "white" }}>{data[7].date}</span>
+											</li>
+										</ul>
 
 									</div>
 								</div>

@@ -56,6 +56,7 @@ export default function HeroPost1({ data }) {
 												style={{ color: "inherit", display: "block" }}
 											>
 												<Image
+												title={item.title}
 													src={item.image}
 													alt="trend"
 													width={500}
@@ -102,6 +103,7 @@ export default function HeroPost1({ data }) {
 														href={`/${item.category}/${item.slug}`}
 													>
 														<Image
+														title={item.title}
 															src={item.image}
 															alt="trend"
 															width={500}
@@ -148,12 +150,12 @@ export default function HeroPost1({ data }) {
 						<div className="post-area-right-2 tab-wrap">
 							<ul className="nav nav-tabs" id="myTab" role="tablist">
 								<li className="nav-item" onClick={() => handleTab(1)}>
-									<button className={isTab == 1 ? "nav-link active" : "nav-link"}>
+									<button aria-label="trending-news" className={isTab == 1 ? "nav-link active" : "nav-link"}>
 										Trending News
 									</button>
 								</li>
 								<li className="nav-item" onClick={() => handleTab(2)}>
-									<button className={isTab == 2 ? "nav-link active" : "nav-link"}>
+									<button aria-label="latest-news" className={isTab == 2 ? "nav-link active" : "nav-link"}>
 										Latest News
 									</button>
 								</li>
@@ -168,6 +170,7 @@ export default function HeroPost1({ data }) {
 												<div className="post-img">
 													<Link title={item.slug} href={`/${item.category}/${item.slug}`}>
 														<Image
+														title={item.title}
 															src={item.image}
 															alt="trend"
 															width={70}
@@ -212,6 +215,7 @@ export default function HeroPost1({ data }) {
 												<div className="post-img">
 													<Link title={item.slug} href={`/${item.category}/${item.slug}`}>
 														<Image
+														title={item.title}
 															src={item.image}
 															alt="trend"
 															width={70}

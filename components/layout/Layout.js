@@ -55,8 +55,9 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 			/> */}
 
 
-			{breadcrumbTitle && <Breadcrumb
-				breadcrumbTitle={breadcrumbTitle.split(" ").slice(0, 4).join(" ")}
+			{breadcrumbTitle && 
+			<Breadcrumb
+				breadcrumbTitle={breadcrumbTitle}
 				category={category}
 			/>}
 

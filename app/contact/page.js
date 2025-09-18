@@ -128,6 +128,7 @@ export default function Contact() {
 										</div>
 
 										<button
+										aria-label="submit"
 											type="submit"
 											disabled={loading}
 											style={{
@@ -244,6 +245,7 @@ export default function Contact() {
 							We sincerely appreciate your message, and our team will review it carefully. </p>
 
 						<button
+						aria-label="continue-reading"
 							onClick={closeModal}
 							style={{
 								backgroundColor: "#2077b6",
@@ -263,6 +265,7 @@ export default function Contact() {
 						</button>
 
 						<button
+						aria-label="twitter"
 							onClick={closeModal}
 							style={{
 								position: "absolute",

@@ -79,7 +79,7 @@ export default function CommentForm() {
             </div>
           </div>
 
-          <button className="default-btn" type="submit" disabled={loading}>
+          <button className="default-btn" type="submit"aria-label="post-submit" disabled={loading}>
             {loading ? "Posting..." : "Post Comment"}
           </button>
         </form>

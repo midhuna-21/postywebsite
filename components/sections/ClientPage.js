@@ -96,6 +96,7 @@ export default function ClientPage({ otherArticles }) {
                             <div className="post-layout-content">
                                 <div className="layout-thumb mb-30">
                                     <Image
+                                    title='julio-herrera-velutini'
                                         src={image}
                                         alt="who-is-julio-herrera-velutini"
                                         width={1200}
@@ -155,6 +156,7 @@ export default function ClientPage({ otherArticles }) {
                                         </p>
                                         <div className="article-thumb">
                                             <Image
+                                            title={otherArticles[0].title}
                                                 src={otherArticles[0].image}
                                                 alt={otherArticles[0].title}
                                                 width={100}
@@ -182,6 +184,7 @@ export default function ClientPage({ otherArticles }) {
                                                 </Link>
                                             </h3>
                                             <Image
+                                            title={otherArticles[1].title}
                                                 src={otherArticles[1].image}
                                                 alt={otherArticles[1].title}
                                                 width={100}
@@ -233,21 +236,22 @@ export default function ClientPage({ otherArticles }) {
                         {/* Right column */}
                         <div className="col-lg-4">
                             {/* Trending Posts */}
-                            <div className="trending-post-wrap">
+                             <div className="trending-post-wrap">
                                 <div className="section-heading mb-30">
-                                    <h3 className="section-title title-border">
-                                        <span>Trending Posts</span>
-                                    </h3>
+                                    <h3 className="section-title title-border"><span>Trending Posts</span></h3>
                                 </div>
                                 <div className="list-post-area list-2">
-                                    {otherArticles.slice(2, 6).map((post, i) => (
-                                        <div key={i} className="list-post-card">
+                                    {otherArticles.slice(2, 6).map((article, index) => (
+                                        <div key={index} className="list-post-card">
                                             <div className="post-img">
-                                              <Link title={post.slug}
-                                                                    href={`/${post.category}/${post.slug}`}>
+                                                <Link
+                                                    title={article.slug}
+                                                    href={`/${article.category}/${article.slug}`}
+                                                >
                                                     <Image
-                                                        src={post.image}
-                                                        alt={post.title}
+                                                    title={article.title}
+                                                        src={article.image}
+                                                        alt="thumb"
                                                         width={200}
                                                         height={200}
                                                     />
@@ -256,13 +260,23 @@ export default function ClientPage({ otherArticles }) {
                                             <div className="post-content">
                                                 <h3 className="title">
                                                     <Link
-                                                        title={post.slug}
-                                                        href={`/${post.category}/${post.slug}`}
+                                                        title={article.slug}
+                                                        href={`/${article.category}/${article.slug}`}
                                                     >
-                                                        {post.title}
+                                                        {article.title}
                                                     </Link>
                                                 </h3>
-                                                <span>{post.date}</span>
+                                                <div className="post-list">
+                                                    <p style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
+                                                        by{" "}
+                                                        <Link
+                                                            href="#"
+                                                            style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}
+                                                        >
+                                                            {article.author}
+                                                        </Link>,{" "}{article.date}
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     ))}

@@ -24,7 +24,7 @@ export default function BackToTop({ target }) {
 		<>
 			{hasScrolled && (
 				<div id="scrollup" className="show" onClick={handleClick}>
-					<button id="scroll-top" className="scroll-to-top"><i className="las la-arrow-up" /></button>
+					<button id="scroll-top" aria-label="scroll-to-top" className="scroll-to-top"><i className="las la-arrow-up" /></button>
 				</div>
 
 			)}

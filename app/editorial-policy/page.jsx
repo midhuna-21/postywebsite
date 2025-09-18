@@ -39,10 +39,10 @@ export default function EditorialPolicy() {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-9 text-center">
-              <h3 className="fw-bold mb-3 d-flex justify-content-center align-items-center gap-2"
-          style={{ fontSize: "1.75rem", color: "gray" }}>
-  Our Editorial Commitment
-</h3>
+                <h3 className="fw-bold mb-3 d-flex justify-content-center align-items-center gap-2"
+                  style={{ fontSize: "1.75rem", color: "gray" }}>
+                  Our Editorial Commitment
+                </h3>
 
                 <p>
                   At PressoraHub, journalism is more than reporting — it’s a
@@ -76,45 +76,45 @@ export default function EditorialPolicy() {
         </section>
 
         {/* Note to Readers */}
-      <section className="py-5" >
-  <div className="container">
-    <div className="row justify-content-center">
-      <div className="col-lg-8 text-center">
-        {/* Heading with accent underline */}
-        <h4
-          className="fw-bold mb-3 d-flex justify-content-center align-items-center gap-2"
-          style={{ fontSize: "1.75rem", color: "gray" }}
-        >
-          To Our Readers
-        </h4>
-        <div
-          style={{
-            width: "60px",
-            height: "3px",
-            backgroundColor: "#2563eb",
-            margin: "0 auto 20px auto",
-            borderRadius: "2px",
-          }}
-        />
-        {/* Description */}
-        <p className="fs-6 text-secondary mb-2">
-          At <strong>PressoraHub</strong>, your trust is our highest priority. We
-          promise clarity, honesty, and integrity in every story we share.
-        </p>
-        <p className="fs-6 text-secondary mb-0">
-          If you ever feel we fall short, please{" "}
-          <a
-            href="/contact"
-            className="fw-semibold text-decoration-underline"  style={{ color: "#3399ff" }}
-          >
-            reach out to us
-          </a>
-          .
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+        <section className="py-5" >
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                {/* Heading with accent underline */}
+                <h4
+                  className="fw-bold mb-3 d-flex justify-content-center align-items-center gap-2"
+                  style={{ fontSize: "1.75rem", color: "gray" }}
+                >
+                  To Our Readers
+                </h4>
+                <div
+                  style={{
+                    width: "60px",
+                    height: "3px",
+                    backgroundColor: "#2563eb",
+                    margin: "0 auto 20px auto",
+                    borderRadius: "2px",
+                  }}
+                />
+                {/* Description */}
+                <p className="fs-6 text-secondary mb-2">
+                  At <strong>PressoraHub</strong>, your trust is our highest priority. We
+                  promise clarity, honesty, and integrity in every story we share.
+                </p>
+                <p className="fs-6 text-secondary mb-0">
+                  If you ever feel we fall short, please{" "}
+                  <a
+                    href="/contact"
+                    className="fw-semibold text-decoration-underline" style={{ color: "#3399ff" }}
+                  >
+                    reach out to us
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
         {/* Subscribe CTA */}

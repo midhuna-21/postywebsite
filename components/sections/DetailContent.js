@@ -55,6 +55,7 @@ export default function DetailContent({ article, otherArticles }) {
                                 <div className="layout-thumb mb-30">
                                     {/* <img src="/assets/img/blog/layout-img.jpg" alt="layout" /> */}
                                         <Image
+                                        title={article.title}
                                             src={article.image}
                                             alt="layout"
                                             width={1200}
@@ -76,6 +77,7 @@ export default function DetailContent({ article, otherArticles }) {
                                         <div className="article-thumb">
                                             {/* <img src="/assets/img/blog/article-1.jpg" alt="thumb" /> */}
                                             <Image
+                                            title={otherArticles[0].title}
                                                 src={otherArticles[0].image}
                                                 alt="thumb"
                                                 width={100}
@@ -96,6 +98,7 @@ export default function DetailContent({ article, otherArticles }) {
                                             </h3>
                                             {/* <img src="/assets/img/blog/article-2.jpg" alt="thumb" /> */}
                                             <Image
+                                            title={otherArticles[1].title}
                                                 src={otherArticles[1].image}
                                                 alt="thumb"
                                                 width={100}
@@ -123,6 +126,7 @@ export default function DetailContent({ article, otherArticles }) {
                                                     href={`/${article.category}/${article.slug}`}
                                                 >
                                                     <Image
+                                                    title={article.title}
                                                         src={article.image}
                                                         alt="thumb"
                                                         width={200}

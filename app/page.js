@@ -91,9 +91,9 @@ export default function Home() {
 				}}
 			/>
 			<Layout headerStyle={1} footerStyle={1}>
-				<News data={[businessData[0], usData[0]]} />
-				<Trending1 data={[businessData[1], usData[1], enterpriseData[0], investingData[0]]} />
-				<HeroPost1 data={[businessData[2], usData[2], enterpriseData[6], investingData[2], innovationData[0], businessData[3], enterpriseData[2], usData[3], investingData[3], innovationData[3], usData[6], businessData[7], enterpriseData[3], innovationData[2],usData[16],businessData[17]]} />
+				<News data={[businessData[1], usData[0]]} />
+				<Trending1 data={[businessData[2], usData[1], enterpriseData[0], investingData[0]]} />
+				<HeroPost1 data={[businessData[0], usData[2], enterpriseData[6], investingData[2], innovationData[0], businessData[3], enterpriseData[2], usData[3], investingData[3], innovationData[3], usData[6], businessData[7], enterpriseData[3], innovationData[2],usData[16],businessData[17]]} />
 				{/* <Cta1 /> */}
 				<EditorBlog1 data={[usData[5], businessData[6], enterpriseData[18], investingData[1]]} />
 

@@ -11,7 +11,7 @@ export default function Headline({title}) {
      fontSize: "clamp(1.4rem, 2vw, 1.7rem)",
         fontWeight: 800,
         lineHeight: 1.15,
-        background: "linear-gradient(135deg, #1f2937 0%, #4b5563 100%)",
+        background: "linear-gradient(135deg, #6c6f72ff 0%, #4b5563 100%)",
         WebkitBackgroundClip: "text",
         backgroundClip: "text",
         WebkitTextFillColor: "transparent",

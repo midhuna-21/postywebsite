@@ -51,6 +51,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 							<div className="site-logo">
 								<Link href="/">
 									<Image
+									title="pressorahub-dark-logo"
 										className="logo-dark"
 										src="/images/pressorahub-black-logo.webp"
 										alt="PressoraHub Logo Dark"
@@ -61,6 +62,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 									/>
 									{/* Light Logo */}
 									<Image
+									title="pressorahub-logo"
 										className="logo-light"
 										src="/images/pressorahub-logo.webp"
 										alt="PressoraHub Logo Light"
@@ -85,7 +87,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 							<div className="navigation-wrapper">
 								<div className="navigation-inner">
 									<div className="sidebar-icon">
-										<button className="sidebar-trigger open" onClick={handleSidebar}>
+										<button aria-label="toggle-bar" className="sidebar-trigger open" onClick={handleSidebar}>
 											<span />
 											<span />
 											<span />
@@ -100,7 +102,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 									</nav>
 									<div className="header-right">
 										<ThemeSwitch />
-										<div className="search-icon dl-search-icon" onClick={handleSearch}>
+										<div className="search-icon dl-search-icon">
 											<i className="las la-search" />
 										</div>
 										<div className="mobile-menu-icon" onClick={handleMobileMenu}>

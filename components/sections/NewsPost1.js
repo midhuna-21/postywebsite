@@ -20,6 +20,7 @@ export default function NewsPost1({ data }) {
                                             href={`/${data[0].category}/${data[0].slug}`}>
                                             {/* <img src="/assets/img/post/news-post-1.jpg" alt="post" /> */}
                                             <Image
+                                            title={data[0].title}
                                                 src={data[0].image}
                                                 alt="trend"
                                                 width={500}
@@ -58,6 +59,7 @@ export default function NewsPost1({ data }) {
                                             href={`/${data[1].category}/${data[1].slug}`}>
                                             {/* <img src="/assets/img/post/news-post-2.jpg" alt="post" /> */}
                                             <Image
+                                            title={data[1].title}
                                                 src={data[1].image}
                                                 alt="trend"
                                                 width={500}
@@ -132,6 +134,7 @@ export default function NewsPost1({ data }) {
                                             href={`/${data[3].category}/${data[3].slug}`}>
                                             {/* <img src="/assets/img/post/news-post-4.jpg" alt="post" /> */}
                                             <Image
+                                            title={data[3].title}
                                                 src={data[3].image}
                                                 alt="trend"
                                                 width={500}
@@ -220,6 +223,7 @@ export default function NewsPost1({ data }) {
                                                 href={`/${data[4].category}/${data[4].slug}`}>
                                                 {/* <img src="/assets/img/post/trending-post-1.jpg" alt="post" /> */}
                                                 <Image
+                                                title={data[4].title}
                                                     src={data[4].image}
                                                     alt="trend"
                                                     width={200}
@@ -250,6 +254,7 @@ export default function NewsPost1({ data }) {
                                                 href={`/${data[5].category}/${data[5].slug}`}>
                                                 {/* <img src="/assets/img/post/trending-post-2.jpg" alt="post" /> */}
                                                 <Image
+                                                title={data[5].title}
                                                     src={data[5].image}
                                                     alt="trend"
                                                     width={200}
@@ -282,6 +287,7 @@ export default function NewsPost1({ data }) {
                                                 href={`/${data[6].category}/${data[6].slug}`}>
                                                 {/* <img src="/assets/img/post/trending-post-3.jpg" alt="post" /> */}
                                                 <Image
+                                                title={data[6].title}
                                                     src={data[6].image}
                                                     alt="trend"
                                                     width={200}
@@ -314,6 +320,7 @@ export default function NewsPost1({ data }) {
                                                 href={`/${data[7].category}/${data[7].slug}`}>
                                                 {/* <img src="/assets/img/post/trending-post-4.jpg" alt="post" /> */}
                                                 <Image
+                                                title={data[7].title}
                                                     src={data[7].image}
                                                     alt="trend"
                                                     width={200}
@@ -346,6 +353,7 @@ export default function NewsPost1({ data }) {
                                                 href={`/${data[8].category}/${data[8].slug}`}>
                                                 {/* <img src="/assets/img/post/trending-post-4.jpg" alt="post" /> */}
                                                 <Image
+                                                title={data[8].title}
                                                     src={data[8].image}
                                                     alt="trend"
                                                     width={200}

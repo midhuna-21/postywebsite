@@ -22,6 +22,7 @@ export default function HeroPost3({ data }) {
 												href={`/${data[0].category}/${data[0].slug}`}>
                                     {/* <img src="/assets/img/post/travel-post-1.jpg" alt="img" /> */}
                                     <Image
+                                    title={data[0].title}
                                         src={data[0].image}
                                         alt="trend"
                                         width={500}
@@ -53,6 +54,7 @@ export default function HeroPost3({ data }) {
 												href={`/${data[1].category}/${data[1].slug}`}>
                                             {/* <img src="/assets/img/post/travel-post-2.jpg" alt="post" /> */}
                                             <Image
+                                            title={data[1].title}
                                                 src={data[1].image}
                                                 alt="trend"
                                                 width={500}
@@ -84,6 +86,7 @@ export default function HeroPost3({ data }) {
 												href={`/${data[2].category}/${data[2].slug}`}>
                                             {/* <img src="/assets/img/post/travel-post-3.jpg" alt="post" /> */}
                                             <Image
+                                            title={data[2].title}
                                                 src={data[2].image}
                                                 alt="trend"
                                                 width={500}
@@ -117,6 +120,7 @@ export default function HeroPost3({ data }) {
 												href={`/${data[3].category}/${data[3].slug}`}>
                                             {/* <img src="/assets/img/post/travel-post-4.jpg" alt="post" /> */}
                                             <Image
+                                            title={data[3].title}
                                                 src={data[3].image}
                                                 alt="trend"
                                                 width={500}
@@ -148,6 +152,7 @@ export default function HeroPost3({ data }) {
 												href={`/${data[4].category}/${data[4].slug}`}>
                                             {/* <img src="/assets/img/post/travel-post-5.jpg" alt="post" /> */}
                                             <Image
+                                            title={data[4].title}
                                                 src={data[4].image}
                                                 alt="trend"
                                                 width={500}

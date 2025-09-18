@@ -55,6 +55,7 @@ export default function Footer() {
                                                 <Link title={businessData[3].slug}
                                                     href={`/${businessData[3].category}/${businessData[3].slug}`}>
                                                     <Image
+                                                    title={businessData[3].title}
                                                         src={businessData[3].image}
                                                         alt={businessData[3].slug}
                                                         width={350}
@@ -77,6 +78,7 @@ export default function Footer() {
                                                     href={`/${usData[0].category}/${usData[0].slug}`}>
                                                     {/* <img src="/assets/img/images/footer-post-2.jpg" alt="post" /> */}
                                                     <Image
+                                                    title={usData[6].title}
                                                         src={usData[6].image}
                                                         alt={usData[6].slug}
                                                         width={350}
@@ -99,6 +101,7 @@ export default function Footer() {
                                                     href={`/${innovationData[0].category}/${innovationData[0].slug}`}
                                                 >
                                                     <Image
+                                                    title={innovationData[1].title}
                                                         src={innovationData[1].image}
                                                         alt={innovationData[1].slug}
                                                         width={350}
@@ -182,6 +185,7 @@ export default function Footer() {
                                 <Link href="/">
                                     {/* <img src="/images/pressorahub-black-logo.webp" alt="logo" /> */}
                                     <Image
+                                    title="pressorahub-logo"
                                         src="/images/pressorahub-black-logo.webp"
                                         alt="PressoraHub Logo"
                                         width={400}

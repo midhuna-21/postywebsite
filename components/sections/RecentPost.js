@@ -19,7 +19,6 @@ export default function RecentPost({ data }) {
                         <div className="col-lg-6">
                             <div className="news-post-wrap">
                                 {data.slice(0, 5).map((item, index) => {
-                                    // define different button classes for each card
                                     const btnClasses = ["bg-blue", "bg-blue-light", "bg-green", "bg-yellow", "bg-pink"];
 
                                     return (
@@ -27,6 +26,7 @@ export default function RecentPost({ data }) {
                                             <div className="post-thumb">
                                                 <Link title={item.slug} href={`/${item.category}/${item.slug}`}>
                                                     <Image
+                                                    title={item.title}
                                                         src={item.image}
                                                         alt={item.title}
                                                         width={500}
@@ -65,7 +65,6 @@ export default function RecentPost({ data }) {
                         <div className="col-lg-6">
                             <div className="news-post-wrap">
                                 {data.slice(5, 10).map((item, index) => {
-                                    // define different button classes for each card
                                     const btnClasses = ["bg-blue", "bg-blue-light", "bg-green", "bg-yellow", "bg-pink"];
 
                                     return (
@@ -73,6 +72,7 @@ export default function RecentPost({ data }) {
                                             <div className="post-thumb">
                                                 <Link title={item.slug} href={`/${item.category}/${item.slug}`}>
                                                     <Image
+                                                    title={item.title}
                                                         src={item.image}
                                                         alt={item.title}
                                                         width={500}

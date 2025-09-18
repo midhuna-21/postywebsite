@@ -161,7 +161,7 @@ export default async function CategoryPage({
 
 				<div>
 					<RecentPosts data={data} />
-
+              
 					{/* ./ recent-post-area */}
 					<SubscribeSection />
 				</div>

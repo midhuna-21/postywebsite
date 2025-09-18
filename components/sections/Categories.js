@@ -14,6 +14,7 @@ export default function Categories({ data }) {
 												href={`/${data[0].category}`}>
                                         {/* <img src="/assets/img/images/categori-img-1.jpg" alt="img" /> */}
                                         <Image
+                                        title={data[0].title}
                                             src={data[0].image}
                                             alt="trend"
                                             width={500}
@@ -37,6 +38,7 @@ export default function Categories({ data }) {
 												href={`/${data[1].category}`}>
                                         {/* <img src="/assets/img/images/categori-img-2.jpg" alt="img" /> */}
                                         <Image
+                                        title={data[1].title}
                                             src={data[1].image}
                                             alt="trend"
                                             width={500}
@@ -60,6 +62,7 @@ export default function Categories({ data }) {
 												href={`/${data[2].category}`}>
                                         {/* <img src="/assets/img/images/categori-img-3.jpg" alt="img" /> */}
                                         <Image
+                                        title={data[2].title}
                                             src={data[2].image}
                                             alt="trend"
                                             width={500}
@@ -84,6 +87,7 @@ export default function Categories({ data }) {
                                         {/* <img src="/assets/img/images/categori-img-8.jpg" alt="img" /> */}
 
                                         <Image
+                                        title={data[3].title}
                                             src={data[3].image}
                                             alt="trend"
                                             width={500}

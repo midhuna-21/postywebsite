@@ -54,7 +54,7 @@ export default function SearchBox({ isSearch, handleSearch }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <button id="popup-search-button" type="submit" name="submit">
+          <button id="popup-search-button" aria-label="submit" type="submit" name="submit">
             <i className="las la-search" />
           </button>
         </form>

@@ -35,6 +35,7 @@ export default function News({ data }) {
                                 <div className="hero-text">
                                     <span className="news">
                                         <Image
+                                        title="news-icon"
                                             src="/assets/img/images/news-icon.png"
                                             alt="icon"
                                             width={20}

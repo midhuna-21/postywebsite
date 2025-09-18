@@ -17,6 +17,7 @@ export default function SearchNotFound() {
 
       <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
         <button
+        aria-label="go-back"
           onClick={() => router.back()}
           style={{
             padding: '10px 20px',

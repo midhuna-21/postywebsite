@@ -1,7 +1,10 @@
 {
-  "/[category]/[slug]/page": "app/[category]/[slug]/page.js",
-  "/editorial-policy/page": "app/editorial-policy/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
+  "/editorial-policy/page": "app/editorial-policy/page.js",
+  "/contact/page": "app/contact/page.js",
   "/about/page": "app/about/page.js",
-  "/[category]/page": "app/[category]/page.js"
+  "/[category]/page": "app/[category]/page.js",
+  "/[category]/[slug]/page": "app/[category]/[slug]/page.js"
 }
