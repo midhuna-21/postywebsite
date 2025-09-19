@@ -4865,9 +4865,15 @@ header-1 .site-logo img {
 .post-layout-content .layout-desc {
     color: var(--heading-color);
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.4;
+    text-align: justify;
 }
 
+@media (max-width: 768px) { 
+    .post-layout-content .layout-desc {
+        text-align: start; 
+    }
+}
 .post-layout-content .layout-title {
     font-size: 24px;
     font-weight: 600;

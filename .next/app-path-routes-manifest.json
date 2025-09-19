@@ -1,10 +1,9 @@
 {
-  "/favicon.ico/route": "/favicon.ico",
   "/_not-found/page": "/_not-found",
-  "/page": "/",
+  "/about/page": "/about",
   "/editorial-policy/page": "/editorial-policy",
   "/contact/page": "/contact",
-  "/about/page": "/about",
-  "/[category]/page": "/[category]",
-  "/[category]/[slug]/page": "/[category]/[slug]"
+  "/page": "/",
+  "/[category]/[slug]/page": "/[category]/[slug]",
+  "/[category]/page": "/[category]"
 }
