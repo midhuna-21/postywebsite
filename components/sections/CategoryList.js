@@ -20,7 +20,7 @@ export default function CategoriesList() {
       <ul className="categorie-list">
         {categories.map((cat, index) => (
           <li key={index}>
-            <Link href={cat.slug}>
+            <Link href={cat.slug} title={cat.name}>
               <h4 className="list-title">{cat.name}</h4>
               <i className="las la-arrow-right" />
             </Link>

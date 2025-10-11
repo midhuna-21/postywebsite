@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 export default function SubscribeSection() {
   const [email, setEmail] = useState("");
@@ -38,7 +39,7 @@ export default function SubscribeSection() {
 };
 
   return (
-    <section className="subscribe-section bg-grey-2">
+    <section className="subscribe-section bg-grey">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -67,13 +68,12 @@ export default function SubscribeSection() {
           <div className="col-lg-6">
             <div className="subscribe-thumb">
               <div className="line" />
-              <img src="/assets/img/images/subscribe-img.png" alt="img" />
+              <Image title="subscibe" src="/assets/img/images/subscribe-img.webp" alt="subscribe" width={500} height={300} />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Success Modal */}
      {showModal && (
   <div
     style={{

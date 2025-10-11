@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from "next/image";
 
-
 export default function RecentPost({ data }) {
     return (
         <>
@@ -9,10 +8,10 @@ export default function RecentPost({ data }) {
                 <div className="container">
                     <div className="top-area mb-40 title-border">
                         <div className="section-heading">
-                            <h3 className="section-title"><span className="bg-grey-2">Recent Post</span></h3>
+                            <h2 className="section-title"><span className="bg-grey">Recent News</span></h2>
                         </div>
                         <div className="right-btn">
-                            <Link href="/business" className="default-btn">See More</Link>
+                            <Link href="/business" title='business' className="default-btn">More News</Link>
                         </div>
                     </div>
                     <div className="row">
@@ -20,13 +19,12 @@ export default function RecentPost({ data }) {
                             <div className="news-post-wrap">
                                 {data.slice(0, 5).map((item, index) => {
                                     const btnClasses = ["bg-blue", "bg-blue-light", "bg-green", "bg-yellow", "bg-pink"];
-
                                     return (
                                         <div className="post-card news-post" key={index}>
                                             <div className="post-thumb">
                                                 <Link title={item.slug} href={`/${item.category}/${item.slug}`}>
                                                     <Image
-                                                    title={item.title}
+                                                        title={item.title}
                                                         src={item.image}
                                                         alt={item.title}
                                                         width={500}
@@ -47,14 +45,8 @@ export default function RecentPost({ data }) {
                                                         {item.title}
                                                     </Link>
                                                 </h3>
-                                                <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                                    <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                        by{" "}
+                                                <span style={{ fontSize: "0.65rem", color: "#666" }}>{item.date}</span>
 
-                                                        {item.author}
-                                                        , <span style={{ fontSize: "0.65rem", color: "#666" }}>{item.date}</span>
-                                                    </li>
-                                                </ul>
                                             </div>
                                         </div>
                                     );
@@ -72,7 +64,7 @@ export default function RecentPost({ data }) {
                                             <div className="post-thumb">
                                                 <Link title={item.slug} href={`/${item.category}/${item.slug}`}>
                                                     <Image
-                                                    title={item.title}
+                                                        title={item.title}
                                                         src={item.image}
                                                         alt={item.title}
                                                         width={500}
@@ -93,25 +85,15 @@ export default function RecentPost({ data }) {
                                                         {item.title}
                                                     </Link>
                                                 </h3>
-                                                <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                                    <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                        by{" "}
+                                                <span style={{ fontSize: "0.65rem", color: "#666" }}>{item.date}</span>
 
-                                                        {item.author}
-                                                        , <span style={{ fontSize: "0.65rem", color: "#666" }}>{item.date}</span>
-                                                    </li>
-                                                </ul>
                                             </div>
                                         </div>
                                     );
                                 })}
                             </div>
                         </div>
-
                     </div>
-                    {/* <div className="recent-post-btn text-center mt-50">
-                        <Link href="/blog-layout-3" className="default-btn">Load More</Link>
-                    </div> */}
                 </div>
             </section>
         </>

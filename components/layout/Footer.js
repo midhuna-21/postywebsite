@@ -14,7 +14,7 @@ export default function Footer() {
                         <div className="row">
                             <div className="col-lg-4 col-md-6">
                                 <div className="footer-item">
-                                    <h3 className="footer-header">About Us</h3>
+                                    <p className="footer-header">About Us</p>
                                     <div className="footer-content">
                                         <p className="desc">
                                             PressoraHub brings you the latest news, breaking stories, and in-depth analysis from around the world.</p>
@@ -26,19 +26,19 @@ export default function Footer() {
                                             <li>
                                                 <ul className="footer-social">
                                                     <li>
-                                                        <Link href="/#"><i className="lab la-facebook-f" /></Link>
+                                                        <Link href="/#" title="facebook"><i className="lab la-facebook-f" /></Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/#"><i className="lab la-twitter" /></Link>
+                                                        <Link href="/#" title="twitter"><i className="lab la-twitter" /></Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/#"><i className="lab la-linkedin-in" /></Link>
+                                                        <Link href="/#" title="linkedin"><i className="lab la-linkedin-in" /></Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/#"><i className="lab la-instagram" /></Link>
+                                                        <Link href="/#" title="instagram"><i className="lab la-instagram" /></Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/#"><i className="lab la-pinterest-p" /></Link>
+                                                        <Link href="/#" title="pinterest"><i className="lab la-pinterest-p" /></Link>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -48,7 +48,7 @@ export default function Footer() {
                             </div>
                             <div className="col-lg-4 col-md-6">
                                 <div className="footer-item">
-                                    <h3 className="footer-header">Top Post</h3>
+                                    <p className="footer-header">Top Post</p>
                                     <div className="footer-content">
                                         <ul className="footer-post-list">
                                             <li>
@@ -64,20 +64,19 @@ export default function Footer() {
                                                     />
 
                                                 </Link>
-                                                <h4 className="post-title">
+                                                <p className="post-title">
                                                     <Link title={businessData[3].slug}
                                                         href={`/${businessData[3].category}/${businessData[3].slug}`}>{businessData[3].title}
-                                                       <span className="post-meta" style={{ fontSize: "0.75rem", color: "#555" }}>
+                                                       <span className="post-meta" style={{ fontSize: "0.75rem", color: "#b6acacff" }}>
                                                         by {businessData[3].author} | {businessData[3].date}
                                                     </span>
                                                     </Link>
-                                                </h4>
+                                                </p>
                                             </li>
                                             <li>
                                                 <Link title={usData[0].slug}
                                                     href={`/${usData[0].category}/${usData[0].slug}`}>
-                                                    {/* <img src="/assets/img/images/footer-post-2.jpg" alt="post" /> */}
-                                                    <Image
+                                              <Image
                                                     title={usData[6].title}
                                                         src={usData[6].image}
                                                         alt={usData[6].slug}
@@ -86,14 +85,14 @@ export default function Footer() {
                                                         priority
                                                     />
                                                 </Link>
-                                                <h4 className="post-title">
+                                                <p className="post-title">
                                                     <Link title={usData[6].slug}
                                                         href={`/${usData[6].category}/${usData[6].slug}`}>{usData[6].title}
-                                                         <span className="post-meta" style={{ fontSize: "0.75rem", color: "#555" }}>
+                                                         <span className="post-meta" style={{ fontSize: "0.75rem", color: "#b6acacff" }}>
                                                         by {usData[6].author} | {usData[6].date}
                                                     </span>
                                                     </Link>
-                                                </h4>
+                                                </p>
                                             </li>
                                             <li>
                                                 <Link
@@ -110,18 +109,18 @@ export default function Footer() {
                                                     />
                                                 </Link>
 
-                                                <h4 className="post-title">
+                                                <p className="post-title">
                                                     <Link
                                                         title={innovationData[1].slug}
                                                         href={`/${innovationData[1].category}/${innovationData[1].slug}`}
                                                     >
                                                         {innovationData[1].title}
-                                                    <span className="post-meta" style={{ fontSize: "0.75rem", color: "#555" }}>
+                                                    <span className="post-meta" style={{ fontSize: "0.75rem", color: "#b6acacff" }}>
                                                         by {innovationData[1].author} | {innovationData[1].date}
                                                     </span>
                                                     </Link>
                                                     {/* Author and date below the h4 */}
-                                                </h4>
+                                                </p>
 
                                             </li>
 
@@ -129,51 +128,7 @@ export default function Footer() {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="col-lg-4 col-md-6">
-                                <div className="footer-item">
-                                    <h3 className="footer-header">Top Comment</h3>
-                                    <div className="footer-content">
-                                        <ul className="comment-list">
-                                            <li>
-                                                <div className="icon">
-                                                    <i className="las la-comments" />
-                                                </div>
-                                                <div className="comment-content">
-                                                    <h4 className="comment-author">
-                                                        <Link href="#"> </Link> <span>On</span>
-                                                    </h4>
-                                                    <span className="comment">Navigation System Doesn Work in Read Space? We’ll
-                                                        See</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="icon">
-                                                    <i className="las la-comments" />
-                                                </div>
-                                                <div className="comment-content">
-                                                    <h4 className="comment-author">
-                                                        <Link href="#"> </Link> <span>On</span>
-                                                    </h4>
-                                                    <span className="comment">Navigation System Doesn Work in Read Space? We’ll
-                                                        See</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="icon">
-                                                    <i className="las la-comments" />
-                                                </div>
-                                                <div className="comment-content">
-                                                    <h4 className="comment-author">
-                                                        <Link href="#"> </Link> <span>On</span>
-                                                    </h4>
-                                                    <span className="comment">Navigation System Doesn Work in Read Space? We’ll
-                                                        See</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> */}
+                          
                         </div>
                     </div>
                 </div>
@@ -182,8 +137,8 @@ export default function Footer() {
                     <div className="container">
                         <div className="footer-bottom-wrap">
                             <div className="footer-logo">
-                                <Link href="/">
-                                    {/* <img src="/images/pressorahub-black-logo.webp" alt="logo" /> */}
+                                <Link href="/" title="home">
+
                                     <Image
                                     title="pressorahub-logo"
                                         src="/images/pressorahub-black-logo.webp"
@@ -198,10 +153,10 @@ export default function Footer() {
                                 </Link>
                             </div>
                             <ul className="footer-menu-list">
-                                <li><Link href="/">Home</Link></li>
-                                <li><Link href="/about">About Us</Link></li>
-                                <li><Link href="/contact">Contact</Link></li>
-                                <li><Link href="/editorial-policy">EDITORIAL POLICY</Link></li>
+                                <li><Link href="/" title="home">Home</Link></li>
+                                <li><Link href="/about" title="about">About Us</Link></li>
+                                <li><Link href="/contact" title="contact">Contact</Link></li>
+                                <li><Link href="/editorial-policy" title="editorial-policy">EDITORIAL POLICY</Link></li>
                                 {/* <li><Link href="#">TERMS AND CONDITIONS</Link></li> */}
 
                             </ul>
@@ -212,7 +167,7 @@ export default function Footer() {
                 <div className="copyright-area">
                     <div className="container">
                         <div className="copyright-wrap">
-                            <p><span>pressorahub</span> {new Date().getFullYear()}. All Rights Reserved.</p>
+                            <p><span style={{color:"#cbc5c5ff"}}>PressoraHub</span> {new Date().getFullYear()}. All Rights Reserved.</p>
                             {/* <ul className="list">
                                 <li><Link href="/contact">.Contact</Link></li>
                                 <li><Link href="/blog-default">.Blog</Link></li>

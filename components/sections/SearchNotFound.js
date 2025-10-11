@@ -33,6 +33,7 @@ export default function SearchNotFound() {
 
         <Link
           href="/"
+          title='home'
           style={{
             padding: '10px 20px',
             backgroundColor: '#eaeaea',

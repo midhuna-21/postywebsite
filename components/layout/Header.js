@@ -13,11 +13,11 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 					<div className="container">
 						<div className="top-bar-wrap">
 							<div className="top-bar-left">
-								<h4 className="link-title"><span>Quick Links:</span></h4>
+								<p className="link-title"><span>Quick Links:</span></p>
 								<ul>
-									<li><Link href="/about">About Us</Link></li>
-									<li><Link href="/contact">Contact us</Link></li>
-									<li><Link href="/single-post-1">Latest News</Link></li>
+									<li><Link href="/about" title="about">About Us</Link></li>
+									<li><Link href="/contact" title="contact">Contact us</Link></li>
+									{/* <li><Link href="/single-post-1">Latest News</Link></li> */}
 								</ul>
 							</div>
 							{/* <div className="top-bar-right">
@@ -49,7 +49,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 								</ul>
 							</div>
 							<div className="site-logo">
-								<Link href="/">
+								<Link href="/" title="home">
 									<Image
 									title="pressorahub-dark-logo"
 										className="logo-dark"
@@ -76,7 +76,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 
 							<div className="mid-header-right">
 								{/* <Link href="/contact" className="default-btn header-btn">Subscribe</Link> */}
-								<Link href="#" className="user"><i className="las la-user" /></Link>
+								<Link href="#" title="user" className="user"><i className="las la-user" /></Link>
 							</div>
 						</div>
 					</div>
@@ -93,10 +93,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 											<span />
 										</button>
 									</div>
-									{/* <div className="site-logo">
-										<Link className="light" href="/"><img src="/assets/img/logo/logo-dark.png" alt="logo " /></Link>
-										<Link className="dark" href="/"><img src="/assets/img/logo/logo-light.png" alt="logo " /></Link>
-									</div> */}
+									
 									<nav className="navigation-menu">
 										<Menu />
 									</nav>

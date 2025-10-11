@@ -287,7 +287,6 @@ export default function Contact() {
 					</div>
 				</div>
 			)}
-
 			<SubscribeSection />
 		</Layout>
 	)

@@ -26,8 +26,8 @@ const jost = Jost({
 
 export const metadata = {
 	metadataBase: new URL("https://www.pressorahub.com"),
-	title: "PressoraHub News: Business, Investing, Innovation, US & Enterprise Updates",
-	description: "PressoraHub delivers fast, reliable news across business, investing, innovation, US politics, enterprise, and global affairs. Stay informed with expert insights and breaking headlines.",
+	title: "PressoraHub News: Business, Investing & Innovation Updates",
+	description: "Stay updated with PressoraHub—reliable news on business, investing, innovation, US politics, and global affairs. Expert insights, fast updates.",
 	keywords: "PressoraHub business news, investing updates, innovation trends, US politics news, enterprise analysis, startup funding, market trends, technology breakthroughs, corporate insights, financial news",
 
 	openGraph: {
@@ -37,7 +37,7 @@ export const metadata = {
 		siteName: " PressoraHub",
 		images: [
 			{
-				url: "https://www.pressorahub.com/images/pressorahub-logo.webp",
+				url: "https://www.pressorahub.com/images/pressorahub-icon.webp",
 				width: 1200,
 				height: 630,
 				alt: "PressoraHub logo",
@@ -50,7 +50,7 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Breaking News in Business, Investing, Innovation & More – PressoraHub",
 		description: "Follow PressoraHub for trusted reporting and real-time updates on business, investing, innovation, US news, and enterprise trends.",
-		images: ["https://www.pressorahub.com/images/pressorahub-logo.webp"],
+		images: ["https://www.pressorahub.com/images/pressorahub-icon.webp"],
 		site: "PressoraHub",
 		creator: "",
 	},

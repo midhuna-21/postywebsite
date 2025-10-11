@@ -8,10 +8,10 @@ export default function FashionBlog1({ data }) {
                 <div className="container">
                     <div className="top-area mb-40 title-border">
                         <div className="section-heading">
-                            <h3 className="section-title"><span className="bg-grey-2">Most Read</span></h3>
+                            <h2 className="section-title"><span className="bg-grey">Top Stories</span></h2>
                         </div>
                         <div className="right-btn">
-                            <Link href="/enterprise" className="default-btn">See More</Link>
+                            <Link href="/enterprise" title='enterprise' className="default-btn">Read All News</Link>
                         </div>
                     </div>
                     <div className="row justify-content-center fashion-blog-top">
@@ -20,11 +20,10 @@ export default function FashionBlog1({ data }) {
                                 <div className="post-thumb">
                                     <Link title={data[0].slug}
                                         href={`/${data[0].category}/${data[0].slug}`}>
-                                        {/* <img src="/assets/img/post/fasion-post-1.jpg" alt="post" /> */}
                                         <Image
-                                        title={data[0].title}
+                                            title={data[0].title}
                                             src={data[0].image}
-                                            alt="trend"
+                                            alt={data[0].title}
                                             width={500}
                                             height={300}
                                         />
@@ -37,15 +36,8 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[0].slug}
                                             href={`/${data[0].category}/${data[0].slug}`}>{data[0].title}</Link>
                                     </h3>
-                                     <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[0].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[0].date}</span>
-                                            </li>
-                                        </ul>
+                                    <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[0].date}</span>
+
                                 </div>
                             </div>
                         </div>
@@ -54,11 +46,10 @@ export default function FashionBlog1({ data }) {
                                 <div className="post-thumb">
                                     <Link title={data[1].slug}
                                         href={`/${data[1].category}/${data[1].slug}`}>
-                                        {/* <img src="/assets/img/post/fasion-post-2.jpg" alt="post" /> */}
                                         <Image
-                                        title={data[1].title}
+                                            title={data[1].title}
                                             src={data[1].image}
-                                            alt="trend"
+                                            alt={data[1].title}
                                             width={500}
                                             height={300}
                                         />
@@ -71,15 +62,8 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[1].slug}
                                             href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
                                     </h3>
-                                   <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[1].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
-                                            </li>
-                                        </ul>
+                                    <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
+
                                 </div>
                             </div>
                         </div>
@@ -88,11 +72,10 @@ export default function FashionBlog1({ data }) {
                                 <div className="post-thumb">
                                     <Link title={data[2].slug}
                                         href={`/${data[2].category}/${data[2].slug}`}>
-                                        {/* <img src="/assets/img/post/fasion-post-3.jpg" alt="post" /> */}
                                         <Image
-                                        title={data[2].title}
+                                            title={data[2].title}
                                             src={data[2].image}
-                                            alt="trend"
+                                            alt={data[2].title}
                                             width={500}
                                             height={300}
                                         />
@@ -105,15 +88,8 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[2].slug}
                                             href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                     </h3>
-                                     <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[2].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
-                                            </li>
-                                        </ul>
+                                    <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
+
                                 </div>
                             </div>
                         </div>
@@ -124,13 +100,12 @@ export default function FashionBlog1({ data }) {
                                 <div className="post-img">
                                     <Link title={data[3].slug}
                                         href={`/${data[3].category}/${data[3].slug}`}>
-                                        {/* <img src="/assets/img/post/fasion-post-4.jpg" alt="post" /> */}
                                         <Image
-                                        title={data[3].title}
+                                            title={data[3].title}
                                             src={data[3].image}
-                                            alt="trend"
-                                            width={500}
-                                            height={300}
+                                            alt={data[3].title}
+                                            width={200}
+                                            height={110}
                                         />
                                     </Link>
                                 </div>
@@ -139,15 +114,8 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[3].slug}
                                             href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
                                     </h3>
-                                  <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[3].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
-                                            </li>
-                                        </ul>
+                                    <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
+
                                 </div>
                             </div>
                         </div>
@@ -156,13 +124,12 @@ export default function FashionBlog1({ data }) {
                                 <div className="post-img">
                                     <Link title={data[4].slug}
                                         href={`/${data[4].category}/${data[4].slug}`}>
-                                        {/* <img src="/assets/img/post/fasion-post-5.jpg" alt="post" /> */}
                                         <Image
-                                        title={data[4].title}
+                                            title={data[4].title}
                                             src={data[4].image}
-                                            alt="trend"
-                                            width={500}
-                                            height={300}
+                                            alt={data[4].title}
+                                            width={200}
+                                            height={110}
                                         />
                                     </Link>
                                 </div>
@@ -172,15 +139,8 @@ export default function FashionBlog1({ data }) {
                                             href={`/${data[4].category}/${data[4].slug}`}>{data[4].title}</Link>
                                     </h3>
 
-                                    <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[4].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[4].date}</span>
-                                            </li>
-                                        </ul>
+                                    <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[4].date}</span>
+
                                 </div>
                             </div>
                         </div>
@@ -189,13 +149,12 @@ export default function FashionBlog1({ data }) {
                                 <div className="post-img">
                                     <Link title={data[5].slug}
                                         href={`/${data[5].category}/${data[5].slug}`}>
-                                        {/* <img src="/assets/img/post/fasion-post-6.jpg" alt="post" /> */}
                                         <Image
-                                        title={data[5].title}
+                                            title={data[5].title}
                                             src={data[5].image}
-                                            alt="trend"
-                                            width={500}
-                                            height={300}
+                                            alt={data[5].title}
+                                            width={200}
+                                            height={110}
                                         />
                                     </Link>
                                 </div>
@@ -204,15 +163,8 @@ export default function FashionBlog1({ data }) {
                                         <Link title={data[5].slug}
                                             href={`/${data[5].category}/${data[5].slug}`}>{data[5].title}</Link>
                                     </h3>
-                                     <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[5].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[5].date}</span>
-                                            </li>
-                                        </ul>
+                                    <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[5].date}</span>
+
                                 </div>
                             </div>
                         </div>

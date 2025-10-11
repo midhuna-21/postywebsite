@@ -28,11 +28,11 @@ export default function Breadcrumb({ category, breadcrumbTitle }) {
         <div className="page-header-content">
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" title="home">Home</Link>
             </li>
             {category && (
               <li>
-                <Link href={`/${category.toLowerCase()}`}>
+                <Link href={`/${category.toLowerCase()}`} title={category}>
                   {category.charAt(0).toUpperCase() + category.slice(1).toLowerCase()}
                 </Link>
               </li>

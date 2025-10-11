@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import Image from "next/image";
 
-
-export default function EditorBlog1({ data }) {
+export default function     EditorBlog1({ data }) {
     return (
         <>
             <section className="editor-blog-area">
@@ -10,17 +9,16 @@ export default function EditorBlog1({ data }) {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="section-heading mb-40">
-                                <h3 className="section-title title-border"><span>Editor's Pick</span></h3>
+                                <h2 className="section-title title-border"><span>Editor's Pick</span></h2>
                             </div>
                             <div className="post-card editor-post-card">
                                 <div className="post-thumb">
                                     <Link title={data[0].slug}
                                         href={`/${data[0].category}/${data[0].slug}`}>
-                                        {/* <img src={data[0].image} alt="post" /> */}
                                         <Image
-                                        title={data[0].title}
+                                            title={data[0].title}
                                             src={data[0].image}
-                                            alt="trend"
+                                            alt={data[0].title}
                                             width={500}
                                             height={300}
                                         />
@@ -35,7 +33,7 @@ export default function EditorBlog1({ data }) {
                                     </h3>
                                     <p>{data[0].shortdescription}</p>
                                     <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                        <li style={{ fontSize: "0.65rem", color: "#333" }}>
+                                        <li style={{ fontSize: "0.65rem", color: "#666" }}>
                                             by{" "}
                                             <span style={{ fontSize: "0.7rem", color: "inherit" }}>
                                                 {data[0].author}
@@ -51,11 +49,10 @@ export default function EditorBlog1({ data }) {
                                     <div className="post-thumb">
                                         <Link title={data[1].slug}
                                             href={`/${data[1].category}/${data[1].slug}`}>
-                                            {/* <img src={data[0].image} alt="post" /> */}
                                             <Image
-                                            title={data[1].title}
+                                                title={data[1].title}
                                                 src={data[1].image}
-                                                alt="trend"
+                                                alt={data[1].title}
                                                 width={500}
                                                 height={300}
                                             />
@@ -69,15 +66,7 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[1].slug}
                                                 href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
                                         </h3>
-                                        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-                                                    {data[1].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
-                                            </li>
-                                        </ul>
+                                        <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
 
                                     </div>
                                 </div>
@@ -85,11 +74,10 @@ export default function EditorBlog1({ data }) {
                                     <div className="post-thumb">
                                         <Link title={data[2].slug}
                                             href={`/${data[2].category}/${data[2].slug}`}>
-                                            {/* <img src={data[0].image} alt="post" /> */}
                                             <Image
-                                            title={data[2].title}
+                                                title={data[2].title}
                                                 src={data[2].image}
-                                                alt="trend"
+                                                alt={data[2].title}
                                                 width={500}
                                                 height={300}
                                             />
@@ -102,15 +90,7 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[2].slug}
                                                 href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                         </h3>
-                                        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-                                                    {data[2].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
-                                            </li>
-                                        </ul>
+                                        <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
 
                                     </div>
                                 </div>
@@ -118,12 +98,10 @@ export default function EditorBlog1({ data }) {
                                     <div className="post-thumb">
                                         <Link title={data[3].slug}
                                             href={`/${data[3].category}/${data[3].slug}`}>
-                                            {/* <img src={data[0].image} alt="post" /> */}
-
                                             <Image
-                                            title={data[3].title}
+                                                title={data[3].title}
                                                 src={data[3].image}
-                                                alt="trend"
+                                                alt={data[3].title}
                                                 width={500}
                                                 height={300}
                                             />
@@ -136,16 +114,7 @@ export default function EditorBlog1({ data }) {
                                             <Link title={data[3].slug}
                                                 href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
                                         </h3>
-                                        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-                                                    {data[3].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
-                                            </li>
-                                        </ul>
-
+                                        <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
                                     </div>
                                 </div>
                             </div>
@@ -156,35 +125,41 @@ export default function EditorBlog1({ data }) {
                             </div>
                             <div className="social-box-wrap">
                                 <div className="social-box facebook">
-                                    <Link href="/#"><i className="lab la-facebook-square" /></Link>
-                                    <h4 className="title"><Link href="/#">Facebook</Link> <span>23k Likes</span></h4>
+                                    <Link href="/#" title='facebook-icon'><i className="lab la-facebook-square" /></Link>
+                                    <span className="title"><Link href="/#" title='facebook'>Facebook</Link>
+                                    </span>
                                 </div>
                                 <div className="social-box twitter">
-                                    <Link href="/#" className="icon"><i className="lab la-twitter" /></Link>
-                                    <h4 className="title"><Link href="/#">Twitter</Link> <span>56k Followers</span></h4>
+                                    <Link href="/#" className="icon" title='twitter-icon'><i className="lab la-twitter" /></Link>
+                                    <span className="title"><Link href="/#" title='twitter'>Twitter</Link>
+                                    </span>
                                 </div>
                                 <div className="social-box youtube">
-                                    <Link href="/#" className="icon"><i className="lab la-youtube" /></Link>
-                                    <h4 className="title"><Link href="/#">Youtube</Link> <span>56k Subscribe</span></h4>
+                                    <Link href="/#" className="icon" title='youtube-icon'><i className="lab la-youtube" /></Link>
+                                    <span className="title"><Link href="/#" title='youtube'>Youtube</Link>
+                                    </span>
                                 </div>
                                 <div className="social-box spotify">
-                                    <Link href="/#" className="icon"><i className="lab la-spotify" /></Link>
-                                    <h4 className="title"><Link href="/#">Spotify</Link> <span>14k Followers</span></h4>
+                                    <Link href="/#" className="icon" title='spotify-icon'><i className="lab la-spotify" /></Link>
+                                    <span className="title"><Link href="/#" title='spotify'>Spotify</Link>
+                                    </span>
                                 </div>
                                 <div className="social-box insta">
-                                    <Link href="/#" className="icon"><i className="lab la-instagram" /></Link>
-                                    <h4 className="title"><Link href="/#">Instagram</Link> <span>5m Followers</span></h4>
+                                    <Link href="/#" className="icon" title='instagram-icon'><i className="lab la-instagram" /></Link>
+                                    <span className="title"><Link href="/#" title='instagram'>Instagram</Link>
+                                    </span>
                                 </div>
                                 <div className="social-box pinterest">
-                                    <Link href="/#" className="icon"><i className="lab la-pinterest-p" /></Link>
-                                    <h4 className="title"><Link href="/#">Pinterest</Link> <span>59k Followers</span></h4>
+                                    <Link href="/#" className="icon" title='pinterest-icon'><i className="lab la-pinterest-p" /></Link>
+                                    <span className="title"><Link href="/#" title='pinterest'>Pinterest</Link>
+                                    </span>
                                 </div>
                             </div>
                             <div className="post-author-box text-center">
                                 <div className="bg" />
                                 <div>
                                     <Image
-                                    title='daniel-ruiz'
+                                        title='daniel-ruiz'
                                         src="/images/daniel-ruiz.webp"
                                         alt="Daniel Ruiz"
                                         width={400}
@@ -196,7 +171,7 @@ export default function EditorBlog1({ data }) {
                                         Sharing timely stories and perspectives on business, culture, and the world around us.
                                     </p>
                                 </div>
-                                <Link href="#" className="default-btn">About Me</Link>
+                                <Link href="#" title='about author' className="default-btn">About Me</Link>
                             </div>
                         </div>
                     </div>

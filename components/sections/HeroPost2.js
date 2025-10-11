@@ -1,18 +1,17 @@
-
 import Link from 'next/link'
 import Image from "next/image";
 
 export default function HeroPost2({ data }) {
     return (
         <>
-            <section className="hero-post-area area-2 bg-grey-2">
+            <section className="hero-post-area area-2 ">
                 <div className="container">
                     <div className="top-area mb-40 title-border">
                         <div className="section-heading">
-                            <h3 className="section-title"><span className="bg-grey-2">Most Read</span></h3>
+                            <h2 className="section-title"><span className="bg-grey">Most Read</span></h2>
                         </div>
                         <div className="right-btn">
-                            <Link href="/innovation" className="default-btn">See More</Link>
+                            <Link href="/innovation" title='innovation' className="default-btn">Explore</Link>
                         </div>
                     </div>
                     <div className="post-area-wrap wrap-2">
@@ -20,11 +19,10 @@ export default function HeroPost2({ data }) {
                             <div className="post-carousel-thumb">
                                 <Link title={data[0].slug}
                                     href={`/${data[0].category}/${data[0].slug}`}>
-                                    {/* <img src="/assets/img/post/read-post-img-1.jpg" alt="img" /> */}
                                     <Image
-                                    title={data[0].title}
+                                        title={data[0].title}
                                         src={data[0].image}
-                                        alt="trend"
+                                        alt={data[0].title}
                                         width={500}
                                         height={300}
                                     />
@@ -44,7 +42,6 @@ export default function HeroPost2({ data }) {
                                     <li className="date">{data[0].date}</li>
                                 </ul>
                             </div>
-                            {/* /. post-card-content */}
                         </div>
                         <div className="post-area-right">
                             <div className="post-card-wrap wrap-2">
@@ -52,11 +49,10 @@ export default function HeroPost2({ data }) {
                                     <div className="post-thumb">
                                         <Link title={data[1].slug}
                                             href={`/${data[1].category}/${data[1].slug}`}>
-                                            {/* <img src="/assets/img/post/post-img-3.jpg" alt="post" /> */}
                                             <Image
-                                            title={data[1].title}
+                                                title={data[1].title}
                                                 src={data[1].image}
-                                                alt="trend"
+                                                alt={data[1].title}
                                                 width={500}
                                                 height={300}
                                             />
@@ -69,27 +65,17 @@ export default function HeroPost2({ data }) {
                                             <Link title={data[1].slug}
                                                 href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
                                         </h3>
-                                        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-                                                    {data[1].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
-                                            </li>
-                                        </ul>
-
+                                        <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
                                     </div>
                                 </div>
                                 <div className="post-card">
                                     <div className="post-thumb">
                                         <Link title={data[2].slug}
                                             href={`/${data[2].category}/${data[2].slug}`}>
-                                            {/* <img src="/assets/img/post/post-img-4.jpg" alt="post" /> */}
                                             <Image
-                                            title={data[2].title}
+                                                title={data[2].title}
                                                 src={data[2].image}
-                                                alt="trend"
+                                                alt={data[2].title}
                                                 width={500}
                                                 height={300}
                                             />
@@ -102,208 +88,40 @@ export default function HeroPost2({ data }) {
                                             <Link title={data[2].slug}
                                                 href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                         </h3>
-                                        <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.7rem", color: "inherit" }}>
-                                                    {data[2].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
-                                            </li>
-                                        </ul>
-
-
+                                        <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="list-post-area list-2">
-                                <div className="list-post-card">
-                                    <div className="post-img">
-                                        <Link title={data[3].slug}
-                                            href={`/${data[3].category}/${data[3].slug}`}>
-                                            {/* <img src="/assets/img/post/list-post-img-6.png" alt="post" /> */}
-                                            <Image
-                                            title={data[3].title}
-                                                src={data[3].image}
-                                                alt="trend"
-                                                width={150}
-                                                height={120}
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content">
-                                        <h3 className="title">
-                                            <Link title={data[3].slug}
-                                                href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
-                                        </h3>
-                                        <div className="post-list">
-                                            <div style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.65rem", color: "inherit" }}>
-                                                    {data[3].author}
+                                {data.slice(3, 9).map((item, index) => (
+                                    <div className="list-post-card" key={item.slug}>
+                                        <div className="post-img">
+
+                                            <Link title={item.slug} href={`/${item.category}/${item.slug}`}>
+                                                <Image
+                                                    title={item.title}
+                                                    src={item.image}
+                                                    alt={item.title}
+                                                    width={150}
+                                                    height={120}
+                                                    style={{ objectFit: "cover" }}
+                                                />
+                                            </Link>
+                                        </div>
+                                        <div className="post-content">
+                                            <h3 className="title">
+                                                <Link title={item.slug} href={`/${item.category}/${item.slug}`}>
+                                                    {item.title}
+                                                </Link>
+                                            </h3>
+                                            <div className="post-list">
+                                                <span style={{ fontSize: "0.55rem", color: "#666" }}>
+                                                    {item.date}
                                                 </span>
-                                                , <span style={{ fontSize: "0.55rem", color: "#666" }}>{data[3].date}</span>
                                             </div>
                                         </div>
-
-
                                     </div>
-                                </div>
-                                <div className="list-post-card">
-                                    <div className="post-img">
-                                        <Link title={data[4].slug}
-                                            href={`/${data[4].category}/${data[4].slug}`}>
-                                            {/* <img src="/assets/img/post/list-post-img-7.png" alt="post" /> */}
-                                            <Image
-                                            title={data[4].title}
-                                                src={data[4].image}
-                                                alt="trend"
-                                                width={150}
-                                                height={120}
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content">
-                                        <h3 className="title">
-                                            <Link title={data[4].slug}
-                                                href={`/${data[4].category}/${data[4].slug}`}>{data[4].title}</Link>
-                                        </h3>
-                                        <div className="post-list">
-                                            <div style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.65rem", color: "inherit" }}>
-                                                    {data[4].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.55rem", color: "#666" }}>{data[4].date}</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="list-post-card">
-                                    <div className="post-img">
-                                        <Link title={data[5].slug}
-                                            href={`/${data[5].category}/${data[5].slug}`}>
-                                            {/* <img src="/assets/img/post/list-post-img-8.png" alt="post" /> */}
-                                            <Image
-                                            title={data[5].title}
-                                                src={data[5].image}
-                                                alt="trend"
-                                                width={150}
-                                                height={120}
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content">
-                                        <h3 className="title">
-                                            <Link title={data[5].slug}
-                                                href={`/${data[5].category}/${data[5].slug}`}>{data[5].title}</Link>
-                                        </h3>
-                                        <div className="post-list">
-                                            <div style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.65rem", color: "inherit" }}>
-                                                    {data[5].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.55rem", color: "#666" }}>{data[5].date}</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="list-post-card">
-                                    <div className="post-img">
-                                        <Link title={data[6].slug}
-                                            href={`/${data[6].category}/${data[6].slug}`}>
-                                            {/* <img src="/assets/img/post/list-post-img-9.png" alt="post" /> */}
-                                            <Image
-                                            title={data[6].title}
-                                                src={data[6].image}
-                                                alt="trend"
-                                                width={150}
-                                                height={120}
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content">
-                                        <h3 className="title">
-                                            <Link title={data[6].slug}
-                                                href={`/${data[6].category}/${data[6].slug}`}>{data[6].title}</Link>
-                                        </h3>
-                                        <div className="post-list">
-                                            <div style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.65rem", color: "inherit" }}>
-                                                    {data[6].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.55rem", color: "#666" }}>{data[6].date}</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="list-post-card">
-                                    <div className="post-img">
-                                        <Link title={data[7].slug}
-                                            href={`/${data[7].category}/${data[7].slug}`}>
-                                            {/* <img src="/assets/img/post/list-post-img-10.png" alt="post" /> */}
-                                            <Image
-                                            title={data[7].title}
-                                                src={data[7].image}
-                                                alt="trend"
-                                                width={150}
-                                                height={120}
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content">
-                                        <h3 className="title">
-                                            <Link title={data[7].slug}
-                                                href={`/${data[7].category}/${data[7].slug}`}>{data[7].title}</Link>
-                                        </h3>
-                                        <div className="post-list">
-                                            <div style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.65rem", color: "inherit" }}>
-                                                    {data[7].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.55rem", color: "#666" }}>{data[7].date}</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="list-post-card">
-                                    <div className="post-img">
-                                        <Link title={data[8].slug}
-                                            href={`/${data[8].category}/${data[8].slug}`}>
-                                            {/* <img src="/assets/img/post/list-post-img-11.png" alt="post" /> */}
-                                            <Image
-                                            title={data[8].title}
-                                                src={data[8].image}
-                                                alt="trend"
-                                                width={150}
-                                                height={120}
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content">
-                                        <h3 className="title">
-                                            <Link title={data[8].slug}
-                                                href={`/${data[8].category}/${data[8].slug}`}>{data[8].title}</Link>
-                                        </h3>
-                                        <div className="post-list">
-                                            <div style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-                                                by{" "}
-                                                <span style={{ fontSize: "0.65rem", color: "inherit" }}>
-                                                    {data[8].author}
-                                                </span>
-                                                , <span style={{ fontSize: "0.55rem", color: "#666" }}>{data[8].date}</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>

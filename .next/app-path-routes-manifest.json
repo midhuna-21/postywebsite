@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/editorial-policy/page": "/editorial-policy",
+  "/contact/page": "/contact",
+  "/page": "/",
+  "/[category]/[slug]/page": "/[category]/[slug]",
+  "/julio-herrera-velutini/julio-herrera-velutini-strategic-vision-driving-global-finance/page": "/julio-herrera-velutini/julio-herrera-velutini-strategic-vision-driving-global-finance",
+  "/[category]/page": "/[category]"
+}

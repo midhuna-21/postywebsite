@@ -1,7 +1,6 @@
 "use client"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
-import Image from "next/image";
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -29,18 +28,10 @@ export default function News({ data }) {
             <div className="container">
                 <div className="news-carousel swiper">
                     <Swiper {...swiperOptions} className="swiper-wrapper">
-
                         {data?.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <div className="hero-text">
                                     <span className="news">
-                                        <Image
-                                        title="news-icon"
-                                            src="/assets/img/images/news-icon.png"
-                                            alt="icon"
-                                            width={20}
-                                            height={20}
-                                        />
                                         Top News
                                     </span>
                                     <span>{item.title}</span>

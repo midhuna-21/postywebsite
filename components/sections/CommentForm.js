@@ -35,8 +35,6 @@ export default function CommentForm() {
   return (
     <div className="blog-form-wrap" style={{ position: "relative" }}>
       <h3 className="layout-title">Leave a comment</h3>
-      {/* <p>Your email address will not be published. Required fields are marked *</p> */}
-
       <div className="blog-form">
         <form onSubmit={handleSubmit}>
           <div className="form-group row">

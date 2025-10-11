@@ -51,7 +51,7 @@ export default function Trending1({ data }) {
                       style={{ color: 'inherit', display: 'block' }}
                     >
                       <Image
-                      title={item.title}
+                        title={item.title}
                         src={item.image}
                         alt="trend"
                         width={80}
@@ -61,7 +61,7 @@ export default function Trending1({ data }) {
                   </div>
                   <div className="post-content trending-content">
                     <span>{item.category}</span>
-                    <h4 className="title trending-title">
+                    <p className="title trending-title">
                       <Link
                         title={item.slug}
                         href={`/${item.category}/${item.slug}`}
@@ -70,10 +70,10 @@ export default function Trending1({ data }) {
                       >
                         {item.title}
                       </Link>
-                    </h4>
+                    </p>
                     <div className="post-list">
                       <p style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-                        by <Link href="#" style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}>
+                        by <Link href="#" title={item.author} style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}>
                           {item.author}
                         </Link>, {item.date}
                       </p>

@@ -9,10 +9,10 @@ export default function HeroPost3({ data }) {
                 <div className="container">
                     <div className="top-area mb-40 title-border">
                         <div className="section-heading">
-                            <h3 className="section-title"><span className="bg-grey-2">Investing</span></h3>
+                            <h2 className="section-title"><span className="bg-grey">Investing</span></h2>
                         </div>
                         <div className="right-btn">
-                            <Link href="/investing" className="default-btn">See More</Link>
+                            <Link href="/investing" title='investing' className="default-btn">View Investing Articles</Link>
                         </div>
                     </div>
                     <div className="post-area-wrap wrap-2">
@@ -24,7 +24,7 @@ export default function HeroPost3({ data }) {
                                     <Image
                                     title={data[0].title}
                                         src={data[0].image}
-                                        alt="trend"
+                                        alt={data[0].title}
                                         width={500}
                                         height={300}
                                     />
@@ -56,28 +56,21 @@ export default function HeroPost3({ data }) {
                                             <Image
                                             title={data[1].title}
                                                 src={data[1].image}
-                                                alt="trend"
+                                                alt={data[1].title}
                                                 width={500}
                                                 height={300}
                                             />
                                         </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link title={data[1].slug}
-												href={`/${data[1].category}/${data[1].slug}`} className="card-btn bg-blue">{data[1].category}</Link>
+                                        {/* <Link title={data[1].slug}
+												href={`/${data[1].category}/${data[1].slug}`} className="card-btn bg-blue">{data[1].category}</Link> */}
                                         <h3 className="title">
                                             <Link title={data[1].slug}
 												href={`/${data[1].category}/${data[1].slug}`}>{data[1].title}</Link>
                                         </h3>
-                                         <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[1].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
-                                            </li>
-                                        </ul>
+                                       <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[1].date}</span>
+                                           
                                     </div>
                                 </div>
                                 <div className="post-card">
@@ -88,28 +81,21 @@ export default function HeroPost3({ data }) {
                                             <Image
                                             title={data[2].title}
                                                 src={data[2].image}
-                                                alt="trend"
+                                                alt={data[2].title}
                                                 width={500}
                                                 height={300}
                                             />
                                         </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link title={data[2].slug}
-												href={`/${data[2].category}/${data[2].slug}`} className="card-btn bg-pink">{data[2].category}</Link>
+                                        {/* <Link title={data[2].slug}
+												href={`/${data[2].category}/${data[2].slug}`} className="card-btn bg-pink">{data[2].category}</Link> */}
                                         <h3 className="title">
                                             <Link title={data[2].slug}
 												href={`/${data[2].category}/${data[2].slug}`}>{data[2].title}</Link>
                                         </h3>
-                                         <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[2].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
-                                            </li>
-                                        </ul>
+                                         <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[2].date}</span>
+                                           
                                     </div>
                                 </div>
                             </div>
@@ -122,28 +108,21 @@ export default function HeroPost3({ data }) {
                                             <Image
                                             title={data[3].title}
                                                 src={data[3].image}
-                                                alt="trend"
+                                                alt={data[3].title}
                                                 width={500}
                                                 height={300}
                                             />
                                         </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link title={data[3].slug}
-												href={`/${data[3].category}/${data[3].slug}`} className="card-btn bg-blue">{data[3].category}</Link>
+                                        {/* <Link title={data[3].slug}
+												href={`/${data[3].category}/${data[3].slug}`} className="card-btn bg-blue">{data[3].category}</Link> */}
                                         <h3 className="title">
                                             <Link title={data[3].slug}
 												href={`/${data[3].category}/${data[3].slug}`}>{data[3].title}</Link>
                                         </h3>
-                                         <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[3].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
-                                            </li>
-                                        </ul>
+                                        <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[3].date}</span>
+                                           
                                     </div>
                                 </div>
                                 <div className="post-card">
@@ -154,28 +133,21 @@ export default function HeroPost3({ data }) {
                                             <Image
                                             title={data[4].title}
                                                 src={data[4].image}
-                                                alt="trend"
+                                                alt={data[4].title}
                                                 width={500}
                                                 height={300}
                                             />
                                         </Link>
                                     </div>
                                     <div className="post-content">
-                                        <Link title={data[4].slug}
-												href={`/${data[4].category}/${data[4].slug}`} className="card-btn bg-pink">{data[4].category}</Link>
+                                        {/* <Link title={data[4].slug}
+												href={`/${data[4].category}/${data[4].slug}`} className="card-btn bg-pink">{data[4].category}</Link> */}
                                         <h3 className="title">
                                             <Link title={data[4].slug}
 												href={`/${data[4].category}/${data[4].slug}`}>{data[4].title}</Link>
                                         </h3>
-                                         <ul className="post-list" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                                            <li style={{ fontSize: "0.65rem", color: "#333" }}>
-                                                by{" "}
-                                              
-                                                   {data[4].author}
-                                                
-                                                , <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[4].date}</span>
-                                            </li>
-                                        </ul>
+                                         <span style={{ fontSize: "0.65rem", color: "#666" }}>{data[4].date}</span>
+
                                     </div>
                                 </div>
                             </div>

@@ -1,11 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
-import image from '../../public/images/who-is-julio-herrera-velutini-3.webp';
 import CommentForm from "./CommentForm";
 import SubscribeSection from "./SubscribeSection";
 
 
 export default function DetailContent({ article, otherArticles }) {
+    const splitIntoParagraphs = (text, numParagraphs = 4) => {
+        if (!text) return [];
+
+        let sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+
+        const chunkSize = Math.ceil(sentences.length / numParagraphs);
+        const paragraphs = [];
+        for (let i = 0; i < sentences.length; i += chunkSize) {
+            paragraphs.push(sentences.slice(i, i + chunkSize).join(" "));
+        }
+
+        return paragraphs;
+    };
+
+    const paragraphs = splitIntoParagraphs(article.description, 4);
 
     return (
         <div>
@@ -16,7 +30,7 @@ export default function DetailContent({ article, otherArticles }) {
                             <div className="post-content">
                                 <Link title={article.slug}
                                     href={`/${article.category}`} className="card-btn bg-green">{article.category}</Link>
-                                <h3 className="title" style={{ lineHeight: 1.3 }}>{article.title}</h3>
+                                <h1 className="title" style={{ lineHeight: 1.3 }}>{article.title}</h1>
                                 <ul className="post-list">
                                     <li className="author">
                                         by <span>{article.author}</span>
@@ -29,22 +43,21 @@ export default function DetailContent({ article, otherArticles }) {
                             </div>
                         </div>
                         <div className="post-social">
-                            {/* <span>Share:</span>  */}
                             <ul className="social-list d-flex align-items-center">
                                 <li>
-                                    <Link href="/#" className="facebook"><i className="lab la-facebook-f" /></Link>
+                                    <Link href="/#" title="facebook" className="facebook"><i className="lab la-facebook-f" /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" className="twitter"><i className="lab la-twitter" /></Link>
+                                    <Link href="/#" title="twitter" className="twitter"><i className="lab la-twitter" /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" className="linkedin"><i className="lab la-linkedin-in" /></Link>
+                                    <Link href="/#" title="linkedin" className="linkedin"><i className="lab la-linkedin-in" /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" className="instagram"><i className="lab la-instagram" /></Link>
+                                    <Link href="/#" title="instagram" className="instagram"><i className="lab la-instagram" /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" className="pinterest"><i className="lab la-pinterest-p" /></Link>
+                                    <Link href="/#" title="pinterest" className="pinterest"><i className="lab la-pinterest-p" /></Link>
                                 </li>
                             </ul>
                         </div>
@@ -53,33 +66,33 @@ export default function DetailContent({ article, otherArticles }) {
                         <div className="col-lg-8">
                             <div className="post-layout-content">
                                 <div className="layout-thumb mb-30">
-                                    {/* <img src="/assets/img/blog/layout-img.jpg" alt="layout" /> */}
-                                        <Image
+                                    <Image
                                         title={article.title}
-                                            src={article.image}
-                                            alt="layout"
-                                            width={1200}
-                                            height={800}
-                                            priority
-                                            style={{ width: "100%", height: "auto" }}
-                                        />
+                                        src={article.image}
+                                        alt={article.title}
+                                        width={1200}
+                                        height={800}
+                                        priority
+                                        style={{ width: "100%", height: "auto" }}
+                                    />
                                 </div>
-                                <p className="layout-desc">
-                                    {article.description}
-                                </p>
-
-
+                                <div>
+                                    {paragraphs.map((para, idx) => (
+                                        <p key={idx} className="layout-desc" style={{ marginBottom: "1rem" }}>
+                                            {para}
+                                        </p>
+                                    ))}
+                                </div>
 
 
                                 <div className="article-wrap">
                                     <div className="article-item left-article">
                                         <p className="arrow"><i className="las la-angle-left" />Previous News</p>
                                         <div className="article-thumb">
-                                            {/* <img src="/assets/img/blog/article-1.jpg" alt="thumb" /> */}
                                             <Image
-                                            title={otherArticles[0].title}
+                                                title={otherArticles[0].title}
                                                 src={otherArticles[0].image}
-                                                alt="thumb"
+                                                alt={otherArticles[0].title}
                                                 width={100}
                                                 height={60}
                                             />
@@ -96,11 +109,10 @@ export default function DetailContent({ article, otherArticles }) {
                                                 <Link title={otherArticles[1].slug}
                                                     href={`/${otherArticles[1].category}/${otherArticles[1].slug}`} className="title">{otherArticles[1].title}</Link>
                                             </h3>
-                                            {/* <img src="/assets/img/blog/article-2.jpg" alt="thumb" /> */}
                                             <Image
-                                            title={otherArticles[1].title}
+                                                title={otherArticles[1].title}
                                                 src={otherArticles[1].image}
-                                                alt="thumb"
+                                                alt={otherArticles[1].title}
                                                 width={100}
                                                 height={60}
                                             />
@@ -125,13 +137,23 @@ export default function DetailContent({ article, otherArticles }) {
                                                     title={article.slug}
                                                     href={`/${article.category}/${article.slug}`}
                                                 >
-                                                    <Image
-                                                    title={article.title}
-                                                        src={article.image}
-                                                        alt="thumb"
-                                                        width={200}
-                                                        height={200}
-                                                    />
+                                                    <div
+                                                        style={{
+                                                            width: 150,
+                                                            height: 120,
+                                                            position: "relative",
+                                                            overflow: "hidden",
+                                                            borderRadius: "8px"
+                                                        }}
+                                                    >
+                                                        <Image
+                                                            title={article.title}
+                                                            src={article.image}
+                                                            alt={article.title}
+                                                            fill
+                                                            style={{ objectFit: "cover" }}
+                                                        />
+                                                    </div>
                                                 </Link>
                                             </div>
                                             <div className="post-content">
@@ -148,6 +170,7 @@ export default function DetailContent({ article, otherArticles }) {
                                                         by{" "}
                                                         <Link
                                                             href="#"
+                                                            title={article.author}
                                                             style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}
                                                         >
                                                             {article.author}
@@ -167,20 +190,20 @@ export default function DetailContent({ article, otherArticles }) {
                                 </div>
                                 <ul className="categorie-list">
                                     <li>
-                                        <Link href="/business"><h4 className="list-title">Business</h4><i className="las la-arrow-right" />
+                                        <Link href="/business" title="business"><h4 className="list-title">Business</h4><i className="las la-arrow-right" />
                                         </Link></li>
 
                                     <li>
-                                        <Link href="/investing"><h4 className="list-title">Investing</h4><i className="las la-arrow-right" /></Link>
+                                        <Link href="/investing" title="investing"><h4 className="list-title">Investing</h4><i className="las la-arrow-right" /></Link>
                                     </li>
                                     <li>
-                                        <Link href="/enterprise"><h4 className="list-title">Enterprise</h4><i className="las la-arrow-right" /></Link>
+                                        <Link href="/enterprise" title="enterprise"><h4 className="list-title">Enterprise</h4><i className="las la-arrow-right" /></Link>
                                     </li>
                                     <li>
-                                        <Link href="/innovation"><h4 className="list-title">Innovation</h4><i className="las la-arrow-right" /></Link>
+                                        <Link href="/innovation" title="innovation"><h4 className="list-title">Innovation</h4><i className="las la-arrow-right" /></Link>
                                     </li>
                                     <li>
-                                        <Link href="/us"><h4 className="list-title">U.S</h4><i className="las la-arrow-right" /></Link>
+                                        <Link href="/us" title="us"><h4 className="list-title">U.S</h4><i className="las la-arrow-right" /></Link>
                                     </li>
                                 </ul>
                             </div>
@@ -188,7 +211,6 @@ export default function DetailContent({ article, otherArticles }) {
                     </div>
                 </div>
             </section>
-            {/* ./ post-layout-1 */}
             <SubscribeSection />
         </div>
     );

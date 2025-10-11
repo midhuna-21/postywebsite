@@ -1,6 +1,6 @@
 
 'use client'
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import BackToTop from "./BackToTop"
 import Breadcrumb from './Breadcrumb'
 import Footer from './Footer'
@@ -66,7 +66,6 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 			< Footer />
 
 			<BackToTop target="#top" />
-			{/* <AddClassBody />	 */}
 		</>
 	)
 }

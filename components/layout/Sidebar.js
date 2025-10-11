@@ -7,6 +7,14 @@ import usData from '../../public/data/us.json';
 import Image from "next/image";
 
 export default function Sidebar({ isSidebar, handleSidebar, isMobileMenu, handleMobileMenu }) {
+	const posts = [
+		businessData[7],
+		investingData[19],
+		enterpriseData[0],
+		innovationData[0],
+		usData[6],
+	];
+
 	return (
 		<>
 			<div id="sidebar-area" className="sidebar-area">
@@ -20,11 +28,11 @@ export default function Sidebar({ isSidebar, handleSidebar, isMobileMenu, handle
 				</button>
 				<div className="sidebar-content">
 					<div className="site-logo">
-						<Link href="/#">
+						<Link href="/#" title="home">
 
 
 							<Image
-							title="pressorahub-dark-logo"
+								title="pressorahub-dark-logo"
 								className="logo-dark"
 								src="/images/pressorahub-black-logo.webp"
 								alt="PressoraHub Logo Dark"
@@ -34,11 +42,11 @@ export default function Sidebar({ isSidebar, handleSidebar, isMobileMenu, handle
 							/>
 							{/* Light Logo */}
 							<Image
-							title="pressorahub-logo"
+								title="pressorahub-logo"
 								className="logo-light"
 								src="/images/pressorahub-logo.webp"
 								alt="PressoraHub Logo Light"
-								width={300}
+								width={200}
 								height={50}
 								priority
 							/>
@@ -46,134 +54,56 @@ export default function Sidebar({ isSidebar, handleSidebar, isMobileMenu, handle
 					</div>
 
 					<div className="list-post-area list-2">
-						<div className="list-post-card">
-							<div className="post-img">
-								<Link title={businessData[7].slug}
-									href={`/${businessData[7].category}/${businessData[7].slug}`} className="title">
-
-									<Image
-									title={businessData[7].title}
-										src={businessData[7].image}
-										alt={businessData[7].slug}
-										width={350}
-										height={100}
-										priority
-									/>
-								</Link>
-							</div>
-							<div className="post-content">
-								<h3 className="title">
-									<Link title={businessData[7].slug}
-										href={`/${businessData[7].category}/${businessData[7].slug}`} className="title">
-										{businessData[7].title}</Link>
-								</h3>
-								<span>{businessData[7].date}</span>
-							</div>
-						</div>
-						<div className="list-post-card">
-							<div className="post-img">
-								<Link title={investingData[19].slug}
-									href={`/${investingData[19].category}/${investingData[19].slug}`} className="title">
-
-									<Image
-									title={investingData[19].title}
-										src={investingData[19].image}
-										alt={investingData[19].slug}
-										width={350}
-										height={100}
-										priority
-									/></Link>
-							</div>
-							<div className="post-content">
-								<h3 className="title">
-									<Link title={investingData[19].slug}
-										href={`/${investingData[19].category}/${investingData[19].slug}`} className="title">
-										{investingData[19].title}</Link>
-								</h3>
-								<span>{investingData[19].date}</span>
-							</div>
-						</div>
-						<div className="list-post-card">
-							<div className="post-img">
-								<Link title={enterpriseData[0].slug}
-									href={`/${enterpriseData[0].category}/${enterpriseData[0].slug}`} className="title">
-									<Image
-									title={enterpriseData[0].title}
-										src={enterpriseData[0].image}
-										alt={enterpriseData[0].slug}
-										width={350}
-										height={100}
-										priority
-									/></Link>
-							</div>
-							<div className="post-content">
-								<h3 className="title">
-									<Link title={enterpriseData[0].slug}
-										href={`/${enterpriseData[0].category}/${enterpriseData[0].slug}`} className="title">
-										{enterpriseData[0].title}</Link>
-								</h3>
-								<span>{enterpriseData[0].date}</span>
-							</div>
-						</div>
-						<div className="list-post-card">
-							<div className="post-img">
-								<Link title={innovationData[0].slug}
-									href={`/${innovationData[0].category}/${innovationData[0].slug}`} className="title">
-									<Image
-									title={innovationData[0].title}
-										src={innovationData[0].image}
-										alt={innovationData[0].slug}
-										width={350}
-										height={100}
-										priority
-									/></Link>
-							</div>
-							<div className="post-content">
-								<h3 className="title">
-									<Link title={innovationData[0].slug}
-										href={`/${innovationData[0].category}/${innovationData[0].slug}`} className="title">
-										{innovationData[0].title}</Link>
-								</h3>
-								<span>{innovationData[0].date}</span>
-							</div>
-						</div>
-						<div className="list-post-card">
-							<div className="post-img">
-								<Link title={usData[6].slug}
-									href={`/${usData[6].category}/${usData[6].slug}`} className="title">
-
-									<Image
-									title={usData[6].title}
-										src={usData[6].image}
-										alt={usData[6].slug}
-										width={350}
-										height={100}
-										priority
-									/>
-								</Link>
-							</div>
-							<div className="post-content">
-								<h3 className="title">
-									<Link title={usData[6].slug}
-										href={`/${usData[6].category}/${usData[6].slug}`} className="title">
-										{usData[6].title}</Link>
-								</h3>
-								<span>{usData[6].date}</span>
-							</div>
+						<div className="list-post-area list-2">
+							{posts.map((post, idx) => (
+								<div className="list-post-card" key={post.slug}>
+									<div className="post-img">
+										<Link
+											title={post.slug}
+											href={`/${post.category}/${post.slug}`}
+											className="title"
+										>
+											<div style={{ position: "relative", width: "110px", height: "90px" }}>
+												<Image
+													src={post.image}
+													alt={post.slug}
+													title={post.title}
+													fill
+													style={{ objectFit: "cover", borderRadius: "6px" }}
+													sizes="110px"
+													priority
+												/>
+											</div>
+										</Link>
+									</div>
+									<div className="post-content">
+										<p className="title">
+											<Link
+												title={post.slug}
+												href={`/${post.category}/${post.slug}`}
+												className="title"
+											>
+												{post.title}
+											</Link>
+										</p>
+										<span>{post.date}</span>
+									</div>
+								</div>
+							))}
 						</div>
 					</div>
 					<ul className="sidebar-social">
 						<li>
-							<Link href="/#"><i className="lab la-facebook-f" /></Link>
+							<Link href="/#" title="facebook"><i className="lab la-facebook-f" /></Link>
 						</li>
 						<li>
-							<Link href="/#"><i className="lab la-twitter" /></Link>
+							<Link href="/#" title="twitter"><i className="lab la-twitter" /></Link>
 						</li>
 						<li>
-							<Link href="/#"><i className="lab la-youtube" /></Link>
+							<Link href="/#" title="youtube"><i className="lab la-youtube" /></Link>
 						</li>
 						<li>
-							<Link href="/#"><i className="lab la-behance" /></Link>
+							<Link href="/#" title="behance"><i className="lab la-behance" /></Link>
 						</li>
 					</ul>
 				</div>
