@@ -1,10 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/about/page": "app/about/page.js",
-  "/editorial-policy/page": "app/editorial-policy/page.js",
-  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
-  "/[category]/[slug]/page": "app/[category]/[slug]/page.js",
-  "/julio-herrera-velutini/julio-herrera-velutini-strategic-vision-driving-global-finance/page": "app/julio-herrera-velutini/julio-herrera-velutini-strategic-vision-driving-global-finance/page.js",
   "/[category]/page": "app/[category]/page.js"
 }
