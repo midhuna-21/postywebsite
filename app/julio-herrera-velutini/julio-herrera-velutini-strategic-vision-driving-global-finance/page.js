@@ -1,7 +1,7 @@
 import React from "react";
 import Script from "next/script";
 import Layout from "../../../components/layout/Layout";
-import Client2 from "@/components/sections/Client2";
+import Client2 from "../../../components/sections/Client2";
 
 
 export const metadata = {
@@ -213,7 +213,7 @@ export default function JulioHerreraPage() {
           )
         }}
       />
-      <Layout breadcrumbTitle={title}>
+      <Layout breadcrumbTitle={title} category='Julio herrera velutini'>
         <Client2 />
       </Layout>
     </main>
