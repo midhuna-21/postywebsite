@@ -1,7 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-// list of HTML void elements
 const voidElements = ["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"];
 
 function cleanHTML(dir) {

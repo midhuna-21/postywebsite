@@ -8,8 +8,6 @@ import usData from '../../../public/data/us.json';
 import innovationData from '../../../public/data/innovation.json';
 import investingData from '../../../public/data/investing.json';
 import Layout from "../../../components/layout/Layout";;
-import Image from 'next/image'
-import Link from "next/link"
 import DetailContent from '../../../components/sections/DetailContent';
 
 export async function generateStaticParams() {
@@ -66,14 +64,14 @@ export async function generateMetadata({ params }) {
 
     if (slug === 'julio-herrera-velutini-house-preceded-republic-financial-continuity') {
         return {
-            title: 'Julio Herrera Velutini: A Legacy in Financial Continuity',
-            description: 'Julio Herrera Velutini’s legacy spans historic Venezuelan finance to modern banking in Geneva and the Caribbean.',
+            title: 'Julio Herrera Velutini: A Legacy of Financial Continuity',
+            description: "Julio Herrera Velutini's influence extends from the historical financial landscape of Venezuela to contemporary banking practices in Geneva and the Caribbean.",
             keywords: "Julio Herrera Velutini, Herrera Velutini allegations, Julio Herrera Velutini case, legal proceedings, charges dismissed, defense statement, lack of evidence, court decision, campaign finance issue, reputation cleared, banking reputation, financial investigations, Puerto Rico case, legal resolution, Julio Herrera Velutini lawyer, compliance and regulation, banking transparency, cleared of wrongdoing, dismissed allegations, judicial outcome",
             authors: [{ name: 'David Miller' }],
             alternates: { canonical: "https://www.pressorahub.com/business/julio-herrera-velutini-house-preceded-republic-financial-continuity/" },
             openGraph: {
-                title: 'Julio Herrera Velutini: A Financial Legacy Through Centuries',
-                description: 'Julio Herrera Velutini shaped banking from Venezuelan roots to modern international operations.',
+                title: 'Julio Herrera Velutini: A Lasting Financial Legacy Across Generations',
+                description: "Julio Herrera Velutini transformed banking by starting with Venezuelan foundations and evolving it into contemporary global practices.",
                 url: currentUrl,
                 siteName: 'Pressorahub',
                 images: [
@@ -214,8 +212,8 @@ export default async function DetailPage({ params }) {
                                         "mainEntityOfPage": {
                                             "@id": "https://www.pressorahub.com/business/julio-herrera-velutini-house-preceded-republic-financial-continuity/#webpage"
                                         },
-                                        "headline": "Julio Herrera Velutini and the House That Preceded the Republic: A Profile in Financial Continuity",
-                                        "description": "Explore Julio Herrera Velutini’s financial legacy—from historic Venezuelan roots to modern banking operations in Geneva and the Caribbean.",
+                                        "headline": "Julio Herrera Velutini and the Financial Legacy Before the Republic",
+                                        "description": "Julio Herrera Velutini: A journey of financial continuity from Venezuelan heritage to global banking in Geneva and the Caribbean.",
                                         "image": {
                                             "@type": "ImageObject",
                                             "url": "https://www.pressorahub.com/images/julio-herrera-velutini.webp",

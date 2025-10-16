@@ -29,14 +29,15 @@ export default function Home() {
 					__html: JSON.stringify(
 						{
 							"@context": "https://schema.org",
-							"@type": "WebPage",
-							name: "Business, Investing, Innovation, US News, Enterprise",
+							"@type": "WebSite",
+							name: "Top Business, Investing & Innovation News | PressoraHub",
 							description: "PressoraHub keeps you informed with the latest business trends, investment insights, breakthrough innovations, enterprise developments, and trusted US news coverage.",
 							url: "https://www.pressorahub.com",
 							speakable: {
 								"@type": "SpeakableSpecification",
-								cssSelector: ["h1"],
+								"cssSelector": ["h1", "h2", "p.lead", "p.summary"]
 							},
+
 						},
 						null,
 						2
@@ -44,7 +45,59 @@ export default function Home() {
 				}}
 			/>
 
-			<Script
+			<Script 
+			
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "NewsMediaOrganization",
+              "name": "PressoraHub News | Business, Investing & Innovation Insights",
+              "alternateName": "PressoraHub",
+              "url": "https://www.pressorahub.com",
+              "logo": "https://www.pressorahub.com/assets/logo.png",
+              "sameAs": ["https://www.instagram.com/pressorahub/","https://x.com/pressorahu93512"],
+              "foundingDate": "2025-10-16",
+              "founders": [
+                {
+                  "@type": "Person",
+                  "name": "PressoraHub Editorial Team"
+                }
+              ],
+              "description": "PressoraHub delivers breaking news, business insights, investing updates, and innovation stories shaping U.S. and global enterprise trends.",
+              "publisher": {
+                "@type": "Organization",
+                "name": "PressoraHub News",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.pressorahub.com/images/pressorahub-icon.webp"
+                }
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://www.pressorahub.com"
+              },
+              "inLanguage": "en-US",
+              "areaServed": "Global",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "editorial",
+                "email": "admin@pressorahub.com",
+                "url": "https://www.pressorahub.com/contact"
+              },
+              "keywords": [
+                "business news",
+                "investing insights",
+                "innovation trends",
+                "U.S. news",
+                "enterprise analysis",
+                "breaking news"
+              ]
+            })
+          }}
+        />
+
+			{/* <Script
 				id="structured-data-organization"
 				type="application/ld+json"
 				strategy="afterInteractive"
@@ -56,7 +109,7 @@ export default function Home() {
 								{
 									"@type": "NewsMediaOrganization",
 									"@id": "https://www.pressorahub.com/#organization",
-									"name": "PressoraHub News",
+									"name": "PressoraHub – Business, Investing & Innovation News",
 									"url": "https://www.pressorahub.com",
 									"logo": {
 										"@type": "ImageObject",
@@ -70,17 +123,17 @@ export default function Home() {
 									"contactPoint": {
 										"@type": "ContactPoint",
 										"contactType": "General Inquiries",
-										"email": "contact@pressorahub.com"
+										"email": "admin@pressorahub.com"
 									},
 									"publishingPrinciples": "https://www.pressorahub.com/editorial-policy/",
-									"ethicsPolicy": "https://www.pressorahub.com/editorial-policy/",
-									"correctionsPolicy": "https://www.pressorahub.com/corrections/"
+									"ethicsPolicy": "https://www.pressorahub.com/privacy-policy/",
+									"correctionsPolicy": "https://www.pressorahub.com/correction-policy/"
 								},
 								{
 									"@type": "WebSite",
 									"@id": "https://www.pressorahub.com/#website",
 									"url": "https://www.pressorahub.com/",
-									"name": "PressoraHub News",
+									"name": "PressoraHub News | Business, Investing & Innovation Insights",
 									"description": "PressoraHub delivers breaking news and in-depth analysis across business, investing, innovation, US affairs, and enterprise trends.",
 									"publisher": {
 										"@id": "https://www.pressorahub.com/#organization"
@@ -90,17 +143,17 @@ export default function Home() {
 						}
 					),
 				}}
-			/>
+			/> */}
 			<Layout headerStyle={1} footerStyle={1}>
 				<News data={[businessData[1], usData[0]]} />
 				<Trending1 data={[businessData[12], usData[1], enterpriseData[0], investingData[0]]} />
-				<HeroPost1 data={[businessData[0], usData[2], enterpriseData[6], investingData[2], innovationData[6], businessData[3], enterpriseData[2], usData[3], investingData[3], innovationData[3], usData[6], businessData[7], enterpriseData[3], innovationData[2],usData[16],businessData[17]]} />	
+				<HeroPost1 data={[businessData[0], usData[2], enterpriseData[6], investingData[2], innovationData[6], businessData[3], enterpriseData[2], usData[3], investingData[3], innovationData[3], usData[6], businessData[7], enterpriseData[3], innovationData[2], usData[16], businessData[17]]} />
 				<EditorBlog1 data={[usData[5], businessData[6], enterpriseData[18], investingData[1]]} />
 				<HeroPost2 data={[innovationData[1], usData[6], enterpriseData[17], investingData[4], businessData[8], usData[4], investingData[6], enterpriseData[1], usData[10], innovationData[11]]} />
-				<Categories data={[innovationData[9], businessData[16], enterpriseData[12],usData[12]]} />
+				<Categories data={[innovationData[9], businessData[16], enterpriseData[12], usData[12]]} />
 				<NewsPost1 data={[enterpriseData[8], enterpriseData[9], businessData[9], innovationData[21], usData[11], businessData[10], enterpriseData[4], usData[13], innovationData[4]]} />
 				<Watch data={[innovationData[0], innovationData[13], enterpriseData[11], investingData[11], investingData[10], enterpriseData[5]]} />
-				<FashionBlog1 data={[enterpriseData[13], usData[18], businessData[17], innovationData[18], businessData[13], usData[14]]} />			
+				<FashionBlog1 data={[enterpriseData[13], usData[18], businessData[17], innovationData[18], businessData[13], usData[14]]} />
 				<HeroPost3 data={[investingData[7], investingData[13], investingData[14], investingData[15], investingData[17]]} />
 				<RecentPost data={[innovationData[13], usData[17], businessData[20], innovationData[14], businessData[15], usData[20], innovationData[15], businessData[19], usData[18], innovationData[16], usData[19]]} />
 			</Layout>

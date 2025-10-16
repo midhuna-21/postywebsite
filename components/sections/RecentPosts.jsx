@@ -1,29 +1,30 @@
+"use client"
 import { useState } from "react";
 import PostCard from "./PostCard";
 
 export default function RecentPosts({ data }) {
-  // Number of posts to load at once
   const POSTS_PER_PAGE = 10;
 
-  // Track how many posts are visible
   const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
 
-  // Handle Load More button click
   const handleLoadMore = () => {
     setVisibleCount((prev) => prev + POSTS_PER_PAGE);
   };
 
-  // Slice only the visible posts
-  const visiblePosts = data.slice(0, visibleCount);
+  // const visiblePosts = data.slice(0, visibleCount);
 
-  // Check if more posts are available
+   const sortedPosts = [...data].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+
+  const visiblePosts = sortedPosts.slice(0, visibleCount);
+  // const hasMore = visibleCount < sortedPosts.length;
   const hasMore = visibleCount < data.length;
 
   return (
     <section className="recent-post-area padding">
       <div className="container">
         <div className="row">
-          {/* Split posts into two columns */}
           <div className="col-lg-6">
             <div className="news-post-wrap">
               {visiblePosts
@@ -44,7 +45,6 @@ export default function RecentPosts({ data }) {
           </div>
         </div>
 
-        {/* Load More Button */}
         {hasMore && (
           <div className="text-center mt-4">
             <button
