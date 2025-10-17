@@ -44,21 +44,32 @@ export default function DetailContent({ article, otherArticles }) {
                         </div>
                         <div className="post-social">
                             <ul className="social-list d-flex align-items-center">
-                                <li>
-                                    <Link href="/#" title="facebook" className="facebook"><i className="lab la-facebook-f" /></Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" title="twitter" className="twitter"><i className="lab la-twitter" /></Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" title="linkedin" className="linkedin"><i className="lab la-linkedin-in" /></Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" title="instagram" className="instagram"><i className="lab la-instagram" /></Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" title="pinterest" className="pinterest"><i className="lab la-pinterest-p" /></Link>
-                                </li>
+                               <li>
+										{/* <Link href="https://x.com/pressorahu93512" className="twitter"><i className="lab la-twitter" /></Link> */}
+									</li>
+									<li>
+										<Link href={article.instagram} className="instagram"><i className="lab la-instagram" /></Link>
+									</li>
+									<li>
+										<Link href={article.medium} className="" style={{border:''}}><i className="lab la-medium" /></Link>
+									</li>
+								<li>
+<Link href={article.substack} className="pinterest">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="15"
+    viewBox="0 0 256 256"
+  >
+    <g transform="scale(5.12,5.12)">
+      <path d="M43,11h-35v-6h35z"></path>
+      <path d="M43,19h-35v-6h35z"></path>
+      <path d="M43,44.805l-17.016,-10.636l-17.984,10.579v-23.748h35z"></path>
+    </g>
+  </svg>
+</Link>
+
+</li>
                             </ul>
                         </div>
                     </div>

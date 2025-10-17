@@ -32,20 +32,36 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 							<div className="mid-header-left">
 								<ul className="header-social">
 									<li>
-										<Link href="/#" className="facebook"><i className="lab la-facebook-f" /></Link>
+										{/* <Link href="/#" className="facebook"><i className="lab la-facebook-f" /></Link> */}
 									</li>
 									<li>
-										<Link href="/#" className="twitter"><i className="lab la-twitter" /></Link>
+										<Link href="https://x.com/pressorahu93512" className="twitter"><i className="lab la-twitter" /></Link>
 									</li>
 									<li>
-										<Link href="/#" className="instagram"><i className="lab la-instagram" /></Link>
+										<Link href="https://www.instagram.com/pressorahub/" className="instagram"><i className="lab la-instagram" /></Link>
 									</li>
 									<li>
-										<Link href="/#" className="linkedin"><i className="lab la-linkedin-in" /></Link>
+										<Link href="https://medium.com/@admin_36629" className="" style={{border:''}}><i className="lab la-medium" /></Link>
 									</li>
-									<li>
-										<Link href="/#" className="pinterest"><i className="lab la-pinterest-p" /></Link>
-									</li>
+								<li>
+<Link href="https://substack.com/@pressorahub" className="pinterest">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="15"
+    viewBox="0 0 256 256"
+  >
+    <g transform="scale(5.12,5.12)">
+      <path d="M43,11h-35v-6h35z"></path>
+      <path d="M43,19h-35v-6h35z"></path>
+      <path d="M43,44.805l-17.016,-10.636l-17.984,10.579v-23.748h35z"></path>
+    </g>
+  </svg>
+</Link>
+
+</li>
+
+
 								</ul>
 							</div>
 							<div className="site-logo">

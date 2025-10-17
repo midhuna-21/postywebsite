@@ -195,22 +195,22 @@ header.main-header.transparent {
 }
 
 .mid-header-wrap .mid-header-left ul li a.linkedin {
-    border: 1px solid #0077b5;
-    color: #0077b5;
+    border: 1px solid #0000;
+    color: #0000;
 }
 
 .mid-header-wrap .mid-header-left ul li a.linkedin:hover {
-    background-color: #0077b5;
+    background-color: #0000;
     color: var(--white-color);
 }
 
 .mid-header-wrap .mid-header-left ul li a.pinterest {
-    border: 1px solid #E60023;
-    color: #E60023;
+    border: 1px solid #f15a13;
+    color: #f15a13;
 }
 
 .mid-header-wrap .mid-header-left ul li a.pinterest:hover {
-    background-color: #E60023;
+    background-color: #f15a13;
     color: var(--white-color);
 }
 
@@ -2670,7 +2670,7 @@ header-1 .site-logo img {
 }
 
 .social-box.pinterest i {
-    color: #F60C19;
+    color: #f15a13;
 }
 
 .social-box.pinterest:hover i {
@@ -2678,7 +2678,7 @@ header-1 .site-logo img {
 }
 
 .social-box.pinterest:hover {
-    background-color: #F60C19;
+    background-color: #f15a13;
 }
 
 .post-author-box {
@@ -4842,25 +4842,25 @@ header-1 .site-logo img {
 }
 
 .social-list li a.linkedin {
-    color: #0077b5;
-    border: 1px solid #0077b5;
+    color: #0000;
+    border: 1px solid #0000;
 }
 
 .social-list li a.linkedin:hover {
-    background-color: #0077b5;
+    background-color: #0000;
     color: var(--white-color);
-    border: 1px solid #0077b5;
+    border: 1px solid #0000;
 }
 
 .social-list li a.pinterest {
-    color: #E60023;
-    border: 1px solid #E60023;
+    color: #f15a13;
+    border: 1px solid #f15a13;
 }
 
 .social-list li a.pinterest:hover {
-    background-color: #E60023;
+    background-color: #f15a13;
     color: var(--white-color);
-    border: 1px solid #E60023;
+    border: 1px solid #f15a13;
 }
 
 .post-layout-content .layout-desc {
@@ -5423,7 +5423,7 @@ blockquote span:before {
 }
 
 .layout-header .top-content .social-list li a.linkedin {
-    background-color: #0077b5;
+    background-color: #0000;
 }
 
 .layout-header .top-content .social-list li a.instagram {
@@ -5431,7 +5431,7 @@ blockquote span:before {
 }
 
 .layout-header .top-content .social-list li a.pinterest {
-    background-color: #E60023;
+    background-color: #f15a13;
 }
 
 .layout-header .post-social span {
@@ -5645,7 +5645,13 @@ blockquote span:before {
 /*===================================================
     Team Section
 ====================================================*/
-
+.pinterest svg {
+  fill: #f15a13;
+  transition: fill 0.3s;
+}
+.pinterest:hover svg {
+  fill: white;
+}
 .team-top {
     display: flex;
     align-items: center;
@@ -5755,14 +5761,14 @@ blockquote span:before {
 }
 
 .team-social li a.linkedin {
-    color: #0077b5;
-    border: 1px solid #0077b5;
+    color: #0000;
+    border: 1px solid #0000;
 }
 
 .team-social li a.linkedin:hover {
-    background-color: #0077b5;
+    background-color: #0000;
     color: var(--white-color);
-    border: 1px solid #0077b5;
+    border: 1px solid #0000;
 }
 
 .team-item:hover .team-thumb img {
@@ -6335,4 +6341,28 @@ blockquote span:before {
     .copyright-wrap .list li a {
         font-size: 12px;
     }
+}
+
+.substack {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: transparent;    /* transparent background */
+  border: 2px solid #ff0000;        /* subtle red border */
+  color: #ff6719;                   /* orange icon */
+  transition: all 0.3s ease;
+}
+
+.substack:hover {
+  background-color: #ff6719;        /* orange background on hover */
+  color: #ffffff;                   /* white icon on hover */
+  border-color: #ff6719;            /* match border to bg */
+}
+
+.substack svg {
+  width: 20px;
+  height: 15px;
 }

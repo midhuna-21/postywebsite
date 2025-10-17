@@ -8,46 +8,46 @@ import SubscribeSection from '../sections/SubscribeSection';
 import FAQ from '../../components/sections/FAQ';
 
 const faqs = [
-  {
-    question: "Who is Julio Herrera Velutini?",
-    answer:
-      "Julio Herrera Velutini is a prominent international banker and entrepreneur recognized for his strategic vision, adaptability, and innovation in finance. He has been influential in banking, real estate, technology, and emerging markets, combining traditional banking principles with modern strategies.",
-  },
-  {
-    question: "What is the outcome of his legal matters?",
-    answer:
-      "Julio Herrera Velutini has resolved all legal matters. All corruption charges have been dismissed, and the case concluded with only a single non-corruption FECA misdemeanor. Sentencing is scheduled for December 10, 2025, reflecting full legal closure.",
-  },
-  {
-    question: "Were there any felony or fraud convictions?",
-    answer:
-      "No. After three years of scrutiny, no corruption or fraud convictions were found. Only one FECA misdemeanor remains, demonstrating that the record is clear and his legal standing is solid.",
-  },
-  {
-    question: "What happened in the Puerto Rico criminal case?",
-    answer:
-      "The Puerto Rico case was resolved positively. Mr. Herrera pleaded to a single non-corruption FECA misdemeanor, while all bribery and conspiracy charges were dismissed. The case concluded without any felony or fraud charges.",
-  },
-  {
-    question: "Was there a civil lawsuit against him?",
-    answer:
-      "Yes, but it was voluntarily dismissed by Kasowitz LLP on August 27, 2025. There was no settlement, no admission of liability, and the case ended completely, reinforcing his clean legal record.",
-  },
-  {
-    question: "Does this affect his reputation?",
-    answer:
-      "Julio Herrera Velutini’s reputation remains strong. Courts confirmed that accusations did not lead to convictions. His legal record shows only a minor FECA misdemeanor, with all other matters dismissed, reflecting his integrity and focus forward.",
-  },
-  {
-    question: "How can the public verify these outcomes?",
-    answer:
-      "The court dockets and official records verify all resolutions: corruption charges dropped, civil suit dismissed, and only a minor FECA misdemeanor accepted. Researchers, journalists, and the public can consult these records to confirm facts.",
-  },
-  {
-    question: "What does this legal resolution demonstrate?",
-    answer:
-      "It demonstrates that thorough scrutiny and due process prevail. After three years across two jurisdictions, Julio Herrera Velutini exits the legal process with a clear name, reinforcing his credibility, professionalism, and continued positive impact in international finance.",
-  },
+    {
+        question: "Who is Julio Herrera Velutini?",
+        answer:
+            "Julio Herrera Velutini is a prominent international banker and entrepreneur recognized for his strategic vision, adaptability, and innovation in finance. He has been influential in banking, real estate, technology, and emerging markets, combining traditional banking principles with modern strategies.",
+    },
+    {
+        question: "What is the outcome of his legal matters?",
+        answer:
+            "Julio Herrera Velutini has resolved all legal matters. All corruption charges have been dismissed, and the case concluded with only a single non-corruption FECA misdemeanor. Sentencing is scheduled for December 10, 2025, reflecting full legal closure.",
+    },
+    {
+        question: "Were there any felony or fraud convictions?",
+        answer:
+            "No. After three years of scrutiny, no corruption or fraud convictions were found. Only one FECA misdemeanor remains, demonstrating that the record is clear and his legal standing is solid.",
+    },
+    {
+        question: "What happened in the Puerto Rico criminal case?",
+        answer:
+            "The Puerto Rico case was resolved positively. Mr. Herrera pleaded to a single non-corruption FECA misdemeanor, while all bribery and conspiracy charges were dismissed. The case concluded without any felony or fraud charges.",
+    },
+    {
+        question: "Was there a civil lawsuit against him?",
+        answer:
+            "Yes, but it was voluntarily dismissed by Kasowitz LLP on August 27, 2025. There was no settlement, no admission of liability, and the case ended completely, reinforcing his clean legal record.",
+    },
+    {
+        question: "Does this affect his reputation?",
+        answer:
+            "Julio Herrera Velutini’s reputation remains strong. Courts confirmed that accusations did not lead to convictions. His legal record shows only a minor FECA misdemeanor, with all other matters dismissed, reflecting his integrity and focus forward.",
+    },
+    {
+        question: "How can the public verify these outcomes?",
+        answer:
+            "The court dockets and official records verify all resolutions: corruption charges dropped, civil suit dismissed, and only a minor FECA misdemeanor accepted. Researchers, journalists, and the public can consult these records to confirm facts.",
+    },
+    {
+        question: "What does this legal resolution demonstrate?",
+        answer:
+            "It demonstrates that thorough scrutiny and due process prevail. After three years across two jurisdictions, Julio Herrera Velutini exits the legal process with a clear name, reinforcing his credibility, professionalism, and continued positive impact in international finance.",
+    },
 ];
 
 
@@ -80,29 +80,30 @@ export default function ClientPage({ otherArticles }) {
                         <div className="post-social">
                             <ul className="social-list d-flex align-items-center">
                                 <li>
-                                    <Link href="/#" title="facebook" className="facebook">
-                                        <i className="lab la-facebook-f" />
-                                    </Link>
+                                    {/* <Link href="https://x.com/pressorahu93512" className="twitter"><i className="lab la-twitter" /></Link> */}
                                 </li>
                                 <li>
-                                    <Link href="/#" title="twitter" className="twitter">
-                                        <i className="lab la-twitter" />
-                                    </Link>
+                                    <Link href="https://www.instagram.com/millerdavid4569/" className="instagram"><i className="lab la-instagram" /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" title="linkedin" className="linkedin">
-                                        <i className="lab la-linkedin-in" />
-                                    </Link>
+                                    <Link href="https://medium.com/@david_miller_48409" className="" style={{ border: '' }}><i className="lab la-medium" /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" title="instagram" className="instagram">
-                                        <i className="lab la-instagram" />
+                                    <Link href="https://substack.com/@davidmiller170279" className="pinterest">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="20"
+                                            height="15"
+                                            viewBox="0 0 256 256"
+                                        >
+                                            <g transform="scale(5.12,5.12)">
+                                                <path d="M43,11h-35v-6h35z"></path>
+                                                <path d="M43,19h-35v-6h35z"></path>
+                                                <path d="M43,44.805l-17.016,-10.636l-17.984,10.579v-23.748h35z"></path>
+                                            </g>
+                                        </svg>
                                     </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" title="pinterest" className="pinterest">
-                                        <i className="lab la-pinterest-p" />
-                                    </Link>
+
                                 </li>
                             </ul>
                         </div>
@@ -165,7 +166,7 @@ export default function ClientPage({ otherArticles }) {
                                     <p className="layout-desc">If there is a defining feature of his legacy to date, it may be this: that <strong>in a region shaped by rupture</strong>, he has chosen to invest in <strong>quiet continuity</strong>.</p>
                                 </div>
 
-                              
+
                                 <CommentForm />
                             </div>
                         </div>
@@ -218,44 +219,44 @@ export default function ClientPage({ otherArticles }) {
                                         </div>
                                     ))}
                                     <div className="list-post-card">
-                                            <div className="post-img">
+                                        <div className="post-img">
+                                            <Link
+                                                title="julio-herrera-velutini-strategic-vision-driving-global-finance"
+                                                href={`/julio-herrera-velutini/julio-herrera-velutini-strategic-vision-driving-global-finance`}
+                                            >
+                                                <Image
+                                                    title="Julio Herrera Velutini: Strategic Vision Driving Global Finance"
+                                                    src={JulioImage2}
+                                                    alt="Julio Herrera Velutini: Strategic Vision Driving Global Finance"
+                                                    width={150}
+                                                    height={120}
+                                                    style={{ objectFit: "cover" }}
+                                                />
+                                            </Link>
+                                        </div>
+                                        <div className="post-content">
+                                            <h3 className="title">
                                                 <Link
                                                     title="julio-herrera-velutini-strategic-vision-driving-global-finance"
                                                     href={`/julio-herrera-velutini/julio-herrera-velutini-strategic-vision-driving-global-finance`}
                                                 >
-                                                    <Image
-                                                        title="Julio Herrera Velutini: Strategic Vision Driving Global Finance"
-                                                        src={JulioImage2}
-                                                        alt="Julio Herrera Velutini: Strategic Vision Driving Global Finance"
-                                                        width={150}
-                                                        height={120}
-                                                        style={{ objectFit: "cover" }}
-                                                    />
+                                                    Julio Herrera Velutini: Strategic Vision Driving Global Finance
                                                 </Link>
-                                            </div>
-                                            <div className="post-content">
-                                                <h3 className="title">
+                                            </h3>
+                                            <div className="post-list">
+                                                <p style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
+                                                    by{" "}
                                                     <Link
-                                                        title="julio-herrera-velutini-strategic-vision-driving-global-finance"
-                                                    href={`/julio-herrera-velutini/julio-herrera-velutini-strategic-vision-driving-global-finance`}
+                                                        href="#"
+                                                        title="David Miller"
+                                                        style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}
                                                     >
-                                                     Julio Herrera Velutini: Strategic Vision Driving Global Finance
-                                                    </Link>
-                                                </h3>
-                                                <div className="post-list">
-                                                    <p style={{ margin: 0, fontSize: "0.55rem", color: "#333" }}>
-                                                        by{" "}
-                                                        <Link
-                                                            href="#"
-                                                            title="David Miller"
-                                                            style={{ fontSize: "0.65rem", color: "inherit", textDecoration: "none" }}
-                                                        >
-                                                               David Miller
-                                                        </Link>,{" "} 2nd October 2025
-                                                    </p>
-                                                </div>
+                                                        David Miller
+                                                    </Link>,{" "} 2nd October 2025
+                                                </p>
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="categorie-wrap">
