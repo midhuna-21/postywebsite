@@ -4,7 +4,7 @@ import CommentForm from "./CommentForm";
 import SubscribeSection from "./SubscribeSection";
 
 
-export default function DetailContent({ article, otherArticles }) {
+export default function DetailContent({ article, otherArticles }) { 
     const splitIntoParagraphs = (text, numParagraphs = 4) => {
         if (!text) return [];
 
@@ -48,7 +48,7 @@ export default function DetailContent({ article, otherArticles }) {
 										{/* <Link href="https://x.com/pressorahu93512" className="twitter"><i className="lab la-twitter" /></Link> */}
 									</li>
 									<li>
-										<Link href={article.instagram} className="instagram"><i className="lab la-instagram" /></Link>
+										<Link href={article.instagram} className="instagram" title="instagram"><i className="lab la-instagram" /></Link>
 									</li>
 									<li>
 										<Link href={article.medium} className="" style={{border:''}}><i className="lab la-medium" /></Link>

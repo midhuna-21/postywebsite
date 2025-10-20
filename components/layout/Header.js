@@ -35,39 +35,36 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 										{/* <Link href="/#" className="facebook"><i className="lab la-facebook-f" /></Link> */}
 									</li>
 									<li>
-										<Link href="https://x.com/pressorahu93512" className="twitter"><i className="lab la-twitter" /></Link>
+										<Link href="https://x.com/pressorahu93512" className="twitter" title="twitter"><i className="lab la-twitter" /></Link>
 									</li>
 									<li>
-										<Link href="https://www.instagram.com/pressorahub/" className="instagram"><i className="lab la-instagram" /></Link>
+										<Link href="https://www.instagram.com/pressorahub/" className="instagram" title="instagram"><i className="lab la-instagram" /></Link>
 									</li>
 									<li>
-										<Link href="https://medium.com/@admin_36629" className="" style={{border:''}}><i className="lab la-medium" /></Link>
+										<Link href="https://medium.com/@admin_36629" className="" title="medium" style={{ border: '' }}><i className="lab la-medium" /></Link>
 									</li>
-								<li>
-<Link href="https://substack.com/@pressorahub" className="pinterest">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="15"
-    viewBox="0 0 256 256"
-  >
-    <g transform="scale(5.12,5.12)">
-      <path d="M43,11h-35v-6h35z"></path>
-      <path d="M43,19h-35v-6h35z"></path>
-      <path d="M43,44.805l-17.016,-10.636l-17.984,10.579v-23.748h35z"></path>
-    </g>
-  </svg>
-</Link>
-
-</li>
-
-
+									<li>
+										<Link href="https://substack.com/@pressorahub" title="substack" className="pinterest">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="15"
+												viewBox="0 0 256 256"
+											>
+												<g transform="scale(5.12,5.12)">
+													<path d="M43,11h-35v-6h35z"></path>
+													<path d="M43,19h-35v-6h35z"></path>
+													<path d="M43,44.805l-17.016,-10.636l-17.984,10.579v-23.748h35z"></path>
+												</g>
+											</svg>
+										</Link>
+									</li>
 								</ul>
 							</div>
 							<div className="site-logo">
 								<Link href="/" title="home">
 									<Image
-									title="pressorahub-dark-logo"
+										title="pressorahub-dark-logo"
 										className="logo-dark"
 										src="/images/pressorahub-black-logo.webp"
 										alt="PressoraHub Logo Dark"
@@ -78,7 +75,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 									/>
 									{/* Light Logo */}
 									<Image
-									title="pressorahub-logo"
+										title="pressorahub-logo"
 										className="logo-light"
 										src="/images/pressorahub-logo.webp"
 										alt="PressoraHub Logo Light"
@@ -109,7 +106,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSideb
 											<span />
 										</button>
 									</div>
-									
+
 									<nav className="navigation-menu">
 										<Menu />
 									</nav>

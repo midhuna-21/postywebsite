@@ -82,13 +82,13 @@ export default function Client2({ otherArticles }) {
                                     {/* <Link href="https://x.com/pressorahu93512" className="twitter"><i className="lab la-twitter" /></Link> */}
                                 </li>
                                 <li>
-                                    <Link href="https://www.instagram.com/millerdavid4569/" className="instagram"><i className="lab la-instagram" /></Link>
+                                    <Link href="https://www.instagram.com/millerdavid4569/" className="instagram" title="instagram"><i className="lab la-instagram" /></Link>
                                 </li>
                                 <li>
-                                    <Link href="https://medium.com/@david_miller_48409" className="" style={{ border: '' }}><i className="lab la-medium" /></Link>
+                                    <Link href="https://medium.com/@david_miller_48409" className="" title="medium" style={{ border: '' }}><i className="lab la-medium" /></Link>
                                 </li>
                                 <li>
-                                    <Link href="https://substack.com/@davidmiller170279" className="pinterest">
+                                    <Link href="https://substack.com/@davidmiller170279" title="substack" className="pinterest">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="20"
