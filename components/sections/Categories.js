@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Categories({ data }) {
   return (
-    <section className="categories-section padding">
+    <div className="categories-section padding">
       <div className="container">
         <div className="row">
           {data.map((item, index) => (
@@ -37,6 +37,6 @@ export default function Categories({ data }) {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   )
 }

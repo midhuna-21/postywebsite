@@ -36,7 +36,7 @@ const swiperOptions = {
 
 export default function Trending1({ data }) {
   return (
-    <section className="trending-area">
+    <div className="trending-area">
       <div className="container">
         <div className="trending-carousel swiper">
           <Swiper {...swiperOptions} className="swiper-wrapper swiper-container">
@@ -85,6 +85,6 @@ export default function Trending1({ data }) {
           </Swiper>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

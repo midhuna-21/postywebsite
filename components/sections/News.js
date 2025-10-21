@@ -24,7 +24,7 @@ const swiperOptions = {
 
 export default function News({ data }) {
     return (
-        <section className="news-area">
+        <div className="news-area">
             <div className="container">
                 <div className="news-carousel swiper">
                     <Swiper {...swiperOptions} className="swiper-wrapper">
@@ -49,6 +49,6 @@ export default function News({ data }) {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }

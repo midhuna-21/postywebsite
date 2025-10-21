@@ -31,7 +31,7 @@ export default function HeroPost3({ data }) {
                                 </Link>
                             </div>
                             <div className="post-carousel-content">
-                                <Link htitle={data[0].slug}
+                                <Link title={data[0].slug}
 												href={`/${data[0].category}/${data[0].slug}`} className="card-btn bg-green">{data[0].category}</Link>
                                 <h3 className="title">
                                     <Link title={data[0].slug}

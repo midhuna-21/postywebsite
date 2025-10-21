@@ -6,11 +6,13 @@
         "dev": "next dev",
         "build": "next build && node w3infoclear.js",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "postbuild": "next-sitemap"
     },
     "dependencies": {
         "lucide-react": "^0.544.0",
         "next": "latest",
+        "next-sitemap": "^4.2.3",
         "react": "latest",
         "react-icons": "^5.5.0",
         "react-modal-video": "^2.0.2",
